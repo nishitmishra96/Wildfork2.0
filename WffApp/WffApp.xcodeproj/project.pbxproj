@@ -11,12 +11,18 @@
 		940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940292B92410D3A100D04AA9 /* Assets.xcassets */; };
 		940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */; };
 		940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940292E42410D7D300D04AA9 /* GoogleService-Info.plist */; };
-		940292EA2410D98B00D04AA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940292E92410D98B00D04AA9 /* ViewController.swift */; };
 		94CB46022410E52900F995E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46012410E52900F995E5 /* Main.storyboard */; };
 		94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46042410EC8C00F995E5 /* NavigationController.swift */; };
 		94CB46162411052800F995E5 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46132411052800F995E5 /* Storyboards.swift */; };
-		94CB4618241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */; };
 		94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46192411089C00F995E5 /* splashvideo.mov */; };
+		94CB461D24110B6E00F995E5 /* BoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */; };
+		94CB461E24110B6E00F995E5 /* BoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */; };
+		94CB462124110B8300F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */; };
+		94CB462224110B8300F995E5 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB462024110B8300F995E5 /* OnBoardingVC.swift */; };
+		94CB462424110BC900F995E5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462324110BC900F995E5 /* Home.storyboard */; };
+		94CB462A24110E3200F995E5 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462624110E3200F995E5 /* Oswald-Bold.ttf */; };
+		94CB462B24110E3200F995E5 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462824110E3200F995E5 /* Oswald-Bold.ttf */; };
+		94CB462C24110E3200F995E5 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462924110E3200F995E5 /* Montserrat-Light.otf */; };
 		E1740A587138D08BAFD4ABAD /* Pods_WFF_WffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9957609DDC69861AD86627 /* Pods_WFF_WffApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,13 +36,19 @@
 		940292BC2410D3A100D04AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940292BE2410D3A100D04AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940292E42410D7D300D04AA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		940292E92410D98B00D04AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94CB46012410E52900F995E5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94CB46032410EAA000F995E5 /* WffApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WffApp.entitlements; sourceTree = "<group>"; };
 		94CB46042410EC8C00F995E5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		94CB46132411052800F995E5 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenWithGIFViewController.swift; sourceTree = "<group>"; };
 		94CB46192411089C00F995E5 /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
+		94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenWithGIFViewController.swift; path = "../../../../Wild Fork Foods/wildforkfoods-ios/WildFork/ViewControllers/StartUpViewControllers/LaunchScreenWithGIFViewController.swift"; sourceTree = "<group>"; };
+		94CB462024110B8300F995E5 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		94CB462324110BC900F995E5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		94CB462724110E3200F995E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		94CB462824110E3200F995E5 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		94CB462924110E3200F995E5 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,19 +103,33 @@
 			isa = PBXGroup;
 			children = (
 				94CB46032410EAA000F995E5 /* WffApp.entitlements */,
+				94CB462324110BC900F995E5 /* Home.storyboard */,
 				940292B02410D3A000D04AA9 /* AppDelegate.swift */,
 				940292B92410D3A100D04AA9 /* Assets.xcassets */,
 				940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */,
-				94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */,
 				94CB46192411089C00F995E5 /* splashvideo.mov */,
 				940292BE2410D3A100D04AA9 /* Info.plist */,
 				940292E42410D7D300D04AA9 /* GoogleService-Info.plist */,
-				940292E92410D98B00D04AA9 /* ViewController.swift */,
 				94CB46012410E52900F995E5 /* Main.storyboard */,
+				94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */,
+				94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */,
+				94CB462024110B8300F995E5 /* OnBoardingVC.swift */,
+				94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */,
+				94CB462524110E3200F995E5 /* Fonts */,
 				94CB46132411052800F995E5 /* Storyboards.swift */,
 				94CB46042410EC8C00F995E5 /* NavigationController.swift */,
 			);
 			path = WffApp;
+			sourceTree = "<group>";
+		};
+		94CB462524110E3200F995E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				94CB462624110E3200F995E5 /* Oswald-Bold.ttf */,
+				94CB462824110E3200F995E5 /* Oswald-Bold.ttf */,
+				94CB462924110E3200F995E5 /* Montserrat-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +193,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CB462424110BC900F995E5 /* Home.storyboard in Resources */,
 				940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */,
 				940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */,
+				94CB462A24110E3200F995E5 /* Oswald-Bold.ttf in Resources */,
 				94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */,
+				94CB462C24110E3200F995E5 /* Montserrat-Light.otf in Resources */,
+				94CB462B24110E3200F995E5 /* Oswald-Bold.ttf in Resources */,
 				940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */,
+				94CB461D24110B6E00F995E5 /* BoardingCollectionViewCell.xib in Resources */,
 				94CB46022410E52900F995E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CB462124110B8300F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */,
+				94CB462224110B8300F995E5 /* OnBoardingVC.swift in Sources */,
+				94CB461E24110B6E00F995E5 /* BoardingCollectionViewCell.swift in Sources */,
 				94CB46162411052800F995E5 /* Storyboards.swift in Sources */,
-				94CB4618241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */,
 				94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */,
-				940292EA2410D98B00D04AA9 /* ViewController.swift in Sources */,
 				940292B12410D3A000D04AA9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +290,14 @@
 				940292BC2410D3A100D04AA9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94CB462624110E3200F995E5 /* Oswald-Bold.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94CB462724110E3200F995E5 /* en */,
+			);
+			name = "Oswald-Bold.ttf";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

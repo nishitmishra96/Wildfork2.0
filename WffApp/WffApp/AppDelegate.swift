@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
-        let viewController = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ViewController")
         let splashVC = Storyboard.main.instanceOf(viewController: LaunchScreenWithGIFViewController.self)!
         splashVC.launchOptions = launchOptions
         let navigationController = UINavigationController.init(rootViewController: splashVC)

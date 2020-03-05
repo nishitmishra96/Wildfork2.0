@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Bold.ttf">
+            <string>Oswald-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On BoardingVC-->
+        <scene sceneID="yhM-VU-d6Z">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingVC" id="rLA-kl-GNT" customClass="OnBoardingVC" customModule="WildFork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9pG-8e-qlB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Nd5-9w-jDe">
+                                <rect key="frame" x="168" y="538" width="39" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wUk-L6-MQI">
+                                <rect key="frame" x="16" y="591" width="343" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-c2-nsv">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="17"/>
+                                        <state key="normal" title="LOG IN/REGISTER">
+                                            <color key="titleColor" red="0.80392156859999997" green="0.19215686269999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.23921568630000001" green="0.22352941179999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="LoginButtonPressed:" destination="rLA-kl-GNT" eventType="touchUpInside" id="Rgb-iZ-8UZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS4-dq-yg8">
+                                        <rect key="frame" x="175.5" y="0.0" width="167.5" height="60"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="15"/>
+                                        <state key="normal" title="START SHOPPING"/>
+                                        <connections>
+                                            <action selector="StartShoppingButtonPressed:" destination="rLA-kl-GNT" eventType="touchUpInside" id="Rfe-ko-q5q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="i2J-iO-QFj"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wbW-lj-22j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Uwi-Xn-FmE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rLA-kl-GNT" id="kYu-0o-Tan"/>
+                                    <outlet property="delegate" destination="rLA-kl-GNT" id="btr-iX-9fe"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wUk-L6-MQI" firstAttribute="leading" secondItem="Lbo-cJ-jQJ" secondAttribute="leading" constant="16" id="1sc-6M-aqt"/>
+                            <constraint firstItem="wbW-lj-22j" firstAttribute="top" secondItem="Lbo-cJ-jQJ" secondAttribute="top" id="A2H-Y6-1Ph"/>
+                            <constraint firstItem="Nd5-9w-jDe" firstAttribute="top" secondItem="wbW-lj-22j" secondAttribute="bottom" id="Pos-SU-4Es"/>
+                            <constraint firstItem="wUk-L6-MQI" firstAttribute="top" secondItem="Nd5-9w-jDe" secondAttribute="bottom" constant="16" id="UTu-r3-K9v"/>
+                            <constraint firstItem="wbW-lj-22j" firstAttribute="leading" secondItem="Lbo-cJ-jQJ" secondAttribute="leading" id="ZVO-gO-4TA"/>
+                            <constraint firstItem="Nd5-9w-jDe" firstAttribute="centerX" secondItem="9pG-8e-qlB" secondAttribute="centerX" id="hlu-ev-P5k"/>
+                            <constraint firstItem="Lbo-cJ-jQJ" firstAttribute="trailing" secondItem="wUk-L6-MQI" secondAttribute="trailing" constant="16" id="ma7-cq-e0V"/>
+                            <constraint firstItem="Lbo-cJ-jQJ" firstAttribute="trailing" secondItem="wbW-lj-22j" secondAttribute="trailing" id="nD8-jd-K95"/>
+                            <constraint firstItem="Lbo-cJ-jQJ" firstAttribute="bottom" secondItem="wUk-L6-MQI" secondAttribute="bottom" constant="16" id="p5A-fA-tIL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lbo-cJ-jQJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HqA-Y0-kc1"/>
+                    <connections>
+                        <outlet property="colView" destination="wbW-lj-22j" id="j9O-nW-nN4"/>
+                        <outlet property="loginButton" destination="bfU-c2-nsv" id="0Ia-NX-4GF"/>
+                        <outlet property="pageControl" destination="Nd5-9w-jDe" id="ysN-IB-goF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pat-kB-ySQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="-349"/>
+        </scene>
+    </scenes>
+</document>
