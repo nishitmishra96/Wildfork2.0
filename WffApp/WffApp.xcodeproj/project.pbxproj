@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940292B12410D3A000D04AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940292B02410D3A000D04AA9 /* AppDelegate.swift */; };
+		940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940292B92410D3A100D04AA9 /* Assets.xcassets */; };
+		940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */; };
+		940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940292E42410D7D300D04AA9 /* GoogleService-Info.plist */; };
+		940292EA2410D98B00D04AA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940292E92410D98B00D04AA9 /* ViewController.swift */; };
+		94CB46022410E52900F995E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46012410E52900F995E5 /* Main.storyboard */; };
+		94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46042410EC8C00F995E5 /* NavigationController.swift */; };
+		94CB46162411052800F995E5 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46132411052800F995E5 /* Storyboards.swift */; };
+		94CB4618241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */; };
+		94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46192411089C00F995E5 /* splashvideo.mov */; };
+		E1740A587138D08BAFD4ABAD /* Pods_WFF_WffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9957609DDC69861AD86627 /* Pods_WFF_WffApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C8FC9BF5C9B68D93F16FCB4 /* Pods-WFF-WffApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WffApp.debug.xcconfig"; path = "Target Support Files/Pods-WFF-WffApp/Pods-WFF-WffApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1FC3685EAC1B7C1A1A4BFA58 /* Pods-WFF-WffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WffApp.release.xcconfig"; path = "Target Support Files/Pods-WFF-WffApp/Pods-WFF-WffApp.release.xcconfig"; sourceTree = "<group>"; };
+		3A9957609DDC69861AD86627 /* Pods_WFF_WffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFF_WffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		940292AD2410D3A000D04AA9 /* WffApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WffApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		940292B02410D3A000D04AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		940292B92410D3A100D04AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		940292BC2410D3A100D04AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		940292BE2410D3A100D04AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940292E42410D7D300D04AA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		940292E92410D98B00D04AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94CB46012410E52900F995E5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		94CB46032410EAA000F995E5 /* WffApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WffApp.entitlements; sourceTree = "<group>"; };
+		94CB46042410EC8C00F995E5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		94CB46132411052800F995E5 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenWithGIFViewController.swift; sourceTree = "<group>"; };
+		94CB46192411089C00F995E5 /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		940292AA2410D3A000D04AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1740A587138D08BAFD4ABAD /* Pods_WFF_WffApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0320B4783BCDEAB5B403FE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A9957609DDC69861AD86627 /* Pods_WFF_WffApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2562AA410D0511E090E0FF1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C8FC9BF5C9B68D93F16FCB4 /* Pods-WFF-WffApp.debug.xcconfig */,
+				1FC3685EAC1B7C1A1A4BFA58 /* Pods-WFF-WffApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		940292A42410D3A000D04AA9 = {
+			isa = PBXGroup;
+			children = (
+				940292AF2410D3A000D04AA9 /* WffApp */,
+				940292AE2410D3A000D04AA9 /* Products */,
+				2562AA410D0511E090E0FF1A /* Pods */,
+				0320B4783BCDEAB5B403FE94 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		940292AE2410D3A000D04AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940292AD2410D3A000D04AA9 /* WffApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		940292AF2410D3A000D04AA9 /* WffApp */ = {
+			isa = PBXGroup;
+			children = (
+				94CB46032410EAA000F995E5 /* WffApp.entitlements */,
+				940292B02410D3A000D04AA9 /* AppDelegate.swift */,
+				940292B92410D3A100D04AA9 /* Assets.xcassets */,
+				940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */,
+				94CB4617241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift */,
+				94CB46192411089C00F995E5 /* splashvideo.mov */,
+				940292BE2410D3A100D04AA9 /* Info.plist */,
+				940292E42410D7D300D04AA9 /* GoogleService-Info.plist */,
+				940292E92410D98B00D04AA9 /* ViewController.swift */,
+				94CB46012410E52900F995E5 /* Main.storyboard */,
+				94CB46132411052800F995E5 /* Storyboards.swift */,
+				94CB46042410EC8C00F995E5 /* NavigationController.swift */,
+			);
+			path = WffApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		940292AC2410D3A000D04AA9 /* WffApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 940292C12410D3A100D04AA9 /* Build configuration list for PBXNativeTarget "WffApp" */;
+			buildPhases = (
+				F33380DA8152AFB393D32549 /* [CP] Check Pods Manifest.lock */,
+				940292A92410D3A000D04AA9 /* Sources */,
+				940292AA2410D3A000D04AA9 /* Frameworks */,
+				940292AB2410D3A000D04AA9 /* Resources */,
+				94CB46002410DD5100F995E5 /* ShellScript */,
+				498C6921669231E372863136 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WffApp;
+			productName = WffApp;
+			productReference = 940292AD2410D3A000D04AA9 /* WffApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		940292A52410D3A000D04AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nishit Mishra";
+				TargetAttributes = {
+					940292AC2410D3A000D04AA9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 940292A82410D3A000D04AA9 /* Build configuration list for PBXProject "WffApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 940292A42410D3A000D04AA9;
+			productRefGroup = 940292AE2410D3A000D04AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				940292AC2410D3A000D04AA9 /* WffApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		940292AB2410D3A000D04AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */,
+				940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */,
+				94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */,
+				940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */,
+				94CB46022410E52900F995E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498C6921669231E372863136 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WFF-WffApp/Pods-WFF-WffApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WFF-WffApp/Pods-WFF-WffApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WFF-WffApp/Pods-WFF-WffApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94CB46002410DD5100F995E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		F33380DA8152AFB393D32549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WFF-WffApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		940292A92410D3A000D04AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CB46162411052800F995E5 /* Storyboards.swift in Sources */,
+				94CB4618241107EE00F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */,
+				94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */,
+				940292EA2410D98B00D04AA9 /* ViewController.swift in Sources */,
+				940292B12410D3A000D04AA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				940292BC2410D3A100D04AA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		940292BF2410D3A100D04AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		940292C02410D3A100D04AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		940292C22410D3A100D04AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8FC9BF5C9B68D93F16FCB4 /* Pods-WFF-WffApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WffApp/WffApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMSLBR397D;
+				INFOPLIST_FILE = WffApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildforkfoods.wffapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		940292C32410D3A100D04AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC3685EAC1B7C1A1A4BFA58 /* Pods-WFF-WffApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WffApp/WffApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMSLBR397D;
+				INFOPLIST_FILE = WffApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildforkfoods.wffapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		940292A82410D3A000D04AA9 /* Build configuration list for PBXProject "WffApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940292BF2410D3A100D04AA9 /* Debug */,
+				940292C02410D3A100D04AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		940292C12410D3A100D04AA9 /* Build configuration list for PBXNativeTarget "WffApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940292C22410D3A100D04AA9 /* Debug */,
+				940292C32410D3A100D04AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 940292A52410D3A000D04AA9 /* Project object */;
+}

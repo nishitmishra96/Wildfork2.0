@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>656645526903-dvcs3ogadj3v8389q5kg26bfn511cn3o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.656645526903-dvcs3ogadj3v8389q5kg26bfn511cn3o</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>656645526903-raf9lqeda01pgb29ffok5emkp90kpj3e.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDvxhFQW_nSga0qNkki6mk7d0w5s7ZqJt8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>656645526903</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wildforkfoods.wffapp</string>
+	<key>PROJECT_ID</key>
+	<string>wff-web-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wff-web-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:656645526903:ios:d8dcc3564e0828173cbd72</string>
+	<key>DATABASE_URL</key>
+	<string>https://wff-web-app.firebaseio.com</string>
+</dict>
+</plist>
