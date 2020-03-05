@@ -38,29 +38,23 @@ class OnBoardingVC: UIViewController, UIScrollViewDelegate {
     public var launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 
     @IBAction func LoginButtonPressed(_ sender: Any) {
-//        let debug_info = String(format: "Login pressed on boarding screen")
-//        DDLogInfo(debug_info)
-//        let homeVC = Storyboard.home.instanceOf(viewController: HomeVC.self)
-//        homeVC?.loginOrRegisterPressed = true
-//        homeVC?.launchOptions = self.launchOptions
-//        let Nav = UINavigationController.init(rootViewController: homeVC!)
-//        Nav.navigationBar.isTranslucent = false
-//        Nav.isNavigationBarHidden = true
-//        AppDelegate.shared().window?.rootViewController = Nav
-//        AppDelegate.shared().window?.makeKeyAndVisible()
+        let homeVC = Storyboard.home.instanceOf(viewController: HomeVC.self)
+        homeVC?.loginOrRegisterPressed = true
+        homeVC?.launchOptions = self.launchOptions
+        let Nav = UINavigationController.init(rootViewController: homeVC!)
+        Nav.navigationBar.isTranslucent = false
+        Nav.isNavigationBarHidden = true
+        AppDelegate.shared().window?.rootViewController = Nav
+        AppDelegate.shared().window?.makeKeyAndVisible()
     }
     
     @IBAction func StartShoppingButtonPressed(_ sender: Any) {
-//        let debug_info = String(format: "Start shopping pressed on boarding screen")
-//        DDLogInfo(debug_info)
-//        let homeVC = Storyboard.home.instanceOf(viewController: HomeVC.self)
-//        let Nav = UINavigationController.init(rootViewController: homeVC!)
-//        Nav.navigationBar.isTranslucent = false
-//        Nav.isNavigationBarHidden = true
-//        homeVC?.launchOptions = self.launchOptions
-//
-//        AppDelegate.shared().window?.rootViewController = Nav
-//        AppDelegate.shared().window?.makeKeyAndVisible()
+        let homeVC = Storyboard.home.instanceOf(viewController: LoginOrRegisterVC.self)
+        let Nav = UINavigationController.init(rootViewController: homeVC!)
+        Nav.navigationBar.isTranslucent = false
+        Nav.isNavigationBarHidden = true
+        AppDelegate.shared().window?.rootViewController = Nav
+        AppDelegate.shared().window?.makeKeyAndVisible()
     }
     
     override func viewDidLoad() {

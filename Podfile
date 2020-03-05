@@ -9,6 +9,9 @@ pod 'Firebase/Analytics'
  pod 'Firebase/Messaging'
  pod 'Firebase/Crashlytics'
  pod "Player", :git => 'https://github.com/nishitmishra96/Player.git'
+ pod 'IQKeyboardManagerSwift','~> 6.5.5'
+ pod 'SVProgressHUD', '~> 2.2.5'
+ pod 'ReachabilitySwift','~> 5.0.0'
 end
 #app target
   target 'WffApp' do

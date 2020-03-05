@@ -85,6 +85,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.5.1):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.5.5)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -93,12 +94,17 @@ PODS:
   - Player (0.13.1)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - ReachabilitySwift (5.0.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
   - Firebase/Messaging
+  - IQKeyboardManagerSwift
   - Player (from `https://github.com/nishitmishra96/Player.git`)
+  - ReachabilitySwift
+  - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
   trunk:
@@ -116,9 +122,12 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - IQKeyboardManagerSwift
     - nanopb
     - PromisesObjC
     - Protobuf
+    - ReachabilitySwift
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   Player:
@@ -144,11 +153,14 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 653963cf5be60fb59cf051e070f0836fdc305f81
   GoogleDataTransportCCTSupport: 84e4d4bbab642f2e9d83ee65d78aca2b5527d314
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Player: ba221cf3b5a2561ca43e20bc129387238d0688d6
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 5b57a0609d0f69b022cd790d045aeb8269073da9
+PODFILE CHECKSUM: 04acaae66d7ed2efac82dd1ec609e60c33f2de89
 
 COCOAPODS: 1.8.4

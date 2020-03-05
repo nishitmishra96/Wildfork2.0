@@ -11,15 +11,46 @@
 		940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940292B92410D3A100D04AA9 /* Assets.xcassets */; };
 		940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */; };
 		940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940292E42410D7D300D04AA9 /* GoogleService-Info.plist */; };
+		9479262A24111B3F00CC0E9F /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F8092411190200F82D82 /* LaunchScreenWithGIFViewController.swift */; };
+		9479262C24111DE200CC0E9F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479262B24111DE200CC0E9F /* HomeVC.swift */; };
+		9479262E24111E0500CC0E9F /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479262D24111E0500CC0E9F /* QRCodeScanner.swift */; };
+		9479263024111E6B00CC0E9F /* LocationWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479262F24111E6B00CC0E9F /* LocationWebViewVC.swift */; };
+		9479263224111F6100CC0E9F /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479263124111F6100CC0E9F /* Protocol.swift */; };
+		9479263424111F9A00CC0E9F /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479263324111F9A00CC0E9F /* AppKeys.swift */; };
+		9479263724111FBC00CC0E9F /* QRCodeScannerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479263624111FBB00CC0E9F /* QRCodeScannerClass.swift */; };
+		947926392411212300CC0E9F /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947926382411212300CC0E9F /* Ratings.swift */; };
+		9479263D2411261200CC0E9F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479263C2411261200CC0E9F /* UIViewController.swift */; };
+		9486F7BA241111FF00F82D82 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9486F7B9241111FF00F82D82 /* Home.storyboard */; };
+		9486F7BC2411129600F82D82 /* LoginOrRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7BB2411129600F82D82 /* LoginOrRegisterVC.swift */; };
+		9486F7C12411148800F82D82 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9486F7BD2411148800F82D82 /* LoginView.xib */; };
+		9486F7C22411148800F82D82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7BE2411148800F82D82 /* LoginView.swift */; };
+		9486F7C32411148800F82D82 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7BF2411148800F82D82 /* RegisterView.swift */; };
+		9486F7C42411148800F82D82 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9486F7C02411148800F82D82 /* RegisterView.xib */; };
+		9486F7DC2411159000F82D82 /* BaseBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7C82411158F00F82D82 /* BaseBlueView.swift */; };
+		9486F7DD2411159000F82D82 /* LMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7C92411158F00F82D82 /* LMTextField.swift */; };
+		9486F7DE2411159000F82D82 /* LMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7CA2411158F00F82D82 /* LMPlaceholderTextView.swift */; };
+		9486F7E12411159000F82D82 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7CE2411159000F82D82 /* HTTPResponseCodes.swift */; };
+		9486F7E22411159000F82D82 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7CF2411159000F82D82 /* MulticastDelegate.swift */; };
+		9486F7E32411159000F82D82 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7D02411159000F82D82 /* SnackBar.swift */; };
+		9486F7EA2411159000F82D82 /* TextfieldUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7D82411159000F82D82 /* TextfieldUtils.swift */; };
+		9486F7EB2411159000F82D82 /* SendCustomEventsToGoogleAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7D92411159000F82D82 /* SendCustomEventsToGoogleAnalytics.swift */; };
+		9486F7EC2411159000F82D82 /* GoogleAnalyticsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7DA2411159000F82D82 /* GoogleAnalyticsKeys.swift */; };
+		9486F7ED2411159000F82D82 /* ShowErrorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7DB2411159000F82D82 /* ShowErrorUtil.swift */; };
+		9486F7F3241116D200F82D82 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7F2241116D200F82D82 /* ForgotPasswordVC.swift */; };
+		9486F7FE241116F400F82D82 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7F5241116F400F82D82 /* UIView.swift */; };
+		9486F800241116F400F82D82 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7F7241116F400F82D82 /* Fonts.swift */; };
+		9486F801241116F400F82D82 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7F8241116F400F82D82 /* Prefix.swift */; };
+		9486F802241116F400F82D82 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7F9241116F400F82D82 /* String.swift */; };
+		9486F803241116F400F82D82 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7FA241116F400F82D82 /* UIButton.swift */; };
+		9486F804241116F400F82D82 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7FB241116F400F82D82 /* UIImage.swift */; };
+		9486F805241116F400F82D82 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7FC241116F400F82D82 /* UIApplication.swift */; };
+		9486F806241116F400F82D82 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F7FD241116F400F82D82 /* Color.swift */; };
 		94CB46022410E52900F995E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46012410E52900F995E5 /* Main.storyboard */; };
-		94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46042410EC8C00F995E5 /* NavigationController.swift */; };
 		94CB46162411052800F995E5 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB46132411052800F995E5 /* Storyboards.swift */; };
 		94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 94CB46192411089C00F995E5 /* splashvideo.mov */; };
 		94CB461D24110B6E00F995E5 /* BoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */; };
 		94CB461E24110B6E00F995E5 /* BoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */; };
-		94CB462124110B8300F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */; };
 		94CB462224110B8300F995E5 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CB462024110B8300F995E5 /* OnBoardingVC.swift */; };
-		94CB462424110BC900F995E5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462324110BC900F995E5 /* Home.storyboard */; };
 		94CB462A24110E3200F995E5 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462624110E3200F995E5 /* Oswald-Bold.ttf */; };
 		94CB462B24110E3200F995E5 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462824110E3200F995E5 /* Oswald-Bold.ttf */; };
 		94CB462C24110E3200F995E5 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94CB462924110E3200F995E5 /* Montserrat-Light.otf */; };
@@ -36,16 +67,47 @@
 		940292BC2410D3A100D04AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940292BE2410D3A100D04AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940292E42410D7D300D04AA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9479262B24111DE200CC0E9F /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9479262D24111E0500CC0E9F /* QRCodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
+		9479262F24111E6B00CC0E9F /* LocationWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWebViewVC.swift; sourceTree = "<group>"; };
+		9479263124111F6100CC0E9F /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		9479263324111F9A00CC0E9F /* AppKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		9479263624111FBB00CC0E9F /* QRCodeScannerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerClass.swift; sourceTree = "<group>"; };
+		947926382411212300CC0E9F /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		9479263C2411261200CC0E9F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9486F7B9241111FF00F82D82 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9486F7BB2411129600F82D82 /* LoginOrRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterVC.swift; sourceTree = "<group>"; };
+		9486F7BD2411148800F82D82 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		9486F7BE2411148800F82D82 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9486F7BF2411148800F82D82 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9486F7C02411148800F82D82 /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		9486F7C82411158F00F82D82 /* BaseBlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBlueView.swift; sourceTree = "<group>"; };
+		9486F7C92411158F00F82D82 /* LMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMTextField.swift; sourceTree = "<group>"; };
+		9486F7CA2411158F00F82D82 /* LMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		9486F7CE2411159000F82D82 /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
+		9486F7CF2411159000F82D82 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		9486F7D02411159000F82D82 /* SnackBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		9486F7D82411159000F82D82 /* TextfieldUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldUtils.swift; sourceTree = "<group>"; };
+		9486F7D92411159000F82D82 /* SendCustomEventsToGoogleAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendCustomEventsToGoogleAnalytics.swift; sourceTree = "<group>"; };
+		9486F7DA2411159000F82D82 /* GoogleAnalyticsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAnalyticsKeys.swift; sourceTree = "<group>"; };
+		9486F7DB2411159000F82D82 /* ShowErrorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowErrorUtil.swift; sourceTree = "<group>"; };
+		9486F7F2241116D200F82D82 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		9486F7F5241116F400F82D82 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9486F7F7241116F400F82D82 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		9486F7F8241116F400F82D82 /* Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
+		9486F7F9241116F400F82D82 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9486F7FA241116F400F82D82 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		9486F7FB241116F400F82D82 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		9486F7FC241116F400F82D82 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		9486F7FD241116F400F82D82 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9486F8092411190200F82D82 /* LaunchScreenWithGIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenWithGIFViewController.swift; sourceTree = "<group>"; };
 		94CB46012410E52900F995E5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94CB46032410EAA000F995E5 /* WffApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WffApp.entitlements; sourceTree = "<group>"; };
-		94CB46042410EC8C00F995E5 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		94CB46132411052800F995E5 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		94CB46192411089C00F995E5 /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
 		94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingCollectionViewCell.swift; sourceTree = "<group>"; };
-		94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenWithGIFViewController.swift; path = "../../../../Wild Fork Foods/wildforkfoods-ios/WildFork/ViewControllers/StartUpViewControllers/LaunchScreenWithGIFViewController.swift"; sourceTree = "<group>"; };
 		94CB462024110B8300F995E5 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
-		94CB462324110BC900F995E5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		94CB462724110E3200F995E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/Oswald-Bold.ttf"; sourceTree = "<group>"; };
 		94CB462824110E3200F995E5 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
 		94CB462924110E3200F995E5 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
@@ -102,24 +164,119 @@
 		940292AF2410D3A000D04AA9 /* WffApp */ = {
 			isa = PBXGroup;
 			children = (
-				94CB46032410EAA000F995E5 /* WffApp.entitlements */,
-				94CB462324110BC900F995E5 /* Home.storyboard */,
 				940292B02410D3A000D04AA9 /* AppDelegate.swift */,
+				9479263324111F9A00CC0E9F /* AppKeys.swift */,
+				9486F8092411190200F82D82 /* LaunchScreenWithGIFViewController.swift */,
+				9479263524111FBB00CC0E9F /* QRCodeReader */,
+				9486F80B2411195F00F82D82 /* Video */,
+				9486F80A2411194100F82D82 /* CustomXIB's */,
+				9486F808241118E400F82D82 /* ViewControllers */,
+				9486F807241118CA00F82D82 /* Storyboards */,
+				94CB46032410EAA000F995E5 /* WffApp.entitlements */,
 				940292B92410D3A100D04AA9 /* Assets.xcassets */,
-				940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */,
-				94CB46192411089C00F995E5 /* splashvideo.mov */,
 				940292BE2410D3A100D04AA9 /* Info.plist */,
+				9486F7F4241116F400F82D82 /* Extensions */,
+				9486F7C72411158F00F82D82 /* CustomUIComponents */,
+				9486F7CD2411159000F82D82 /* Utilities */,
 				940292E42410D7D300D04AA9 /* GoogleService-Info.plist */,
-				94CB46012410E52900F995E5 /* Main.storyboard */,
-				94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */,
-				94CB461F24110B8200F995E5 /* LaunchScreenWithGIFViewController.swift */,
-				94CB462024110B8300F995E5 /* OnBoardingVC.swift */,
-				94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */,
 				94CB462524110E3200F995E5 /* Fonts */,
-				94CB46132411052800F995E5 /* Storyboards.swift */,
-				94CB46042410EC8C00F995E5 /* NavigationController.swift */,
+				9479263124111F6100CC0E9F /* Protocol.swift */,
+				947926382411212300CC0E9F /* Ratings.swift */,
 			);
 			path = WffApp;
+			sourceTree = "<group>";
+		};
+		9479263524111FBB00CC0E9F /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				9479263624111FBB00CC0E9F /* QRCodeScannerClass.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		9486F7C72411158F00F82D82 /* CustomUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9486F7C82411158F00F82D82 /* BaseBlueView.swift */,
+				9486F7C92411158F00F82D82 /* LMTextField.swift */,
+				9486F7CA2411158F00F82D82 /* LMPlaceholderTextView.swift */,
+			);
+			path = CustomUIComponents;
+			sourceTree = "<group>";
+		};
+		9486F7CD2411159000F82D82 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				94CB46132411052800F995E5 /* Storyboards.swift */,
+				9486F7CE2411159000F82D82 /* HTTPResponseCodes.swift */,
+				9486F7CF2411159000F82D82 /* MulticastDelegate.swift */,
+				9486F7D02411159000F82D82 /* SnackBar.swift */,
+				9486F7D82411159000F82D82 /* TextfieldUtils.swift */,
+				9486F7D92411159000F82D82 /* SendCustomEventsToGoogleAnalytics.swift */,
+				9486F7DA2411159000F82D82 /* GoogleAnalyticsKeys.swift */,
+				9486F7DB2411159000F82D82 /* ShowErrorUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9486F7F4241116F400F82D82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9486F7F5241116F400F82D82 /* UIView.swift */,
+				9486F7F7241116F400F82D82 /* Fonts.swift */,
+				9486F7F8241116F400F82D82 /* Prefix.swift */,
+				9486F7F9241116F400F82D82 /* String.swift */,
+				9486F7FA241116F400F82D82 /* UIButton.swift */,
+				9486F7FB241116F400F82D82 /* UIImage.swift */,
+				9486F7FC241116F400F82D82 /* UIApplication.swift */,
+				9486F7FD241116F400F82D82 /* Color.swift */,
+				9479263C2411261200CC0E9F /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9486F807241118CA00F82D82 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */,
+				9486F7B9241111FF00F82D82 /* Home.storyboard */,
+				94CB46012410E52900F995E5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9486F808241118E400F82D82 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9479262B24111DE200CC0E9F /* HomeVC.swift */,
+				9486F7F2241116D200F82D82 /* ForgotPasswordVC.swift */,
+				9479262F24111E6B00CC0E9F /* LocationWebViewVC.swift */,
+				9486F7BB2411129600F82D82 /* LoginOrRegisterVC.swift */,
+				94CB462024110B8300F995E5 /* OnBoardingVC.swift */,
+				9479262D24111E0500CC0E9F /* QRCodeScanner.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9486F80A2411194100F82D82 /* CustomXIB's */ = {
+			isa = PBXGroup;
+			children = (
+				9486F7BD2411148800F82D82 /* LoginView.xib */,
+				9486F7C02411148800F82D82 /* RegisterView.xib */,
+				94CB461C24110B6E00F995E5 /* BoardingCollectionViewCell.swift */,
+				94CB461B24110B6E00F995E5 /* BoardingCollectionViewCell.xib */,
+				9486F7BE2411148800F82D82 /* LoginView.swift */,
+				9486F7BF2411148800F82D82 /* RegisterView.swift */,
+			);
+			path = "CustomXIB's";
+			sourceTree = "<group>";
+		};
+		9486F80B2411195F00F82D82 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				94CB46192411089C00F995E5 /* splashvideo.mov */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		94CB462524110E3200F995E5 /* Fonts */ = {
@@ -193,9 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CB462424110BC900F995E5 /* Home.storyboard in Resources */,
 				940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */,
+				9486F7C42411148800F82D82 /* RegisterView.xib in Resources */,
+				9486F7BA241111FF00F82D82 /* Home.storyboard in Resources */,
 				940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */,
+				9486F7C12411148800F82D82 /* LoginView.xib in Resources */,
 				94CB462A24110E3200F995E5 /* Oswald-Bold.ttf in Resources */,
 				94CB461A2411089C00F995E5 /* splashvideo.mov in Resources */,
 				94CB462C24110E3200F995E5 /* Montserrat-Light.otf in Resources */,
@@ -272,12 +431,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CB462124110B8300F995E5 /* LaunchScreenWithGIFViewController.swift in Sources */,
+				9486F805241116F400F82D82 /* UIApplication.swift in Sources */,
+				9486F802241116F400F82D82 /* String.swift in Sources */,
+				9486F806241116F400F82D82 /* Color.swift in Sources */,
+				9486F7C32411148800F82D82 /* RegisterView.swift in Sources */,
+				9486F7EA2411159000F82D82 /* TextfieldUtils.swift in Sources */,
+				9486F803241116F400F82D82 /* UIButton.swift in Sources */,
 				94CB462224110B8300F995E5 /* OnBoardingVC.swift in Sources */,
+				9486F7DE2411159000F82D82 /* LMPlaceholderTextView.swift in Sources */,
+				9486F7DC2411159000F82D82 /* BaseBlueView.swift in Sources */,
+				9486F7BC2411129600F82D82 /* LoginOrRegisterVC.swift in Sources */,
+				9486F804241116F400F82D82 /* UIImage.swift in Sources */,
 				94CB461E24110B6E00F995E5 /* BoardingCollectionViewCell.swift in Sources */,
+				9479263D2411261200CC0E9F /* UIViewController.swift in Sources */,
+				947926392411212300CC0E9F /* Ratings.swift in Sources */,
+				9479263724111FBC00CC0E9F /* QRCodeScannerClass.swift in Sources */,
 				94CB46162411052800F995E5 /* Storyboards.swift in Sources */,
-				94CB46052410EC8C00F995E5 /* NavigationController.swift in Sources */,
+				9479262A24111B3F00CC0E9F /* LaunchScreenWithGIFViewController.swift in Sources */,
+				9479263424111F9A00CC0E9F /* AppKeys.swift in Sources */,
+				9486F7F3241116D200F82D82 /* ForgotPasswordVC.swift in Sources */,
+				9486F7ED2411159000F82D82 /* ShowErrorUtil.swift in Sources */,
+				9486F7C22411148800F82D82 /* LoginView.swift in Sources */,
+				9486F7EB2411159000F82D82 /* SendCustomEventsToGoogleAnalytics.swift in Sources */,
+				9486F7DD2411159000F82D82 /* LMTextField.swift in Sources */,
+				9486F7EC2411159000F82D82 /* GoogleAnalyticsKeys.swift in Sources */,
+				9486F7FE241116F400F82D82 /* UIView.swift in Sources */,
 				940292B12410D3A000D04AA9 /* AppDelegate.swift in Sources */,
+				9479262C24111DE200CC0E9F /* HomeVC.swift in Sources */,
+				9486F7E22411159000F82D82 /* MulticastDelegate.swift in Sources */,
+				9486F7E32411159000F82D82 /* SnackBar.swift in Sources */,
+				9479262E24111E0500CC0E9F /* QRCodeScanner.swift in Sources */,
+				9479263224111F6100CC0E9F /* Protocol.swift in Sources */,
+				9486F801241116F400F82D82 /* Prefix.swift in Sources */,
+				9486F800241116F400F82D82 /* Fonts.swift in Sources */,
+				9486F7E12411159000F82D82 /* HTTPResponseCodes.swift in Sources */,
+				9479263024111E6B00CC0E9F /* LocationWebViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

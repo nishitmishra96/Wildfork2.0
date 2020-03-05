@@ -10,10 +10,13 @@ import UIKit
 import Firebase
 import FirebaseCrashlytics
 import FirebaseMessaging
+
+import Reachability
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
     var window: UIWindow?
-
+    let reachability = try! Reachability()
+    let internetAlert = UIAlertController.init(title: "Internet is not connected", message: "Please connect to internet.", preferredStyle: .alert)
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
         let splashVC = Storyboard.main.instanceOf(viewController: LaunchScreenWithGIFViewController.self)!
@@ -66,4 +69,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             
         }
     }
+    func checkForInternet(){
+          let dismiss = UIAlertAction(title: "Dismiss", style: .destructive, handler: nil)
+          internetAlert.addAction(dismiss)
+          reachability.whenReachable = { reachability in
+
+              if reachability.connection == .wifi {
+                  print("Reachable via WiFi")
+                  self.internetAlert.dismiss(animated: true, completion: nil)
+              } else {
+                  let debug_info =
+                  print("Reachable via Cellular")
+                  self.internetAlert.dismiss(animated: true, completion: nil)
+              }
+          }
+          reachability.whenUnreachable = { _ in
+              print("Not reachable")
+              self.window?.rootViewController?.present(self.internetAlert, animated: true, completion: nil)
+          }
+
+          do {
+              try reachability.startNotifier()
+          } catch {
+              print("Unable to start notifier")
+          }
+      }
 }
