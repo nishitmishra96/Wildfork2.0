@@ -1,5 +1,5 @@
 //
-//  LocationWebViewVC.swift
+//  WebviewOpener.swift
 //  WildFork
 //
 //  Created by Himanshu Singh on 03/10/19.
@@ -16,7 +16,7 @@ protocol LocationDelegate {
     
 }
 
-class LocationWebViewVC: UIViewController {
+class WebviewOpener: UIViewController {
 
     @IBOutlet weak var tabbar: UIToolbar!
     @IBOutlet weak var webView: UIWebView!

@@ -22,7 +22,7 @@ class HomeVC: UITabBarController {
             let notification = /(remoteNotification["notificationTitle"] as? String)
             SendCustomEventsToGoogleAnalytics.sendEventToGoogle(category: GoogleEventKeys.Category.key, action: /notification)
             guard let url = remoteNotification["url"] as? String else{return}
-            let vc = Storyboard.home.instanceOf(viewController: LocationWebViewVC.self)!
+            let vc = Storyboard.home.instanceOf(viewController: WebviewOpener.self)!
             vc.urlStringToLoad = url
             UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: true, completion: nil)
         }
@@ -40,7 +40,7 @@ class HomeVC: UITabBarController {
             print("User Already Saw Home Before")
         }
         if loginOrRegisterPressed{
-            self.selectedIndex = 4
+            self.selectedIndex = 3
         }
     }
 
@@ -68,7 +68,7 @@ extension HomeVC: UITabBarControllerDelegate{
 extension HomeVC:ReceipeDelegate{
     func qrCodeScanned(qrString:String){
         self.presentedViewController?.dismiss(animated: true, completion: {
-            let recipeWebView = Storyboard.home.instanceOf(viewController: LocationWebViewVC.self)
+            let recipeWebView = Storyboard.home.instanceOf(viewController: WebviewOpener.self)
             recipeWebView?.urlStringToLoad = qrString
             recipeWebView?.modalPresentationStyle = .fullScreen
             self.present(recipeWebView!, animated: true, completion: nil)

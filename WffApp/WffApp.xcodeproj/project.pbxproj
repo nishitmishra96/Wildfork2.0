@@ -11,6 +11,7 @@
 		940292BA2410D3A100D04AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940292B92410D3A100D04AA9 /* Assets.xcassets */; };
 		940292BD2410D3A100D04AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940292BB2410D3A100D04AA9 /* LaunchScreen.storyboard */; };
 		940292E52410D7D300D04AA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940292E42410D7D300D04AA9 /* GoogleService-Info.plist */; };
+		94603942241239BA00802317 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94603941241239BA00802317 /* BaseViewController.swift */; };
 		9479262A24111B3F00CC0E9F /* LaunchScreenWithGIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F8092411190200F82D82 /* LaunchScreenWithGIFViewController.swift */; };
 		9479262C24111DE200CC0E9F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479262B24111DE200CC0E9F /* HomeVC.swift */; };
 		9479262E24111E0500CC0E9F /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479262D24111E0500CC0E9F /* QRCodeScanner.swift */; };
@@ -67,6 +68,7 @@
 		940292BC2410D3A100D04AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940292BE2410D3A100D04AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940292E42410D7D300D04AA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94603941241239BA00802317 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9479262B24111DE200CC0E9F /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9479262D24111E0500CC0E9F /* QRCodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
 		9479262F24111E6B00CC0E9F /* LocationWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWebViewVC.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				9486F7BB2411129600F82D82 /* LoginOrRegisterVC.swift */,
 				94CB462024110B8300F995E5 /* OnBoardingVC.swift */,
 				9479262D24111E0500CC0E9F /* QRCodeScanner.swift */,
+				94603941241239BA00802317 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				9486F806241116F400F82D82 /* Color.swift in Sources */,
 				9486F7C32411148800F82D82 /* RegisterView.swift in Sources */,
 				9486F7EA2411159000F82D82 /* TextfieldUtils.swift in Sources */,
+				94603942241239BA00802317 /* BaseViewController.swift in Sources */,
 				9486F803241116F400F82D82 /* UIButton.swift in Sources */,
 				94CB462224110B8300F995E5 /* OnBoardingVC.swift in Sources */,
 				9486F7DE2411159000F82D82 /* LMPlaceholderTextView.swift in Sources */,

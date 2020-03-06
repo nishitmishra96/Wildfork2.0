@@ -8,10 +8,13 @@
 
 import Foundation
 import UIKit
-class WFFViewController:UIViewController{
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        UIImageView()
-//        self.navigationItem.titleView = UIImage.logo;
+extension UIViewController{
+    
+    func setTitleImage(image:UIImage?){
+        let imageView = UIImageView(image:image)
+        self.navigationController?.navigationBar.topItem?.titleView = imageView
+    }
+    func setRightBarButtonItems(items:[UIBarButtonItem]){
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItems = items
     }
 }

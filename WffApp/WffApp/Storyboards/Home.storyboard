@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="3345" y="182"/>
         </scene>
-        <!--Location Web ViewVC-->
+        <!--Webview Opener-->
         <scene sceneID="WkU-Jh-AF5">
             <objects>
-                <viewController storyboardIdentifier="LocationWebViewVC" id="qaA-ym-ork" customClass="LocationWebViewVC" customModule="WffApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebviewOpener" id="qaA-ym-ork" customClass="WebviewOpener" customModule="WffApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FpT-Ng-AUa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
