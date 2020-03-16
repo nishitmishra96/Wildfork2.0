@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:WffApp/WffApp.xcodeproj">
+      location = "group:WFFApp/WFFApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:WffPlatform/WffPlatform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BuySdk/Buy.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

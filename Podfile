@@ -1,22 +1,18 @@
-platform :ios, '11.0'
+platform :ios, '12.0'
 workspace 'WildForkFoods.xcworkspace'
-project 'WffApp/WffApp.xcodeproj'
+project 'WFFApp/WFFApp.xcodeproj'
 project 'WffPlatform/WffPlatform.xcodeproj'
 
 abstract_target 'WFF' do
 def wffAppPods
-pod 'Firebase/Analytics'
- pod 'Firebase/Messaging'
- pod 'Firebase/Crashlytics'
- pod "Player", :git => 'https://github.com/nishitmishra96/Player.git'
- pod 'IQKeyboardManagerSwift','~> 6.5.5'
- pod 'SVProgressHUD', '~> 2.2.5'
- pod 'ReachabilitySwift','~> 5.0.0'
+  pod 'CZTableView',:git => "https://gitlab.craterzone.com/administartor/CZTableView-1.git"
 end
+
 #app target
-  target 'WffApp' do
+  target 'WFFApp' do
     use_frameworks!
-    project 'WffApp/WffApp.xcodeproj'
+    project 'WFFApp/WFFApp.xcodeproj'
+    pod 'Firebase/RemoteConfig'
     wffAppPods
   end
   
@@ -24,5 +20,6 @@ end
   target 'WffPlatform' do
     use_frameworks!
     project 'WffPlatform/WffPlatform.xcodeproj'
+    pod 'AlgoliaSearch-Client-Swift', '~> 4.8.1'
   end
 end
