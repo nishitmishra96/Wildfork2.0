@@ -20,6 +20,11 @@ func registerCellNib(_ cellClass: AnyClass) {
     let nib = UINib(nibName: identifier, bundle: nil)
     self.register(nib, forCellReuseIdentifier: identifier)
 }
+    func registerTableViewHeaderFooterNib(_ headerFooterClass: AnyClass) {
+        let identifier = String.className(headerFooterClass)
+        let nib = UINib(nibName: identifier, bundle: nil)
+        self.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+    }
 }
 extension String{
     static func className(_ aClass: AnyClass) -> String {

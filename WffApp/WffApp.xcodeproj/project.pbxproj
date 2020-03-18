@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8B0C3B242112E20052E017 /* ProductsGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0C3A242112E20052E017 /* ProductsGridCell.swift */; };
+		1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FC1E2420E5560098BAEE /* HomeFeaturedTVC.swift */; };
+		1D91FC212420E5560098BAEE /* HomeFeaturedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */; };
+		1D91FC282420F74E0098BAEE /* HomePopularTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FC262420F74E0098BAEE /* HomePopularTVC.swift */; };
+		1D91FC292420F74E0098BAEE /* HomePopularTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D91FC272420F74E0098BAEE /* HomePopularTVC.xib */; };
+		1D91FC2C242109BF0098BAEE /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D91FC2B242109BF0098BAEE /* HomeTableViewHeader.xib */; };
+		1D91FC2E24210E980098BAEE /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FC2D24210E980098BAEE /* HomeTableViewHeader.swift */; };
+		1DE7B74E2420B49F009A8634 /* FeaturedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7B74C2420B49F009A8634 /* FeaturedCVC.swift */; };
+		1DE7B74F2420B49F009A8634 /* FeaturedCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B74D2420B49F009A8634 /* FeaturedCVC.xib */; };
+		1DE7B7522420BAA4009A8634 /* PopularCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7B7502420BAA4009A8634 /* PopularCVC.swift */; };
+		1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7512420BAA4009A8634 /* PopularCVC.xib */; };
+		1DE7B7562420BD42009A8634 /* ProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7B7542420BD42009A8634 /* ProductCVC.swift */; };
+		1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7552420BD42009A8634 /* ProductCVC.xib */; };
 		80AC443347FC62BD253C92F9 /* Pods_WFF_WFFApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B136DD62D2B90A87DDD46A2B /* Pods_WFF_WFFApp.framework */; };
 		F73387C924164D7F00DE8F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73387C824164D7F00DE8F75 /* AppDelegate.swift */; };
 		F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73387D124164D8300DE8F75 /* Assets.xcassets */; };
@@ -43,6 +56,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D8B0C3A242112E20052E017 /* ProductsGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsGridCell.swift; path = ../../../../WffApp/WffApp/ProductsGridCell.swift; sourceTree = "<group>"; };
+		1D91FC1E2420E5560098BAEE /* HomeFeaturedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFeaturedTVC.swift; path = ../../../../WffApp/WffApp/HomeFeaturedTVC.swift; sourceTree = "<group>"; };
+		1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeFeaturedTVC.xib; path = ../../../../WffApp/WffApp/HomeFeaturedTVC.xib; sourceTree = "<group>"; };
+		1D91FC262420F74E0098BAEE /* HomePopularTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePopularTVC.swift; path = ../../../../WffApp/WffApp/HomePopularTVC.swift; sourceTree = "<group>"; };
+		1D91FC272420F74E0098BAEE /* HomePopularTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomePopularTVC.xib; path = ../../../../WffApp/WffApp/HomePopularTVC.xib; sourceTree = "<group>"; };
+		1D91FC2B242109BF0098BAEE /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTableViewHeader.xib; path = ../../../../WffApp/WffApp/HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		1D91FC2D24210E980098BAEE /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewHeader.swift; path = ../../../../WffApp/WffApp/HomeTableViewHeader.swift; sourceTree = "<group>"; };
+		1DE7B74C2420B49F009A8634 /* FeaturedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeaturedCVC.swift; path = ../../../../WffApp/WffApp/FeaturedCVC.swift; sourceTree = "<group>"; };
+		1DE7B74D2420B49F009A8634 /* FeaturedCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FeaturedCVC.xib; path = ../../../../WffApp/WffApp/FeaturedCVC.xib; sourceTree = "<group>"; };
+		1DE7B7502420BAA4009A8634 /* PopularCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularCVC.swift; path = ../../../../WffApp/WffApp/PopularCVC.swift; sourceTree = "<group>"; };
+		1DE7B7512420BAA4009A8634 /* PopularCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PopularCVC.xib; path = ../../../../WffApp/WffApp/PopularCVC.xib; sourceTree = "<group>"; };
+		1DE7B7542420BD42009A8634 /* ProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCVC.swift; path = ../../../../WffApp/WffApp/ProductCVC.swift; sourceTree = "<group>"; };
+		1DE7B7552420BD42009A8634 /* ProductCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductCVC.xib; path = ../../../../WffApp/WffApp/ProductCVC.xib; sourceTree = "<group>"; };
 		3B0DA1F3CCCA9534CB443E57 /* Pods-WFF-WFFApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WFFApp.release.xcconfig"; path = "Target Support Files/Pods-WFF-WFFApp/Pods-WFF-WFFApp.release.xcconfig"; sourceTree = "<group>"; };
 		A589940DBEF0DD03E845FC4F /* Pods-WFF-WFFApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WFFApp.debug.xcconfig"; path = "Target Support Files/Pods-WFF-WFFApp/Pods-WFF-WFFApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B136DD62D2B90A87DDD46A2B /* Pods_WFF_WFFApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFF_WFFApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D91FC2A242108150098BAEE /* TableViewHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				1D91FC2D24210E980098BAEE /* HomeTableViewHeader.swift */,
+				1D91FC2B242109BF0098BAEE /* HomeTableViewHeader.xib */,
+			);
+			path = TableViewHeaders;
+			sourceTree = "<group>";
+		};
 		3983C8AE34CA183DA24B9E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F73387FB24166E2D00DE8F75 /* DataSource */,
+				1D91FC2A242108150098BAEE /* TableViewHeaders */,
 				F73387EF241662A600DE8F75 /* TableViewCells */,
 				F73387EE2416629A00DE8F75 /* CollectionViewCells */,
 				F73387EA2416602300DE8F75 /* ViewControllers */,
@@ -180,6 +216,12 @@
 		F73387EE2416629A00DE8F75 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				1DE7B7542420BD42009A8634 /* ProductCVC.swift */,
+				1DE7B7552420BD42009A8634 /* ProductCVC.xib */,
+				1DE7B7502420BAA4009A8634 /* PopularCVC.swift */,
+				1DE7B7512420BAA4009A8634 /* PopularCVC.xib */,
+				1DE7B74C2420B49F009A8634 /* FeaturedCVC.swift */,
+				1DE7B74D2420B49F009A8634 /* FeaturedCVC.xib */,
 				F73387F0241662C200DE8F75 /* CollectionCVC.swift */,
 				F73387F1241662C200DE8F75 /* CollectionCVC.xib */,
 			);
@@ -189,6 +231,11 @@
 		F73387EF241662A600DE8F75 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				1D8B0C3A242112E20052E017 /* ProductsGridCell.swift */,
+				1D91FC262420F74E0098BAEE /* HomePopularTVC.swift */,
+				1D91FC272420F74E0098BAEE /* HomePopularTVC.xib */,
+				1D91FC1E2420E5560098BAEE /* HomeFeaturedTVC.swift */,
+				1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */,
 				F73387F4241662EC00DE8F75 /* HomeCollectionTVC.swift */,
 				F73387F5241662EC00DE8F75 /* HomeCollectionTVC.xib */,
 			);
@@ -314,11 +361,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */,
 				F73387E724165F0700DE8F75 /* Home.storyboard in Resources */,
+				1DE7B74F2420B49F009A8634 /* FeaturedCVC.xib in Resources */,
 				F73387D524164D8300DE8F75 /* LaunchScreen.storyboard in Resources */,
 				F73387F3241662C200DE8F75 /* CollectionCVC.xib in Resources */,
+				1D91FC2C242109BF0098BAEE /* HomeTableViewHeader.xib in Resources */,
 				F73387F7241662EC00DE8F75 /* HomeCollectionTVC.xib in Resources */,
 				F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */,
+				1D91FC292420F74E0098BAEE /* HomePopularTVC.xib in Resources */,
+				1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */,
+				1D91FC212420E5560098BAEE /* HomeFeaturedTVC.xib in Resources */,
 				F73388092416A6CC00DE8F75 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,14 +425,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE7B7562420BD42009A8634 /* ProductCVC.swift in Sources */,
+				1D91FC282420F74E0098BAEE /* HomePopularTVC.swift in Sources */,
 				F73387F6241662EC00DE8F75 /* HomeCollectionTVC.swift in Sources */,
 				F73387FA24166A0700DE8F75 /* UITAbleView.swift in Sources */,
 				F733880E2416B94D00DE8F75 /* CategorySelectionVC.swift in Sources */,
 				F73387ED2416604C00DE8F75 /* HomeVC.swift in Sources */,
+				1DE7B74E2420B49F009A8634 /* FeaturedCVC.swift in Sources */,
 				F73388102416BB2D00DE8F75 /* UIViewController.swift in Sources */,
+				1DE7B7522420BAA4009A8634 /* PopularCVC.swift in Sources */,
+				1D91FC2E24210E980098BAEE /* HomeTableViewHeader.swift in Sources */,
+				1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
 				F73387FE24166E5000DE8F75 /* HomeScreenDataSource.swift in Sources */,
 				F73387F2241662C200DE8F75 /* CollectionCVC.swift in Sources */,
+				1D8B0C3B242112E20052E017 /* ProductsGridCell.swift in Sources */,
 				F733880B2416B16500DE8F75 /* HomeScreenCollections.swift in Sources */,
 				F73387C924164D7F00DE8F75 /* AppDelegate.swift in Sources */,
 			);

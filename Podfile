@@ -20,6 +20,5 @@ end
   target 'WffPlatform' do
     use_frameworks!
     project 'WffPlatform/WffPlatform.xcodeproj'
-    pod 'AlgoliaSearch-Client-Swift', '~> 4.8.1'
   end
 end

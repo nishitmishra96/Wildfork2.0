@@ -1,5 +1,4 @@
 PODS:
-  - AlgoliaSearch-Client-Swift (4.8.2)
   - CZTableView (1.0.0)
   - Firebase/CoreOnly (6.18.0):
     - FirebaseCore (= 6.6.3)
@@ -59,13 +58,11 @@ PODS:
   - Protobuf (3.11.4)
 
 DEPENDENCIES:
-  - AlgoliaSearch-Client-Swift (~> 4.8.1)
   - CZTableView (from `https://gitlab.craterzone.com/administartor/CZTableView-1.git`)
   - Firebase/RemoteConfig
 
 SPEC REPOS:
   trunk:
-    - AlgoliaSearch-Client-Swift
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalyticsInterop
@@ -92,7 +89,6 @@ CHECKOUT OPTIONS:
     :git: https://gitlab.craterzone.com/administartor/CZTableView-1.git
 
 SPEC CHECKSUMS:
-  AlgoliaSearch-Client-Swift: 78f46378329dc47db5b7be8385f49c7be0ad3348
   CZTableView: c0ba7eeea0385c74679b6195533786b0e5933c11
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseABTesting: 0d10f3cdc3fa00f3f175b5b56c1003c8e888299f
@@ -110,6 +106,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
 
-PODFILE CHECKSUM: 660ac516c6864493087d0b0497e2e72ae3475a14
+PODFILE CHECKSUM: 4357e860042672141bad7c2a51dc943e2dc4d8d3
 
-COCOAPODS: 1.9.0.beta.3
+COCOAPODS: 1.9.1

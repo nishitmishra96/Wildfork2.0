@@ -11,7 +11,7 @@ import WffPlatform
 import FirebaseRemoteConfig
 import Firebase
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var remoteConfig:RemoteConfig?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -16,14 +16,21 @@ protocol SelectionDelegates {
     func didSelectProduct(product:WFFProduct)
 }
 class HomeVC: UIViewController {
+    @IBOutlet weak var floatingButton: UIButton!
     @IBOutlet weak var tableView: TableView!
     private var homeScreenDS:HomeScreenDataSource?
     override func viewDidLoad() {
         super.viewDidLoad()
+        floatingButton.layer.cornerRadius = floatingButton.frame.height/2
         self.navigationController?.navigationBar.prefersLargeTitles = true
         homeScreenDS = HomeScreenDataSource(delegate: self, tableView: tableView)
         tableView.registerCellNib(HomeCollectionTVC.self)
+        tableView.registerCellNib(HomeFeaturedTVC.self)
+        tableView.registerCellNib(HomePopularTVC.self)
+        tableView.registerTableViewHeaderFooterNib(HomeTableViewHeader.self)
         tableView.dataSource = homeScreenDS
+        //tableView.tableHeaderView = HomeTableViewHeader.instanceFromNib()
+        
         self.homeScreenDS?.setupDataSource()
     }
 }

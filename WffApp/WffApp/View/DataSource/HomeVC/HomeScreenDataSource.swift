@@ -14,8 +14,9 @@ enum SectionsOnHomeScreen:Int{
     case category = 0
     case nonCategory = 1
 }
+//mark for review
 var selectedCategory:ProductCategories? = nil
-class HomeScreenDataSource:NSObject,UITableViewDataSource,PaginateDelegate,SelectionDelegates{
+class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,SelectionDelegates{
     
     private var delegate:SelectionDelegates!
     private var tableView:TableView?
@@ -53,6 +54,7 @@ class HomeScreenDataSource:NSObject,UITableViewDataSource,PaginateDelegate,Selec
         return 2
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch SectionsOnHomeScreen(rawValue: section) {
         case .category:
@@ -64,23 +66,46 @@ class HomeScreenDataSource:NSObject,UITableViewDataSource,PaginateDelegate,Selec
             return 0
         }
     }
+    
+    
     func getCategoryTableViewCell(tableView:UITableView,indexPath:IndexPath)->UITableViewCell{
         let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeCollectionTVC", for: indexPath) as! HomeCollectionTVC
         cell.delegate = self
         cell.setProductCategories(productcategory: self.productcategories)
         return cell
     }
+    func getFeaturedTableViewCell(tableView:UITableView,indexPath:IndexPath)->UITableViewCell{
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeFeaturedTVC", for: indexPath) as! HomeFeaturedTVC
+        cell.delegate = self
+        return cell
+    }
+    func getPopularTableViewCell(tableView:UITableView,indexPath:IndexPath)->UITableViewCell{
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "HomePopularTVC", for: indexPath) as! HomePopularTVC
+        cell.delegate = self
+        return cell
+    }
     func getNonCategoryCellCount()->Int{
         return self.homeProducts.count
     }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell = UITableViewCell()
         switch SectionsOnHomeScreen(rawValue: indexPath.section) {
         case .category:
             cell = self.getCategoryTableViewCell(tableView: tableView, indexPath: indexPath)
         case .nonCategory:
-            cell = UITableViewCell()
-            cell.detailTextLabel?.text = self.homeProducts[indexPath.row].name
+            if indexPath.row == 0{
+                cell = self.getFeaturedTableViewCell(tableView: tableView, indexPath: indexPath)
+            }
+            else if indexPath.row == 1 {
+                cell = self.getPopularTableViewCell(tableView: tableView, indexPath: indexPath)
+            }
+            
+            //cell = UITableViewCell()
+            //cell.detailTextLabel?.text = self.homeProducts[indexPath.row].name
         default:
             assertionFailure("Woa!! this cannot come in this")
         }
@@ -112,9 +137,9 @@ class HomeScreenDataSource:NSObject,UITableViewDataSource,PaginateDelegate,Selec
     }
     
 }
-class CategoryDataSource:HomeScreenDataSource{
-    
-    override func getNonCategoryCellCount() -> Int {
-       return  selectedCategory?.subcategories?.count ?? 0
-    }
-}
+//class CategoryDataSource:HomeScreenDataSource
+//{
+//    override func getNonCategoryCellCount() -> Int {
+//       return  selectedCategory?.subcategories?.count ?? 0
+//    }
+//}

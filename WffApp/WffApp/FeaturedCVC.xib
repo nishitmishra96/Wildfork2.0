@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedCVC" id="gTV-IL-0wX" customClass="FeaturedCVC" customModule="WFFApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="233"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruits" translatesAutoresizingMaskIntoConstraints="NO" id="jFc-fo-BWH">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="233"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jFc-fo-BWH" secondAttribute="height" multiplier="150:233" id="yl3-MJ-oTv"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qn1-Ga-YDh">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="233"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-Gp-UjU">
+                        <rect key="frame" x="12" y="69.5" width="126" height="94"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9qF-w8-myD">
+                                <rect key="frame" x="48" y="11" width="30" height="30.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lka-Ql-3Ms"/>
+                                    <constraint firstAttribute="width" secondItem="9qF-w8-myD" secondAttribute="height" multiplier="1:1" id="QUg-C2-Oc4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="X3t-db-RWZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BACK TO SCHOOL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-ig-Ljs">
+                                <rect key="frame" x="4" y="66" width="118" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DWZ-ig-Ljs" secondAttribute="bottom" constant="12" id="9fq-cU-pHV"/>
+                            <constraint firstItem="DWZ-ig-Ljs" firstAttribute="centerX" secondItem="p1w-Gp-UjU" secondAttribute="centerX" id="YxN-mW-wpl"/>
+                            <constraint firstItem="9qF-w8-myD" firstAttribute="top" secondItem="p1w-Gp-UjU" secondAttribute="top" constant="12" id="eZp-22-KWo"/>
+                            <constraint firstItem="DWZ-ig-Ljs" firstAttribute="top" secondItem="9qF-w8-myD" secondAttribute="bottom" constant="24" id="hsj-qq-eXH"/>
+                            <constraint firstItem="9qF-w8-myD" firstAttribute="centerX" secondItem="p1w-Gp-UjU" secondAttribute="centerX" id="t7S-HM-kif"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qn1-Ga-YDh" secondAttribute="trailing" id="85e-zO-7At"/>
+                <constraint firstItem="jFc-fo-BWH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D0A-rq-qLB"/>
+                <constraint firstItem="qn1-Ga-YDh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EXg-Mo-9Kb"/>
+                <constraint firstItem="p1w-Gp-UjU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="MAM-Y9-OTe"/>
+                <constraint firstItem="p1w-Gp-UjU" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="OQW-fb-fcO"/>
+                <constraint firstItem="jFc-fo-BWH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ReC-ga-IHL"/>
+                <constraint firstItem="qn1-Ga-YDh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XI5-OI-9Oz"/>
+                <constraint firstAttribute="trailing" secondItem="p1w-Gp-UjU" secondAttribute="trailing" constant="12" id="az3-8p-JN8"/>
+                <constraint firstAttribute="trailing" secondItem="jFc-fo-BWH" secondAttribute="trailing" id="c0h-TC-wn1"/>
+                <constraint firstAttribute="bottom" secondItem="qn1-Ga-YDh" secondAttribute="bottom" id="caL-kM-Ts9"/>
+                <constraint firstAttribute="bottom" secondItem="jFc-fo-BWH" secondAttribute="bottom" id="kge-TI-Auh"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p1w-Gp-UjU" secondAttribute="bottom" constant="24" id="nfD-mJ-wUm"/>
+                <constraint firstItem="p1w-Gp-UjU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="tIJ-55-Li3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="150" height="233"/>
+            <connections>
+                <outlet property="backgroundImage" destination="jFc-fo-BWH" id="TJw-jH-xpb"/>
+                <outlet property="foregroundImage" destination="9qF-w8-myD" id="8IE-wg-qN9"/>
+                <outlet property="foregroundLabel" destination="DWZ-ig-Ljs" id="FVs-bp-DUb"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fruits" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
