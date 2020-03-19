@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3875BD2423760900E8D93F /* ProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3875BC2423760900E8D93F /* ProductProtocol.swift */; };
+		1D3876012423A77400E8D93F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3876002423A77400E8D93F /* RegisterVC.swift */; };
+		1D46B04A24235DBA00144E60 /* WFFFormComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46B04924235DBA00144E60 /* WFFFormComponents.swift */; };
+		1D6BD46B24233AA300184537 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BD46A24233AA300184537 /* Login.swift */; };
+		1D6BD46E24233E8B00184537 /* StartFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6BD46D24233E8B00184537 /* StartFlow.storyboard */; };
+		1D6BD4702423409700184537 /* BaseBlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BD46F2423409700184537 /* BaseBlueView.swift */; };
+		1D6BD472242340A300184537 /* LMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BD471242340A300184537 /* LMPlaceholderTextView.swift */; };
+		1D6BD474242340AF00184537 /* LMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BD473242340AF00184537 /* LMTextField.swift */; };
 		1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FC1E2420E5560098BAEE /* HomeFeaturedTVC.swift */; };
 		1D91FC212420E5560098BAEE /* HomeFeaturedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */; };
 		1D91FC282420F74E0098BAEE /* HomePopularTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FC262420F74E0098BAEE /* HomePopularTVC.swift */; };
@@ -63,6 +71,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D3875BC2423760900E8D93F /* ProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductProtocol.swift; path = ../../../WffApp/WffApp/ViewModels/ProductProtocol.swift; sourceTree = "<group>"; };
+		1D3876002423A77400E8D93F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = ../../../../../WffApp/WffApp/RegisterVC.swift; sourceTree = "<group>"; };
+		1D46B04924235DBA00144E60 /* WFFFormComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WFFFormComponents.swift; path = ../../../WffApp/WffApp/WFFFormComponents.swift; sourceTree = "<group>"; };
+		1D6BD46A24233AA300184537 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Login.swift; path = ../../../../../WffApp/WffApp/Login.swift; sourceTree = "<group>"; };
+		1D6BD46D24233E8B00184537 /* StartFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = StartFlow.storyboard; path = ../../../../WffApp/WffApp/StartFlow.storyboard; sourceTree = "<group>"; };
+		1D6BD46F2423409700184537 /* BaseBlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBlueView.swift; sourceTree = "<group>"; };
+		1D6BD471242340A300184537 /* LMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		1D6BD473242340AF00184537 /* LMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMTextField.swift; sourceTree = "<group>"; };
 		1D91FC1E2420E5560098BAEE /* HomeFeaturedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFeaturedTVC.swift; path = ../../../../WffApp/WffApp/HomeFeaturedTVC.swift; sourceTree = "<group>"; };
 		1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeFeaturedTVC.xib; path = ../../../../WffApp/WffApp/HomeFeaturedTVC.xib; sourceTree = "<group>"; };
 		1D91FC262420F74E0098BAEE /* HomePopularTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePopularTVC.swift; path = ../../../../WffApp/WffApp/HomePopularTVC.swift; sourceTree = "<group>"; };
@@ -120,6 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D6BD46824233A0F00184537 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1D6BD46A24233AA300184537 /* Login.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		1D6BD46924233A3200184537 /* RegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1D3876002423A77400E8D93F /* RegisterVC.swift */,
+			);
+			path = RegisterScreen;
+			sourceTree = "<group>";
+		};
+		1D6BD46C24233D6000184537 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1D46B04924235DBA00144E60 /* WFFFormComponents.swift */,
+				1D6BD46F2423409700184537 /* BaseBlueView.swift */,
+				1D6BD471242340A300184537 /* LMPlaceholderTextView.swift */,
+				1D6BD473242340AF00184537 /* LMTextField.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		1D91FC2A242108150098BAEE /* TableViewHeaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +204,7 @@
 		F73387C724164D7F00DE8F75 /* WFFApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D6BD46C24233D6000184537 /* UIComponents */,
 				F733880024169E5100DE8F75 /* ViewModels */,
 				F73387FF2416717C00DE8F75 /* Models */,
 				F73387F8241669FC00DE8F75 /* Extentions */,
@@ -199,6 +243,7 @@
 		F73387E424165D6000DE8F75 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				1D6BD46D24233E8B00184537 /* StartFlow.storyboard */,
 				F73387E624165F0700DE8F75 /* Home.storyboard */,
 			);
 			path = StoryBoards;
@@ -215,6 +260,8 @@
 		F73387EA2416602300DE8F75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D6BD46924233A3200184537 /* RegisterScreen */,
+				1D6BD46824233A0F00184537 /* LoginScreen */,
 				F733880C2416B92C00DE8F75 /* CategoryScreen */,
 				F73387EB2416603000DE8F75 /* Boarding */,
 			);
@@ -299,6 +346,7 @@
 		F733880024169E5100DE8F75 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1D3875BC2423760900E8D93F /* ProductProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -385,6 +433,7 @@
 				1DE0630424220EBB00A01FE4 /* ProductsHeader.xib in Resources */,
 				1DE062FA2421F54600A01FE4 /* SubCategoryListTVC.xib in Resources */,
 				1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */,
+				1D6BD46E24233E8B00184537 /* StartFlow.storyboard in Resources */,
 				F73387E724165F0700DE8F75 /* Home.storyboard in Resources */,
 				1DE7B74F2420B49F009A8634 /* FeaturedCVC.xib in Resources */,
 				F73387D524164D8300DE8F75 /* LaunchScreen.storyboard in Resources */,
@@ -450,11 +499,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6BD46B24233AA300184537 /* Login.swift in Sources */,
+				1D46B04A24235DBA00144E60 /* WFFFormComponents.swift in Sources */,
 				1DE7B7562420BD42009A8634 /* ProductCVC.swift in Sources */,
 				1D91FC282420F74E0098BAEE /* HomePopularTVC.swift in Sources */,
 				F73387F6241662EC00DE8F75 /* HomeCollectionTVC.swift in Sources */,
 				F73387FA24166A0700DE8F75 /* UITAbleView.swift in Sources */,
 				F733880E2416B94D00DE8F75 /* CategorySelectionVC.swift in Sources */,
+				1D6BD472242340A300184537 /* LMPlaceholderTextView.swift in Sources */,
 				F73387ED2416604C00DE8F75 /* HomeVC.swift in Sources */,
 				1DE7B74E2420B49F009A8634 /* FeaturedCVC.swift in Sources */,
 				F73388102416BB2D00DE8F75 /* UIViewController.swift in Sources */,
@@ -462,13 +514,17 @@
 				1DE7B7522420BAA4009A8634 /* PopularCVC.swift in Sources */,
 				1D91FC2E24210E980098BAEE /* HomeTableViewHeader.swift in Sources */,
 				1DE0630024220E3F00A01FE4 /* ProductsHeader.swift in Sources */,
+				1D3876012423A77400E8D93F /* RegisterVC.swift in Sources */,
 				1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
+				1D6BD4702423409700184537 /* BaseBlueView.swift in Sources */,
 				F73387FE24166E5000DE8F75 /* HomeScreenDataSource.swift in Sources */,
+				1D3875BD2423760900E8D93F /* ProductProtocol.swift in Sources */,
 				F73387F2241662C200DE8F75 /* CollectionCVC.swift in Sources */,
 				1DE062FD2421F59900A01FE4 /* ProductSubCategoryCVC.swift in Sources */,
 				F733880B2416B16500DE8F75 /* HomeScreenCollections.swift in Sources */,
 				1DE062F52421EC6E00A01FE4 /* ProductsGridTVC.swift in Sources */,
+				1D6BD474242340AF00184537 /* LMTextField.swift in Sources */,
 				F73387C924164D7F00DE8F75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
