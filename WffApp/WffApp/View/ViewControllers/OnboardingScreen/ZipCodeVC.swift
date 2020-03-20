@@ -10,18 +10,39 @@ import UIKit
 
 class ZipCodeVC: UIViewController {
 
+    @IBOutlet var loginRegisterButton: UIButton!
+    @IBOutlet var startShoppingButton: UIButton!
+    @IBOutlet var submitButton: UIButton!
     @IBOutlet weak var zipCode: LMUnderLinedTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func submitPressed(_ sender: UIButton) {
-        let loginVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "Login") as! Login
-                   pushViewController(loginVC)
+    override func viewDidAppear(_ animated: Bool) {
+        loginRegisterButton.isHidden = true
+        startShoppingButton.isHidden = true
+        submitButton.isHidden = false
     }
     
+    @IBAction func submitPressed(_ sender: UIButton) {
+//        loginRegisterButton.isHidden = false
+//        startShoppingButton.isHidden = false
+//        submitButton.isHidden = true
+        let popupVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "PopupVC") as! PopupVC
+        popupVC.zipcode = zipCode.text
+        self.present(popupVC, animated: true, completion: nil)
+    
+       
+    }
+    
+    @IBAction func startShoppingPressed(_ sender: UIButton) {
+    }
+    @IBAction func loginRegisterPressed(_ sender: UIButton) {
+        let loginVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "Login") as! Login
+            pushViewController(loginVC)
+    }
     /*
     // MARK: - Navigation
 

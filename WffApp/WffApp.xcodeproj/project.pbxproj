@@ -40,6 +40,9 @@
 		1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7512420BAA4009A8634 /* PopularCVC.xib */; };
 		1DE7B7562420BD42009A8634 /* ProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7B7542420BD42009A8634 /* ProductCVC.swift */; };
 		1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7552420BD42009A8634 /* ProductCVC.xib */; };
+		1DF076042425558F00C6B883 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF076032425558F00C6B883 /* PopupVC.swift */; };
+		1DF076072425587500C6B883 /* productUnavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF076062425587500C6B883 /* productUnavailable.swift */; };
+		1DF07609242558A400C6B883 /* productUnavailable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF07608242558A400C6B883 /* productUnavailable.xib */; };
 		80AC443347FC62BD253C92F9 /* Pods_WFF_WFFApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B136DD62D2B90A87DDD46A2B /* Pods_WFF_WFFApp.framework */; };
 		F73387C924164D7F00DE8F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73387C824164D7F00DE8F75 /* AppDelegate.swift */; };
 		F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73387D124164D8300DE8F75 /* Assets.xcassets */; };
@@ -109,6 +112,9 @@
 		1DE7B7512420BAA4009A8634 /* PopularCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PopularCVC.xib; path = ../../../../WffApp/WffApp/PopularCVC.xib; sourceTree = "<group>"; };
 		1DE7B7542420BD42009A8634 /* ProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCVC.swift; path = ../../../../WffApp/WffApp/ProductCVC.swift; sourceTree = "<group>"; };
 		1DE7B7552420BD42009A8634 /* ProductCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductCVC.xib; path = ../../../../WffApp/WffApp/ProductCVC.xib; sourceTree = "<group>"; };
+		1DF076032425558F00C6B883 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopupVC.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/PopupController/PopupVC.swift; sourceTree = "<group>"; };
+		1DF076062425587500C6B883 /* productUnavailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = productUnavailable.swift; path = ../../../../WffApp/WffApp/View/PopModalViews/productUnavailable.swift; sourceTree = "<group>"; };
+		1DF07608242558A400C6B883 /* productUnavailable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = productUnavailable.xib; path = ../../../../WffApp/WffApp/View/PopModalViews/productUnavailable.xib; sourceTree = "<group>"; };
 		3B0DA1F3CCCA9534CB443E57 /* Pods-WFF-WFFApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WFFApp.release.xcconfig"; path = "Target Support Files/Pods-WFF-WFFApp/Pods-WFF-WFFApp.release.xcconfig"; sourceTree = "<group>"; };
 		A589940DBEF0DD03E845FC4F /* Pods-WFF-WFFApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFF-WFFApp.debug.xcconfig"; path = "Target Support Files/Pods-WFF-WFFApp/Pods-WFF-WFFApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B136DD62D2B90A87DDD46A2B /* Pods_WFF_WFFApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFF_WFFApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +199,23 @@
 			path = OnboardingScreen;
 			sourceTree = "<group>";
 		};
+		1DF07600242554F800C6B883 /* PopupController */ = {
+			isa = PBXGroup;
+			children = (
+				1DF076032425558F00C6B883 /* PopupVC.swift */,
+			);
+			path = PopupController;
+			sourceTree = "<group>";
+		};
+		1DF076052425578700C6B883 /* PopModalViews */ = {
+			isa = PBXGroup;
+			children = (
+				1DF076062425587500C6B883 /* productUnavailable.swift */,
+				1DF07608242558A400C6B883 /* productUnavailable.xib */,
+			);
+			path = PopModalViews;
+			sourceTree = "<group>";
+		};
 		3983C8AE34CA183DA24B9E90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				F73387FB24166E2D00DE8F75 /* DataSource */,
+				1DF076052425578700C6B883 /* PopModalViews */,
 				1D91FC2A242108150098BAEE /* TableViewHeaders */,
 				F73387EF241662A600DE8F75 /* TableViewCells */,
 				F73387EE2416629A00DE8F75 /* CollectionViewCells */,
@@ -279,6 +303,7 @@
 		F73387EA2416602300DE8F75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1DF07600242554F800C6B883 /* PopupController */,
 				1DB0C14E2424A3940073B1FB /* OnboardingScreen */,
 				1D6BD46924233A3200184537 /* RegisterScreen */,
 				1D6BD46824233A0F00184537 /* LoginScreen */,
@@ -467,6 +492,7 @@
 				F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */,
 				1D91FC292420F74E0098BAEE /* HomePopularTVC.xib in Resources */,
 				1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */,
+				1DF07609242558A400C6B883 /* productUnavailable.xib in Resources */,
 				1D91FC212420E5560098BAEE /* HomeFeaturedTVC.xib in Resources */,
 				1DE062FE2421F59900A01FE4 /* ProductSubCategoryCVC.xib in Resources */,
 				F73388092416A6CC00DE8F75 /* GoogleService-Info.plist in Resources */,
@@ -544,7 +570,9 @@
 				1D3876012423A77400E8D93F /* RegisterVC.swift in Sources */,
 				1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
+				1DF076042425558F00C6B883 /* PopupVC.swift in Sources */,
 				1D6BD4702423409700184537 /* BaseBlueView.swift in Sources */,
+				1DF076072425587500C6B883 /* productUnavailable.swift in Sources */,
 				F73387FE24166E5000DE8F75 /* HomeScreenDataSource.swift in Sources */,
 				1D3875BD2423760900E8D93F /* ProductProtocol.swift in Sources */,
 				F73387F2241662C200DE8F75 /* CollectionCVC.swift in Sources */,

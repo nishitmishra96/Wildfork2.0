@@ -104,3 +104,124 @@ public extension UIBarButtonItem {
         badgeLayer?.removeFromSuperlayer()
     }
 }
+enum ValidationResult{
+    case empty
+    case valid
+    case invalid
+}
+extension String{
+func isValidEmail() -> Bool {
+    let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
+    return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+}
+    var trim: String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    
+//    func isValidEmail() -> ValidationResult{
+//         guard self.text?.trim.count ?? 0 > 0 else {
+//             self.errorMessage = placeholder
+//             ShowErrorUtil.showError(withMessage: ValidationMessages.EmptyEmail.rawValue)
+//             return .empty
+//         }
+//
+//         let regex = "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" + "\\@" + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" +
+//             "(" + "\\." + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" + ")+"
+//
+//         let emailTest = NSPredicate(format:"SELF MATCHES %@", regex)
+//         let result = emailTest.evaluate(with: self.text)
+//
+//         if result{
+//             return .valid
+//         }else{
+//             self.errorMessage = placeholder
+//             ShowErrorUtil.showError(withMessage: ValidationMessages.invalidEmail.rawValue)
+//             return .invalid
+//         }
+//     }
+}
+extension LMUnderLinedTextField{
+    func isValidPassword() -> Bool {
+            let characterCount = self.text?.trim.count
+            
+            guard characterCount ?? 0 > 0 else {
+                //self.errorMessage = self.placeholder
+                //ShowErrorUtil.showError(withMessage: ValidationMessages.EmptyPassWord.rawValue)
+                return false
+            }
+        if characterCount ?? 0 > 6{
+            return true
+        }
+        else{
+            return false
+        }
+            
+    //        if (characterCount ?? 0 > ValidationUtil.minPasswordLength){
+    //            return true
+    //        }else{
+    //            //self.errorMessage = self.placeholder
+    //            //ShowErrorUtil.showError(withMessage: ValidationMessages.invalidPassWord.rawValue)
+    //            //return .invalid
+    //            return false
+    //        }
+        }
+        func isValidName() -> Bool {
+            
+            let characterCount = self.text?.trim.count
+            
+            guard characterCount ?? 0 > 0 else {
+                self.errorMessage = self.placeholder
+                //ShowErrorUtil.showError(withMessage: ValidationMessages.EmptyName.rawValue)
+                return false
+            }
+            
+//            guard characterCount ?? 0 >= ValidationUtil.minNameLength else {
+//                //self.errorMessage = ValidationMessages.invalidName.rawValue
+//                //return .minLength
+//                return false
+//            }
+            
+            let nameRegEx = "^[a-zA-Z ]+$"
+            let nameTest = NSPredicate(format:"SELF MATCHES %@",nameRegEx)
+            let result = nameTest.evaluate(with: self.text)
+            
+            if result{
+                //return .valid
+                return true
+            }else{
+                //self.errorMessage = self.placeholder
+                //ShowErrorUtil.showError(withMessage: ValidationMessages.invalidName.rawValue)
+                //return .invalid
+                return false
+            }
+        }
+        func isValidLastName() -> Bool{
+            let characterCount = self.text?.trim.count
+            
+            guard characterCount ?? 0 > 0 else {
+                self.errorMessage = self.placeholder
+                //ShowErrorUtil.showError(withMessage: ValidationMessages.EmptyLastName.rawValue)
+                //return .empty
+                return false
+            }
+    //
+    //        guard characterCount ?? 0 >= ValidationUtil.minLastNameLength else {
+    //            self.errorMessage = placeholder
+    //            return .minLength
+    //        }
+            
+            let nameRegEx = "^[a-zA-Z ]+$"
+            let nameTest = NSPredicate(format:"SELF MATCHES %@",nameRegEx)
+            let result = nameTest.evaluate(with: self.text)
+            
+            if result{
+                return true
+            }else{
+    //            self.errorMessage = placeholder
+    //            ShowErrorUtil.showError(withMessage: ValidationMessages.invalidLastName.rawValue)
+                return false
+            }
+            
+        }
+}

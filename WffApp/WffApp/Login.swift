@@ -33,11 +33,17 @@ class Login: UIViewController {
         if email.text == ""{
             errorAlert(msg : "Enter your email")
         }
+        else if !email.text!.isValidEmail(){
+            errorAlert(msg : "Please Enter valid email")
+        }
         else if password.text == "" {
             errorAlert(msg: "Enter your password")
         }
+        else if !password.isValidPassword(){
+             errorAlert(msg: "Invalid password")
+        }
         else{
-            
+            //login success
         }
     }
     func errorAlert(msg : String){
