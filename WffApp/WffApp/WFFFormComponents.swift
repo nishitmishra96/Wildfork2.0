@@ -15,7 +15,6 @@ class WFFCheckBox: UIButton {
     let checkedImage = UIImage(systemName: "checkmark.square")! as UIImage
     let uncheckedImage = UIImage(systemName: "square")! as UIImage
 
-    // Bool property
     var isChecked: Bool = false {
         didSet {
             if isChecked == true {

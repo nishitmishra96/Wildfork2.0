@@ -43,7 +43,7 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-       
+       popViewController()
     }
     func errorAlert(msg : String){
         let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)

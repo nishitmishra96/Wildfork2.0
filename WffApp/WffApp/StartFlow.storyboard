@@ -25,7 +25,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-gF-uhZ" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                 <rect key="frame" x="48" y="306" width="318" height="35.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Email"/>
                                 </userDefinedRuntimeAttributes>
@@ -33,7 +33,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Zr-vgW" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                 <rect key="frame" x="48" y="381.66666666666669" width="318" height="35.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                 </userDefinedRuntimeAttributes>
@@ -146,7 +146,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIM-aJ-CqP" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="290.66666666666669" width="318" height="35.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="First Name"/>
                                                 </userDefinedRuntimeAttributes>
@@ -154,7 +154,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iED-nt-meu" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="366.33333333333331" width="318" height="35.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Last Name"/>
                                                 </userDefinedRuntimeAttributes>
@@ -162,7 +162,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7Q-N6-c5W" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="442" width="318" height="35.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Email"/>
                                                 </userDefinedRuntimeAttributes>
@@ -170,7 +170,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-rp-31M" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="517.66666666666663" width="318" height="35.666666666666629"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                                 </userDefinedRuntimeAttributes>
