@@ -48,6 +48,22 @@ final class Client {
     //  MARK: - Customers -
     //
     @discardableResult
+    func register(email:String,password:String,name:String,lastName:String,acceptsMarketing:Bool,completion: @escaping (String?) -> Void ) -> Task{
+        let mutation = ClientQuery.mutationForSignup(email: email, password: password, name: name, lastName: lastName, acceptsMarketing: acceptsMarketing)
+        let task = self.client.mutateGraphWith(mutation) { (mutation, error) in
+            error.debugPrint()
+            if let container = mutation?.customerAccessTokenCreate?.customerAccessToken{
+                completion(container.accessToken)
+            }else{
+                let errors = mutation?.customerAccessTokenCreate?.customerUserErrors ?? []
+                print("Failed to login customer: \(errors)")
+                completion(nil)
+            }
+        }
+        task.resume()
+        return task
+    }
+    @discardableResult
     func login(email: String, password: String, completion: @escaping (String?) -> Void) -> Task {
         
         let mutation = ClientQuery.mutationForLogin(email: email, password: password)

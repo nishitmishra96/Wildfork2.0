@@ -34,7 +34,12 @@ final class ProductViewModel: ViewModel {
     let model:    ModelType
     let cursor:   String
     
-    let id:       String
+    var id:       String{
+        didSet{
+            self.alternateId = String(data: Data(base64Encoded: self.id) ?? Data(), encoding: .utf8)
+        }
+    }
+    var alternateId: String?
     let title:    String
     let summary:  String
     let price:    String

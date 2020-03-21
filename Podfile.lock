@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - CZTableView (1.0.0)
   - Firebase/CoreOnly (6.18.0):
     - FirebaseCore (= 6.6.3)
@@ -49,20 +50,48 @@ PODS:
   - "GoogleUtilities/NSData+zlib (6.5.1)"
   - GoogleUtilities/UserDefaults (6.5.1):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.5.5)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - ObjectMapper (3.5.1)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - Result (4.1.0)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+  - SWSegmentedControl (2.7.0)
+  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - CZTableView (from `https://gitlab.craterzone.com/administartor/CZTableView-1.git`)
   - Firebase/RemoteConfig
+  - IQKeyboardManagerSwift
+  - Moya (~> 12.0.1)
+  - ObjectMapper (~> 3.5)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SDWebImage (~> 5.0)
+  - SWSegmentedControl
+  - TTTAttributedLabel
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalyticsInterop
@@ -75,9 +104,19 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - IQKeyboardManagerSwift
+    - Moya
     - nanopb
+    - ObjectMapper
     - PromisesObjC
     - Protobuf
+    - Result
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SWSegmentedControl
+    - TTTAttributedLabel
 
 EXTERNAL SOURCES:
   CZTableView:
@@ -89,6 +128,7 @@ CHECKOUT OPTIONS:
     :git: https://gitlab.craterzone.com/administartor/CZTableView-1.git
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CZTableView: c0ba7eeea0385c74679b6195533786b0e5933c11
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseABTesting: 0d10f3cdc3fa00f3f175b5b56c1003c8e888299f
@@ -102,10 +142,20 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 653963cf5be60fb59cf051e070f0836fdc305f81
   GoogleDataTransportCCTSupport: 84e4d4bbab642f2e9d83ee65d78aca2b5527d314
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+  SWSegmentedControl: 808ef4b80d0168799a60d8a2d322cfde7f45f46c
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 4357e860042672141bad7c2a51dc943e2dc4d8d3
+PODFILE CHECKSUM: 5a170f0fae3c11c6b8279a792da881919221f4af
 
 COCOAPODS: 1.9.0.beta.3

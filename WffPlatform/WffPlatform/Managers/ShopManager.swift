@@ -7,51 +7,18 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 public protocol ShopManagerDataSource{
     func HomePageRemoteConfig(handler: ((String?)->())? )
 }
 public final class ShopManager {
     public static var shared = ShopManager()
     @objc dynamic public var categories:[String] = []
+    public var isDeleveryAvailable:BehaviorRelay<Bool> = BehaviorRelay(value: false)
     public var datasource:ShopManagerDataSource?
     private init() {
         
-    }
-    func makeShopReady(ready: @escaping (()->())){
-        if CollectionManager.shared.collections.count == 0{
-            CollectionManager.shared.setupCollections {
-                ready()
-            }
-        }else{
-            ready()
-        }
-    }
-    public func fetchProductsForCollection(collectionID:String,handler: @escaping (([WFFProduct])->()) ){
-        makeShopReady {
-            CollectionManager.shared.fetchProductsForCollection(collection: collectionID) { (products) in
-                handler(products.map { (productVM) -> WFFProduct in
-                    return WFFProduct(productViewModel: productVM)
-                })
-            }
-        }
-    }
-    public func fetchCollection(byNameMatching:String? = nil , byId:String? = nil ,handler:@escaping (([WFFCollection])->())){
-        makeShopReady {
-            var localCollection = CollectionManager.shared.collections
-            if let searchString = byNameMatching{
-                localCollection = CollectionManager.shared.collections.filter { (collection) -> Bool in
-                    return collection.title.lowercased().contains(searchString.lowercased())
-                }
-            }
-            if let id = byId{
-                localCollection = localCollection.filter { (collection) -> Bool in
-                    return collection.id == id
-                }
-            }
-            handler(localCollection.map({ (viewModel) -> WFFCollection in
-                return WFFCollection(viewModel: viewModel)
-            }))
-        }
     }
 }
 

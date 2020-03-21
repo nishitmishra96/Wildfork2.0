@@ -8,6 +8,8 @@
 
 import UIKit
 import WffPlatform
+import RxCocoa
+import RxSwift
 class ZipCodeVC: UIViewController {
 
     @IBOutlet weak var loginRegisterButton: UIButton!
@@ -16,10 +18,15 @@ class ZipCodeVC: UIViewController {
     @IBOutlet weak var zipCode: LMUnderLinedTextField!
     @IBOutlet weak var loginSignupStackView:UIStackView!
     @IBOutlet weak var messagLabel:UILabel!
+    private var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.zipCode.typeOftextfield = .otp
         self.zipCode.delegate = self
         self.messagLabel.text = "ENTER ZIP CODE TO GET STARTED"
+        self.loginSignupStackView.isHidden = true
+        self.submitButton.isHidden = false
+        self.submitButton.isEnabled = false
     }
     func isGoodZipCodeView(){
         self.zipCode.isTextFieldEnabled = true
@@ -33,11 +40,18 @@ class ZipCodeVC: UIViewController {
     }
     
     @IBAction func submitPressed(_ sender: UIButton) {
-        
-        return
-        let popupVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "PopupVC") as! PopupVC
-        popupVC.zipcode = zipCode.text
-        self.present(popupVC, animated: true, completion: nil)
+        sender.loadingIndicator(true)
+        UserManager.shared.setNewZipCode(zipCode: self.zipCode.text ?? "" ) { (newValue) in
+             sender.loadingIndicator(false)
+            if newValue{
+                self.isGoodZipCodeView()
+            }else{
+                let popupVC = Storyboard.start.instanceOf(viewController: PopupVC.self)!
+                popupVC.zipcode = self.zipCode.text
+                self.present(popupVC, animated: true, completion: nil)
+            }
+        }
+   
     }
     
     @IBAction func startShoppingPressed(_ sender: UIButton) {

@@ -80,8 +80,9 @@ extension CategorySelectionVC : UITableViewDataSource, UITableViewDelegate {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductsGridTVC", for: indexPath) as! ProductsGridTVC
             return cell
-             
-    
+       }
+
+
        }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
            return UITableView.automaticDimension
@@ -92,5 +93,4 @@ extension CategorySelectionVC : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return  UIScreen.main.bounds.height - 100
         
-    }
 }

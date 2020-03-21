@@ -31,7 +31,10 @@ class OnboardingVC: UIViewController {
         OnboardingCV.registerCollectionViewCellNib(OnboardingCVC.self)
         OnboardingCV.isPagingEnabled = true
     }
-    
+    @IBAction func didTapSkipButton(){
+        let zipcodeVC = Storyboard.start.instanceOf(viewController: ZipCodeVC.self)!
+        pushViewController(zipcodeVC)
+    }
     @IBAction func nextPressed(_ sender: Any) {
         if skipButton.isHidden{
             let zipcodeVC = Storyboard.start.instanceOf(viewController: ZipCodeVC.self)!

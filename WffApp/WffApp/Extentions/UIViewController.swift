@@ -9,7 +9,7 @@ import UIKit
 public extension UIViewController {
     
     
-    public func adjustScrollingInsets(){
+    func adjustScrollingInsets(){
         extendedLayoutIncludesOpaqueBars = false
         automaticallyAdjustsScrollViewInsets = false
         

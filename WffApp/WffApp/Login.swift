@@ -12,55 +12,23 @@ class Login: UIViewController {
 
     
     @IBOutlet weak var email: LMUnderLinedTextField!
-    
     @IBOutlet weak var password: LMUnderLinedTextField!
+    @IBOutlet weak var loginButton:UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func registerPressed(_ sender: Any) {
-         let registerVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "RegisterVC") as! RegisterVC
-           self.navigationController?.pushViewController(registerVC, animated: true)
-        
+        let registerVC = Storyboard.start.instanceOf(viewController: RegisterVC.self)!
+        pushViewController(registerVC)
     }
     @IBAction func forgotPasswordPressed(_ sender: Any) {
         
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        if email.text == ""{
-            errorAlert(msg : "Enter your email")
-        }
-        else if !email.text!.isValidEmail(){
-            errorAlert(msg : "Please Enter valid email")
-        }
-        else if password.text == "" {
-            errorAlert(msg: "Enter your password")
-        }
-        else if !password.isValidPassword(){
-             errorAlert(msg: "Invalid password")
-        }
-        else{
-            //login success
-        }
+        
     }
-    func errorAlert(msg : String){
-        let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        self.present(alert, animated: true)
-
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

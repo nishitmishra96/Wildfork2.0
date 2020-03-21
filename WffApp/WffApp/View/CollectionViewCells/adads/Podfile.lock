@@ -1,0 +1,16 @@
+PODS:
+  - SWSegmentedControl (2.7.0)
+
+DEPENDENCIES:
+  - SWSegmentedControl
+
+SPEC REPOS:
+  trunk:
+    - SWSegmentedControl
+
+SPEC CHECKSUMS:
+  SWSegmentedControl: 808ef4b80d0168799a60d8a2d322cfde7f45f46c
+
+PODFILE CHECKSUM: 06a269f9a346d23ebb13222825da5095b8ae300d
+
+COCOAPODS: 1.8.4
