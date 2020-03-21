@@ -11,6 +11,7 @@ import Foundation
 enum Storyboard: String {
 //    Normal App StoryBoards
     case home = "Home"
+    case start = "StartFlow"
     var instance: UIStoryboard {
         return UIStoryboard(name: rawValue, bundle: nil)
     }

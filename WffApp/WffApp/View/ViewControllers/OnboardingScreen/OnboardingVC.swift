@@ -7,16 +7,12 @@
 //
 
 import UIKit
-//struct onBoardingView{
-//    var image:UIImage
-//    var title:String
-//    var subTitle:String
-//}
 class OnboardingVC: UIViewController {
-
+    @IBOutlet weak var nextButton:UIButton!
+    @IBOutlet weak var skipButton:UIButton!
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var OnboardingCV: UICollectionView!
-    var counter = 0
+
     var imageList: [UIImage] = [#imageLiteral(resourceName: "onboardingIllustrations1"),#imageLiteral(resourceName: "onboardingIllustrations2"),#imageLiteral(resourceName: "onboardingIllustrations3")]
     var titleList: [String] = ["SHOP FASTER THAN EVER",
     "SCAN FOR FUN IDEAS",
@@ -30,44 +26,23 @@ class OnboardingVC: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         OnboardingCV.dataSource = self
         OnboardingCV.delegate = self
         OnboardingCV.registerCollectionViewCellNib(OnboardingCVC.self)
-        OnboardingCV.isUserInteractionEnabled = false
-        
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        counter = 0
+        OnboardingCV.isPagingEnabled = true
     }
     
     @IBAction func nextPressed(_ sender: Any) {
-        if counter < 2 {
-            counter += 1
-            let index = IndexPath.init(item: counter, section: 0)
-            self.OnboardingCV.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            pageController.currentPage = counter
-        }
-        else {
-            let zipcodeVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "ZipCodeVC") as! ZipCodeVC
+        if skipButton.isHidden{
+            let zipcodeVC = Storyboard.start.instanceOf(viewController: ZipCodeVC.self)!
             pushViewController(zipcodeVC)
+        }else{
+        UIView.animate(withDuration: 0.3) {
+            self.OnboardingCV.contentOffset.x = self.OnboardingCV.contentOffset.x + self.OnboardingCV.frame.width
+        }
         }
     }
-    @IBAction func skipPressed(_ sender: Any) {
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
 extension OnboardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -85,6 +60,11 @@ extension OnboardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         cell.width.constant = UIScreen.main.bounds.width
         return cell
     }
-    
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let page = Int( scrollView.contentOffset.x / scrollView.frame.width )
+        self.pageController.currentPage = page
+        UIView.animate(withDuration: 0.3) {
+            self.skipButton.isHidden = page == (self.titleList.count - 1)
+        }
+    }
 }

@@ -7,50 +7,59 @@
 //
 
 import UIKit
-
+import WffPlatform
 class ZipCodeVC: UIViewController {
 
-    @IBOutlet var loginRegisterButton: UIButton!
-    @IBOutlet var startShoppingButton: UIButton!
-    @IBOutlet var submitButton: UIButton!
+    @IBOutlet weak var loginRegisterButton: UIButton!
+    @IBOutlet weak var startShoppingButton: UIButton!
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var zipCode: LMUnderLinedTextField!
+    @IBOutlet weak var loginSignupStackView:UIStackView!
+    @IBOutlet weak var messagLabel:UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        // Do any additional setup after loading the view.
+        self.zipCode.delegate = self
+        self.messagLabel.text = "ENTER ZIP CODE TO GET STARTED"
     }
-    override func viewDidAppear(_ animated: Bool) {
-        loginRegisterButton.isHidden = true
-        startShoppingButton.isHidden = true
-        submitButton.isHidden = false
+    func isGoodZipCodeView(){
+        self.zipCode.isTextFieldEnabled = true
+        self.messagLabel.text = "WE DELIVER TO \(self.zipCode.text ?? "YOUR ZIP")"
+        self.submitButton.isHidden = true
+        self.loginSignupStackView.isHidden = false
+    }
+    func emptyZipCodeView(){
+        self.submitButton.isHidden = false
+        self.loginSignupStackView.isHidden = true
     }
     
     @IBAction func submitPressed(_ sender: UIButton) {
-//        loginRegisterButton.isHidden = false
-//        startShoppingButton.isHidden = false
-//        submitButton.isHidden = true
+        
+        return
         let popupVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "PopupVC") as! PopupVC
         popupVC.zipcode = zipCode.text
         self.present(popupVC, animated: true, completion: nil)
-    
-       
     }
     
     @IBAction func startShoppingPressed(_ sender: UIButton) {
+        
     }
     @IBAction func loginRegisterPressed(_ sender: UIButton) {
         let loginVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "Login") as! Login
             pushViewController(loginVC)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension ZipCodeVC:UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        emptyZipCodeView()
+        if textField.text?.count ?? 0 < 4 {
+            self.submitButton.isEnabled = false
+        }else{
+            self.submitButton.isEnabled = true
+        }
+        if textField.text?.count ?? 0 > 5 && string != ""{
+            return false
+        }
+        return true
     }
-    */
-
 }

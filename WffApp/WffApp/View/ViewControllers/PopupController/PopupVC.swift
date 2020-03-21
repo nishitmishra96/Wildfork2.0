@@ -19,10 +19,6 @@ class PopupVC: UIViewController {
         if let zip = zipcode{
             popupTitle.text = "WE DON'T DELIVER TO \(zip)"
         }
-        
-        // Do any additional setup after loading the view.
-//        let customView = productUnavailable().loadNib() as! productUnavailable
-//        popUpView.addSubview(customView)
     }
     @IBAction func continueWithoutShoppingPressed(_ sender: Any) {
         
@@ -34,12 +30,3 @@ class PopupVC: UIViewController {
     
 
 }
-//extension UIView {
-//    /** Loads instance from nib with the same name. */
-//    func loadNib() -> UIView {
-//        let bundle = Bundle(for: type(of: self))
-//        let nibName = type(of: self).description().components(separatedBy: ".").last!
-//        let nib = UINib(nibName: nibName, bundle: bundle)
-//        return nib.instantiate(withOwner: self, options: nil).first as! UIView
-//    }
-//}
