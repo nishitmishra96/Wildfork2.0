@@ -35,7 +35,7 @@ public extension UIButton {
             }
         }
 }
-class WFFButton:UIButton{
+class WFFButton: WFFFlatButton{
     override var isEnabled: Bool{
         didSet{
             if self.isEnabled{
@@ -43,6 +43,8 @@ class WFFButton:UIButton{
             }else{
                 self.alpha = 0.3
             }
+        
+            
         }
     }
 }

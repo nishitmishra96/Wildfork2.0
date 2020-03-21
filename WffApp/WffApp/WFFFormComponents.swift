@@ -36,11 +36,3 @@ class WFFCheckBox: UIButton {
         }
     }
 }
-class WFFBorderedButton : UIButton {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.backgroundColor = UIColor.clear
-        self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.gray.cgColor
-    }
-}

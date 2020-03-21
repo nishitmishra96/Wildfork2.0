@@ -24,6 +24,7 @@ class ZipCodeVC: UIViewController {
         self.zipCode.typeOftextfield = .otp
         self.zipCode.delegate = self
         self.messagLabel.text = "ENTER ZIP CODE TO GET STARTED"
+        self.messagLabel.font = UIFont.appTitleBold(ofSize: .large)
         self.loginSignupStackView.isHidden = true
         self.submitButton.isHidden = false
         self.submitButton.isEnabled = false
