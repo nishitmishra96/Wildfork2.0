@@ -12,8 +12,6 @@ def wffAppPods
   pod 'SDWebImage', '~> 5.0'
   pod 'IQKeyboardManagerSwift'
   pod 'ReachabilitySwift'
-
-#  pod "ExpandableLabel"
 end
 def commonPods
   pod 'Moya','~> 12.0.1'

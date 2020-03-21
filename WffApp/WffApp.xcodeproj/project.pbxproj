@@ -79,6 +79,7 @@
 		F7BC86F3242645CF00A73632 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F2242645CF00A73632 /* UIAlertController.swift */; };
 		F7BC86F624264CE300A73632 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F524264CE300A73632 /* TabBarVC.swift */; };
 		F7BC86F824264DA100A73632 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F724264DA100A73632 /* UIImage.swift */; };
+		F7BC86FB24267EBE00A73632 /* PINKLABEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86FA24267EBE00A73632 /* PINKLABEL.swift */; };
 		F7BE3807242099C200057592 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BE3806242099C200057592 /* Product.storyboard */; };
 		F7BE380B24209A6E00057592 /* ProductImagesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE380924209A6E00057592 /* ProductImagesTVC.swift */; };
 		F7BE380C24209A6E00057592 /* ProductImagesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BE380A24209A6E00057592 /* ProductImagesTVC.xib */; };
@@ -188,6 +189,7 @@
 		F7BC86F2242645CF00A73632 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		F7BC86F524264CE300A73632 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		F7BC86F724264DA100A73632 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		F7BC86FA24267EBE00A73632 /* PINKLABEL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINKLABEL.swift; sourceTree = "<group>"; };
 		F7BE3806242099C200057592 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		F7BE380924209A6E00057592 /* ProductImagesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImagesTVC.swift; sourceTree = "<group>"; };
 		F7BE380A24209A6E00057592 /* ProductImagesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductImagesTVC.xib; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 		F73387E324165D5800DE8F75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7BC86F924267EAD00A73632 /* UILabel */,
 				F7F276762426251700967685 /* TableViewHeaders */,
 				9492E30324236A280073C806 /* ViewProtocols */,
 				94EDF9FD24222D5900F2AFBA /* UIViewElements */,
@@ -526,6 +529,14 @@
 				F7BC86F524264CE300A73632 /* TabBarVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F7BC86F924267EAD00A73632 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				F7BC86FA24267EBE00A73632 /* PINKLABEL.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		F7BE380824209A5100057592 /* ProductPageTVC */ = {
@@ -780,6 +791,7 @@
 				944F9D6A2423C201003BF6B8 /* HeaderView.swift in Sources */,
 				F7F276782426254300967685 /* SplashVC.swift in Sources */,
 				1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */,
+				F7BC86FB24267EBE00A73632 /* PINKLABEL.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
 				F7BC86F824264DA100A73632 /* UIImage.swift in Sources */,
 				F7F27674242624FA00967685 /* HomeTableViewHeader.swift in Sources */,
