@@ -22,6 +22,9 @@
 		1DB0C1502424A3DC0073B1FB /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0C14F2424A3DC0073B1FB /* OnboardingVC.swift */; };
 		1DB0C1522424A73D0073B1FB /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0C1512424A73D0073B1FB /* UICollectionView.swift */; };
 		1DB0C1562424D12C0073B1FB /* ZipCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0C1552424D12C0073B1FB /* ZipCodeVC.swift */; };
+		1DB2EA1024266368004D99FD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2EA0F24266368004D99FD /* UIColor.swift */; };
+		1DB2EA122426643D004D99FD /* WFFFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2EA112426643D004D99FD /* WFFFlatButton.swift */; };
+		1DB2EA16242669F8004D99FD /* WFFBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2EA15242669F8004D99FD /* WFFBorderedButton.swift */; };
 		1DE062F52421EC6E00A01FE4 /* ProductsGridTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE062F32421EC6E00A01FE4 /* ProductsGridTVC.swift */; };
 		1DE062F62421EC6E00A01FE4 /* ProductsGridTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE062F42421EC6E00A01FE4 /* ProductsGridTVC.xib */; };
 		1DE062F92421F54600A01FE4 /* SubCategoryListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE062F72421F54600A01FE4 /* SubCategoryListTVC.swift */; };
@@ -34,6 +37,17 @@
 		1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7512420BAA4009A8634 /* PopularCVC.xib */; };
 		1DE7B7562420BD42009A8634 /* ProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7B7542420BD42009A8634 /* ProductCVC.swift */; };
 		1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7B7552420BD42009A8634 /* ProductCVC.xib */; };
+		1DE88B3B2426371800D35218 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B1D2426371700D35218 /* Montserrat-Light.ttf */; };
+		1DE88B55242638A800D35218 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE88B54242638A800D35218 /* UILabel.swift */; };
+		1DE88B5724263E4B00D35218 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE88B5624263E4B00D35218 /* UIFont.swift */; };
+		1DE88B59242642AB00D35218 /* WFFLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE88B58242642AB00D35218 /* WFFLabels.swift */; };
+		1DE88B652426459400D35218 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B5C2426459300D35218 /* Oswald-Bold.ttf */; };
+		1DE88B662426459400D35218 /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B5D2426459300D35218 /* Oswald-SemiBold.ttf */; };
+		1DE88B672426459400D35218 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B5E2426459300D35218 /* Oswald-Medium.ttf */; };
+		1DE88B682426459400D35218 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B5F2426459300D35218 /* Oswald-Regular.ttf */; };
+		1DE88B692426459400D35218 /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B602426459300D35218 /* Oswald-ExtraLight.ttf */; };
+		1DE88B6A2426459400D35218 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B612426459300D35218 /* Oswald-Light.ttf */; };
+		1DE88B6F24264FF900D35218 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88B6E24264FF900D35218 /* Montserrat-LightItalic.ttf */; };
 		1DF076042425558F00C6B883 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF076032425558F00C6B883 /* PopupVC.swift */; };
 		1DF076072425587500C6B883 /* productUnavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF076062425587500C6B883 /* productUnavailable.swift */; };
 		1DF07609242558A400C6B883 /* productUnavailable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF07608242558A400C6B883 /* productUnavailable.xib */; };
@@ -131,6 +145,9 @@
 		1DB0C14F2424A3DC0073B1FB /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingVC.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/OnboardingScreen/OnboardingVC.swift; sourceTree = "<group>"; };
 		1DB0C1512424A73D0073B1FB /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICollectionView.swift; path = ../../../WffApp/WffApp/Extentions/UICollectionView.swift; sourceTree = "<group>"; };
 		1DB0C1552424D12C0073B1FB /* ZipCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipCodeVC.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/OnboardingScreen/ZipCodeVC.swift; sourceTree = "<group>"; };
+		1DB2EA0F24266368004D99FD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = ../../../WffApp/WffApp/Extentions/UIColor.swift; sourceTree = "<group>"; };
+		1DB2EA112426643D004D99FD /* WFFFlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WFFFlatButton.swift; path = ../../../WffApp/WffApp/UIComponents/WFFFlatButton.swift; sourceTree = "<group>"; };
+		1DB2EA15242669F8004D99FD /* WFFBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WFFBorderedButton.swift; path = ../../../WffApp/WffApp/UIComponents/WFFBorderedButton.swift; sourceTree = "<group>"; };
 		1DE062F32421EC6E00A01FE4 /* ProductsGridTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsGridTVC.swift; path = ../../../../WffApp/WffApp/ProductsGridTVC.swift; sourceTree = "<group>"; };
 		1DE062F42421EC6E00A01FE4 /* ProductsGridTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductsGridTVC.xib; path = ../../../../WffApp/WffApp/ProductsGridTVC.xib; sourceTree = "<group>"; };
 		1DE062F72421F54600A01FE4 /* SubCategoryListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryListTVC.swift; sourceTree = "<group>"; };
@@ -143,6 +160,18 @@
 		1DE7B7512420BAA4009A8634 /* PopularCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PopularCVC.xib; path = ../../../../WffApp/WffApp/PopularCVC.xib; sourceTree = "<group>"; };
 		1DE7B7542420BD42009A8634 /* ProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCVC.swift; path = ../../../../WffApp/WffApp/ProductCVC.swift; sourceTree = "<group>"; };
 		1DE7B7552420BD42009A8634 /* ProductCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductCVC.xib; path = ../../../../WffApp/WffApp/ProductCVC.xib; sourceTree = "<group>"; };
+		1DE88B1D2426371700D35218 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		1DE88B54242638A800D35218 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ../../../WffApp/WffApp/Extentions/UILabel.swift; sourceTree = "<group>"; };
+		1DE88B5624263E4B00D35218 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = ../../../WffApp/WffApp/Extentions/UIFont.swift; sourceTree = "<group>"; };
+		1DE88B58242642AB00D35218 /* WFFLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WFFLabels.swift; path = ../../../WffApp/WffApp/UIComponents/WFFLabels.swift; sourceTree = "<group>"; };
+		1DE88B5C2426459300D35218 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		1DE88B5D2426459300D35218 /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		1DE88B5E2426459300D35218 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
+		1DE88B5F2426459300D35218 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
+		1DE88B602426459300D35218 /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1DE88B612426459300D35218 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		1DE88B6E24264FF900D35218 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		1DE88B702426502E00D35218 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		1DF076032425558F00C6B883 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopupVC.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/PopupController/PopupVC.swift; sourceTree = "<group>"; };
 		1DF076062425587500C6B883 /* productUnavailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = productUnavailable.swift; path = ../../../../WffApp/WffApp/View/PopModalViews/productUnavailable.swift; sourceTree = "<group>"; };
 		1DF07608242558A400C6B883 /* productUnavailable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = productUnavailable.xib; path = ../../../../WffApp/WffApp/View/PopModalViews/productUnavailable.xib; sourceTree = "<group>"; };
@@ -240,6 +269,9 @@
 				1D6BD46F2423409700184537 /* BaseBlueView.swift */,
 				1D6BD471242340A300184537 /* LMPlaceholderTextView.swift */,
 				1D6BD473242340AF00184537 /* LMTextField.swift */,
+				1DE88B58242642AB00D35218 /* WFFLabels.swift */,
+				1DB2EA112426643D004D99FD /* WFFFlatButton.swift */,
+				1DB2EA15242669F8004D99FD /* WFFBorderedButton.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -251,6 +283,54 @@
 				1DB0C1552424D12C0073B1FB /* ZipCodeVC.swift */,
 			);
 			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		1DE88B17242636AC00D35218 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DE88B18242636C500D35218 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DE88B18242636C500D35218 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DE88B192426371700D35218 /* Montserrat */,
+				1DE88B5A2426459300D35218 /* Oswald */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1DE88B192426371700D35218 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				1DE88B1D2426371700D35218 /* Montserrat-Light.ttf */,
+				1DE88B6E24264FF900D35218 /* Montserrat-LightItalic.ttf */,
+				1DE88B702426502E00D35218 /* Montserrat-Medium.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		1DE88B5A2426459300D35218 /* Oswald */ = {
+			isa = PBXGroup;
+			children = (
+				1DE88B5B2426459300D35218 /* static */,
+			);
+			path = Oswald;
+			sourceTree = "<group>";
+		};
+		1DE88B5B2426459300D35218 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				1DE88B5C2426459300D35218 /* Oswald-Bold.ttf */,
+				1DE88B5D2426459300D35218 /* Oswald-SemiBold.ttf */,
+				1DE88B5E2426459300D35218 /* Oswald-Medium.ttf */,
+				1DE88B5F2426459300D35218 /* Oswald-Regular.ttf */,
+				1DE88B602426459300D35218 /* Oswald-ExtraLight.ttf */,
+				1DE88B612426459300D35218 /* Oswald-Light.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 		1DF07600242554F800C6B883 /* PopupController */ = {
@@ -320,7 +400,7 @@
 		F73387C724164D7F00DE8F75 /* WFFApp */ = {
 			isa = PBXGroup;
 			children = (
-				F7F27668242624AB00967685 /* Resources */,
+				1DE88B17242636AC00D35218 /* Resources */,
 				1D6BD46C24233D6000184537 /* UIComponents */,
 				F733880024169E5100DE8F75 /* ViewModels */,
 				F73387FF2416717C00DE8F75 /* Models */,
@@ -446,6 +526,9 @@
 				F733880F2416BB2D00DE8F75 /* UIViewController.swift */,
 				1DB0C1512424A73D0073B1FB /* UICollectionView.swift */,
 				F7F2766424260AF300967685 /* UIbutton.swift */,
+				1DE88B54242638A800D35218 /* UILabel.swift */,
+				1DE88B5624263E4B00D35218 /* UIFont.swift */,
+				1DB2EA0F24266368004D99FD /* UIColor.swift */,
 				F7F27666242620C000967685 /* UIBarButton.swift */,
 				F7BC86F2242645CF00A73632 /* UIAlertController.swift */,
 				F7BC86F724264DA100A73632 /* UIImage.swift */,
@@ -679,11 +762,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE88B662426459400D35218 /* Oswald-SemiBold.ttf in Resources */,
 				1DE062FA2421F54600A01FE4 /* SubCategoryListTVC.xib in Resources */,
 				1DE7B7572420BD42009A8634 /* ProductCVC.xib in Resources */,
 				1D6BD46E24233E8B00184537 /* StartFlow.storyboard in Resources */,
+				1DE88B692426459400D35218 /* Oswald-ExtraLight.ttf in Resources */,
 				F73387E724165F0700DE8F75 /* Home.storyboard in Resources */,
 				1DE7B74F2420B49F009A8634 /* FeaturedCVC.xib in Resources */,
+				1DE88B6F24264FF900D35218 /* Montserrat-LightItalic.ttf in Resources */,
 				F7BE380C24209A6E00057592 /* ProductImagesTVC.xib in Resources */,
 				F7419B6B24210388006D2780 /* ProductInfoView.xib in Resources */,
 				F73387D524164D8300DE8F75 /* LaunchScreen.storyboard in Resources */,
@@ -692,6 +778,7 @@
 				F7419B652420E474006D2780 /* ProductCostView.xib in Resources */,
 				948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */,
 				F7419B6E24210597006D2780 /* ReviewHeaderView.xib in Resources */,
+				1DE88B672426459400D35218 /* Oswald-Medium.ttf in Resources */,
 				F73387F3241662C200DE8F75 /* CollectionCVC.xib in Resources */,
 				1DE062F62421EC6E00A01FE4 /* ProductsGridTVC.xib in Resources */,
 				F7F27672242624FA00967685 /* ProductsHeader.xib in Resources */,
@@ -700,13 +787,17 @@
 				9492E309242375150073C806 /* AllReviews.xib in Resources */,
 				F73387F7241662EC00DE8F75 /* HomeCollectionTVC.xib in Resources */,
 				F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */,
+				1DE88B6A2426459400D35218 /* Oswald-Light.ttf in Resources */,
 				1D91FC292420F74E0098BAEE /* HomePopularTVC.xib in Resources */,
+				1DE88B682426459400D35218 /* Oswald-Regular.ttf in Resources */,
 				1DE7B7532420BAA4009A8634 /* PopularCVC.xib in Resources */,
 				1DF07609242558A400C6B883 /* productUnavailable.xib in Resources */,
 				1D91FC212420E5560098BAEE /* HomeFeaturedTVC.xib in Resources */,
 				1DE062FE2421F59900A01FE4 /* ProductSubCategoryCVC.xib in Resources */,
+				1DE88B3B2426371800D35218 /* Montserrat-Light.ttf in Resources */,
 				F73388092416A6CC00DE8F75 /* GoogleService-Info.plist in Resources */,
 				1DB0C14D2424967B0073B1FB /* OnboardingCVC.xib in Resources */,
+				1DE88B652426459400D35218 /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +869,7 @@
 				9492E300242365B40073C806 /* UIButton.swift in Sources */,
 				F7F276612425E9EB00967685 /* Login.swift in Sources */,
 				1D6BD472242340A300184537 /* LMPlaceholderTextView.swift in Sources */,
+				1DB2EA1024266368004D99FD /* UIColor.swift in Sources */,
 				948D153B24233F3200001A7A /* ReviewTableViewCell.swift in Sources */,
 				F7419B672420E480006D2780 /* ProductCostView.swift in Sources */,
 				F73387ED2416604C00DE8F75 /* HomeVC.swift in Sources */,
@@ -789,18 +881,22 @@
 				1DE7B7522420BAA4009A8634 /* PopularCVC.swift in Sources */,
 				F7419B6924210381006D2780 /* ProductInfoView.swift in Sources */,
 				944F9D6A2423C201003BF6B8 /* HeaderView.swift in Sources */,
+				1DE88B59242642AB00D35218 /* WFFLabels.swift in Sources */,
 				F7F276782426254300967685 /* SplashVC.swift in Sources */,
 				1D91FC202420E5560098BAEE /* HomeFeaturedTVC.swift in Sources */,
-				F7BC86FB24267EBE00A73632 /* PINKLABEL.swift in Sources */,
+				1DB2EA122426643D004D99FD /* WFFFlatButton.swift in Sources */,
+				1DE88B55242638A800D35218 /* UILabel.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
 				F7BC86F824264DA100A73632 /* UIImage.swift in Sources */,
 				F7F27674242624FA00967685 /* HomeTableViewHeader.swift in Sources */,
 				F7BE380B24209A6E00057592 /* ProductImagesTVC.swift in Sources */,
 				1DF076042425558F00C6B883 /* PopupVC.swift in Sources */,
 				1D6BD4702423409700184537 /* BaseBlueView.swift in Sources */,
+				1DE88B5724263E4B00D35218 /* UIFont.swift in Sources */,
 				9492E308242375150073C806 /* AllReviews.swift in Sources */,
 				1DF076072425587500C6B883 /* productUnavailable.swift in Sources */,
 				9492E30524236A3F0073C806 /* ViewProtocols.swift in Sources */,
+				1DB2EA16242669F8004D99FD /* WFFBorderedButton.swift in Sources */,
 				F73387FE24166E5000DE8F75 /* HomeScreenDataSource.swift in Sources */,
 				F7F276632425E9FB00967685 /* RegisterVC.swift in Sources */,
 				F7BC86F624264CE300A73632 /* TabBarVC.swift in Sources */,

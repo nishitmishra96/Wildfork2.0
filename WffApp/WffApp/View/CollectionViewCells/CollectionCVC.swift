@@ -17,10 +17,6 @@ class CollectionCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-
-
-        
         categoryImageContainer.layer.shadowOpacity = 0.2
         categoryImageContainer.layer.shadowOffset = CGSize(width: 0, height: 5)
        
