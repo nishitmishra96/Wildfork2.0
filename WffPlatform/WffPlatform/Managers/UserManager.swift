@@ -61,11 +61,13 @@ extension UserManager{
 
 //Methods related to Inventory
 extension UserManager{
-    public func setNewZipCode(zipCode:String,handler:((Bool)->())?){
-        InventoryManager.shared.isProductAvailable(at: zipCode) { (flag) in
+    public func setNewZipCode(zipCode:String,handler:((Bool?,Int)->())?){
+        InventoryManager.shared.isProductAvailable(at: zipCode) { (flag,statusCode)  in
+            if let responseFlag = flag{
             self.userZipCode.accept(zipCode)
-            self.isDeleveryAvailable.accept(flag)
-            handler?(flag)
+            self.isDeleveryAvailable.accept(responseFlag)
+            }
+            handler?(flag, statusCode)
         }
     }
 }

@@ -41,21 +41,32 @@ class ZipCodeVC: UIViewController {
     
     @IBAction func submitPressed(_ sender: UIButton) {
         sender.loadingIndicator(true)
-        UserManager.shared.setNewZipCode(zipCode: self.zipCode.text ?? "" ) { (newValue) in
-             sender.loadingIndicator(false)
-            if newValue{
+        UserManager.shared.setNewZipCode(zipCode: self.zipCode.text ?? "") { (newValue, statusCode) in
+            sender.loadingIndicator(false)
+            switch statusCode{
+            case 200:
+                self.messagLabel.text = "WE DELIVER TO \(self.zipCode.text ?? "YOUR PINCODE")"
                 self.isGoodZipCodeView()
-            }else{
+            case 0:
+                self.showNoInterNetConnectionAlert(withMessage: "Hit retry to find delivery again, after connecting to Internet") {
+                    self.submitPressed(sender)
+                }
+            case 404:
                 let popupVC = Storyboard.start.instanceOf(viewController: PopupVC.self)!
                 popupVC.zipcode = self.zipCode.text
+                self.messagLabel.text = "ENTER ZIP CODE TO GET STARTED"
                 self.present(popupVC, animated: true, completion: nil)
+            default:
+                print("DEFAULT: NEED TO INSPECT CODE")
             }
         }
-   
     }
     
     @IBAction func startShoppingPressed(_ sender: UIButton) {
-        
+        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
+        let navigationController = UINavigationController(rootViewController: vc)
+        AppDelegate.shared().window?.rootViewController = navigationController
+        AppDelegate.shared().window?.makeKeyAndVisible()
     }
     @IBAction func loginRegisterPressed(_ sender: UIButton) {
         let loginVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "Login") as! Login

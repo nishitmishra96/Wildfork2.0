@@ -35,7 +35,8 @@ extension UIView {
 }
 
 
-@IBDesignable public class RoundedView: UIView {
+
+public class RoundedView: UIView {
     override public func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = 0.5 * bounds.size.width

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpr-pP-62K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TTz-Hd-ypD">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -48,8 +48,22 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-16-vvd">
                                 <rect key="frame" x="16" y="441" width="288" height="112"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U0o-40-ygS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-8x-i7i" customClass="WFFButton" customModule="WFFApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="55"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Ckj-h8-PX8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitPressed:" destination="LqI-wc-KmW" eventType="touchUpInside" id="MRp-K1-hL8"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U0o-40-ygS">
+                                        <rect key="frame" x="0.0" y="57" width="288" height="55"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40t-Qu-Y6I">
                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="55"/>
@@ -84,20 +98,6 @@
                                             <constraint firstItem="xrb-pw-t9d" firstAttribute="width" secondItem="40t-Qu-Y6I" secondAttribute="width" id="BgR-Fl-SaL"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-8x-i7i" customClass="WFFButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="57" width="288" height="55"/>
-                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Ckj-h8-PX8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="SUBMIT">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="submitPressed:" destination="LqI-wc-KmW" eventType="touchUpInside" id="MRp-K1-hL8"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puE-gB-WKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478.2608695652175" y="-25.446428571428569"/>
+            <point key="canvasLocation" x="2475" y="-26.408450704225352"/>
         </scene>
         <!--PopupVC-->
         <scene sceneID="0tV-mJ-PYu">
@@ -235,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-gF-uhZ" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="203" width="256" height="35.5"/>
+                                <rect key="frame" x="32" y="203" width="256" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
@@ -243,7 +243,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Zr-vgW" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="270.5" width="256" height="36"/>
+                                <rect key="frame" x="32" y="269" width="256" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
@@ -251,7 +251,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25T-gf-hdZ">
-                                <rect key="frame" x="98.5" y="338.5" width="123" height="30"/>
+                                <rect key="frame" x="98.5" y="335" width="123" height="30"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -260,7 +260,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-Pt-rCz">
-                                <rect key="frame" x="80" y="392.5" width="160" height="55"/>
+                                <rect key="frame" x="80" y="389" width="160" height="55"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="2uV-E8-eWJ"/>
@@ -275,7 +275,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcN-eE-RKK">
-                                <rect key="frame" x="62.5" y="475.5" width="195" height="30"/>
+                                <rect key="frame" x="62.5" y="472" width="195" height="30"/>
                                 <state key="normal" title="Not a member yet ? Register">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2W-HP-X9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2167" y="-25"/>
+            <point key="canvasLocation" x="3163.125" y="-25.35211267605634"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="tHk-yz-62m">
@@ -335,7 +335,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScB-3Y-JPS">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="894.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="886.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-OB-MRB">
                                                 <rect key="frame" x="80" y="40" width="160" height="57"/>
@@ -357,10 +357,10 @@
                                                 <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-gr-U7X">
-                                                <rect key="frame" x="32" y="312.5" width="256" height="306"/>
+                                                <rect key="frame" x="32" y="312.5" width="256" height="298"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIM-aJ-CqP" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                                         <userDefinedRuntimeAttributes>
@@ -368,7 +368,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iED-nt-meu" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="67.5" width="256" height="36"/>
+                                                        <rect key="frame" x="0.0" y="66" width="256" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" textContentType="family-name"/>
                                                         <userDefinedRuntimeAttributes>
@@ -376,7 +376,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7Q-N6-c5W" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="135.5" width="256" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="132" width="256" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                         <userDefinedRuntimeAttributes>
@@ -384,7 +384,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-rp-31M" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="203" width="256" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="198" width="256" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
@@ -392,7 +392,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33Q-fy-YX2" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="270.5" width="256" height="35.5"/>
+                                                        <rect key="frame" x="0.0" y="264" width="256" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <userDefinedRuntimeAttributes>
@@ -402,13 +402,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email to receive free shipping, exclusive deals, promotions, recipes and more!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g91-Tj-5dp">
-                                                <rect key="frame" x="80" y="650.5" width="192" height="67"/>
+                                                <rect key="frame" x="80" y="642.5" width="192" height="67"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-C5-cbB" customClass="WFFCheckBox" customModule="WFFApp" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="674" width="20" height="20"/>
+                                                <rect key="frame" x="48" y="666" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="dbs-qf-Efo"/>
                                                     <constraint firstAttribute="width" secondItem="qRd-C5-cbB" secondAttribute="height" multiplier="1:1" id="vMQ-ds-aqF"/>
@@ -420,7 +420,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVw-l7-bQj">
-                                                <rect key="frame" x="73" y="832.5" width="174" height="30"/>
+                                                <rect key="frame" x="73" y="824.5" width="174" height="30"/>
                                                 <state key="normal" title="Already a member? Login">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -429,7 +429,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60n-YL-jWU">
-                                                <rect key="frame" x="80" y="749.5" width="160" height="55"/>
+                                                <rect key="frame" x="80" y="741.5" width="160" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="G0F-s0-ZEO"/>
@@ -507,18 +507,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nl-i9-8Th" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2881.875" y="-25.35211267605634"/>
+            <point key="canvasLocation" x="3879.375" y="-25.35211267605634"/>
         </scene>
         <!--OnboardingVC-->
         <scene sceneID="bCw-Tf-Acc">
             <objects>
-                <viewController id="TaV-ho-dD5" customClass="OnboardingVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingVC" id="TaV-ho-dD5" customClass="OnboardingVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EMD-fp-fIk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OVy-eG-wC2">
-                                <rect key="frame" x="0.0" y="189" width="320" height="248"/>
+                                <rect key="frame" x="0.0" y="145" width="320" height="292"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LlT-5l-4PI">
                                     <size key="itemSize" width="398" height="472"/>
@@ -528,7 +528,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCVC" id="a3l-qD-cPb">
-                                        <rect key="frame" x="0.0" y="-112" width="398" height="472"/>
+                                        <rect key="frame" x="0.0" y="-90" width="398" height="472"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cvF-yb-2yL">
                                             <rect key="frame" x="0.0" y="0.0" width="398" height="472"/>
@@ -576,7 +576,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-Eu-RHj">
-                                <rect key="frame" x="80" y="104" width="160" height="57"/>
+                                <rect key="frame" x="80" y="60" width="160" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="68n-Re-UWy"/>
                                     <constraint firstAttribute="width" constant="160" id="9ts-p4-78f"/>
@@ -611,25 +611,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BH4-JQ-XJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.81159420289862" y="-25.446428571428569"/>
+            <point key="canvasLocation" x="1773.75" y="-26.408450704225352"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="JP9-cP-83N">
+        <scene sceneID="bV4-Hz-o3J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dpr-pP-62K" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TTz-Hd-ypD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hET-3y-QvF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0pO-5D-faC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TaV-ho-dD5" kind="relationship" relationship="rootViewController" id="h08-dt-CwG"/>
+                        <segue destination="TW1-sZ-U73" kind="relationship" relationship="rootViewController" id="Nln-iF-5Yz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Md-eM-v4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yuR-7i-TVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67" y="-25"/>
+            <point key="canvasLocation" x="-208.125" y="-40.140845070422536"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="S3C-dd-3ki">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="SplashVC" videoGravity="AVLayerVideoGravityResizeAspect" id="TW1-sZ-U73" customClass="SplashVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4ZZ-W9-8E8"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnN-k9-KkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="-74"/>
         </scene>
     </scenes>
     <resources>

@@ -30,5 +30,8 @@ class Login: UIViewController {
     @IBAction func loginPressed(_ sender: Any) {
         
     }
+    private func ViewValidations()->Bool{
+        return true
+    }
 }
 

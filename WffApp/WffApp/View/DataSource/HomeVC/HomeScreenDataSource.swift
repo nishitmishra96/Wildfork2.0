@@ -87,9 +87,6 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
     func getNonCategoryCellCount()->Int{
         return self.homeProducts.count
     }
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell = UITableViewCell()

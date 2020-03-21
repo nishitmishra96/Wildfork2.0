@@ -9,18 +9,14 @@
 import Foundation
 import UIKit
 
-@available(iOS 13.0, *)
 class WFFCheckBox: UIButton {
-
-    let checkedImage = UIImage(systemName: "checkmark.square")! as UIImage
-    let uncheckedImage = UIImage(systemName: "square")! as UIImage
 
     var isChecked: Bool = false {
         didSet {
             if isChecked == true {
-                self.setImage(checkedImage, for: UIControl.State.normal)
+                self.setImage(UIImage(imageLiteralResourceName: "checkboxfilled"), for: UIControl.State.normal)
             } else {
-                self.setImage(uncheckedImage, for: UIControl.State.normal)
+                self.setImage(UIImage(imageLiteralResourceName: "checkboxblank"), for: UIControl.State.normal)
             }
         }
     }

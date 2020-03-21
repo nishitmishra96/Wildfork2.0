@@ -22,16 +22,14 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         floatingButton.layer.cornerRadius = floatingButton.frame.height/2
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         homeScreenDS = HomeScreenDataSource(delegate: self, tableView: tableView)
         tableView.registerCellNib(HomeCollectionTVC.self)
         tableView.registerCellNib(HomeFeaturedTVC.self)
         tableView.registerCellNib(HomePopularTVC.self)
-        tableView.registerTableViewHeaderFooterNib(HomeTableViewHeader.self)
+//        tableView.registerTableViewHeaderFooterNib(HomeTableViewHeader.self)
         tableView.dataSource = homeScreenDS
-        //tableView.tableHeaderView = HomeTableViewHeader.instanceFromNib()
-        
         self.homeScreenDS?.setupDataSource()
+        self.tableView.tableHeaderView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
     }
 }
 

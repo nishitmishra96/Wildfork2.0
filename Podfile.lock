@@ -64,6 +64,7 @@ PODS:
   - ObjectMapper (3.5.1)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - ReachabilitySwift (5.0.0)
   - Result (4.1.0)
   - RxCocoa (5.1.0):
     - RxRelay (~> 5)
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Moya (~> 12.0.1)
   - ObjectMapper (~> 3.5)
+  - ReachabilitySwift
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SDWebImage (~> 5.0)
@@ -110,6 +112,7 @@ SPEC REPOS:
     - ObjectMapper
     - PromisesObjC
     - Protobuf
+    - ReachabilitySwift
     - Result
     - RxCocoa
     - RxRelay
@@ -148,6 +151,7 @@ SPEC CHECKSUMS:
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
   RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
@@ -156,6 +160,6 @@ SPEC CHECKSUMS:
   SWSegmentedControl: 808ef4b80d0168799a60d8a2d322cfde7f45f46c
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 5a170f0fae3c11c6b8279a792da881919221f4af
+PODFILE CHECKSUM: 1726a1e8a0b8bf559d49ec1e4471cd271c1b699c
 
 COCOAPODS: 1.9.0.beta.3

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-@IBDesignable class RatingBar:UIView{
+class RatingBar:UIView{
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -19,7 +19,7 @@ import UIKit
     }
 }
 
-@IBDesignable class SetStar:UIView{
+class SetStar:UIView{
     private var stackView = UIStackView()
     var label = UILabel()
     // TODO: Add assets when available

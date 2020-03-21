@@ -18,18 +18,15 @@ class InventoryManager: NSObject {
         super.init()
         
     }
-    func isProductAvailable(at ZipCode:String,handler:@escaping ((Bool)->()) ){
-//        if userZipCode != nil && isDeleveryAvailable != nil{
-//            handler(isDeleveryAvailable ?? false)
-//        }else{
+    func isProductAvailable(at ZipCode:String,handler:@escaping ((Bool?,Int)->()) ){
+
         self.getAvailability(zipcode: ZipCode) { (avalability, statusCode) in
             self.userZipCode = ZipCode
             self.isDeleveryAvailable = avalability
-            handler(avalability)
+            handler(avalability, statusCode)
         }
-//        }
     }
-    private func getAvailability(zipcode:String,handler:@escaping ((Bool,Int)->())){
+    private func getAvailability(zipcode:String,handler:@escaping ((Bool?,Int)->())){
         provider.request(.checkAvailability(zipCode: zipcode)) { (response) in
             switch response{
             case .success(let result):
@@ -39,13 +36,13 @@ class InventoryManager: NSObject {
                     if (responseDic?["store"] as? [String:Any]) != nil{
                         handler(true , result.statusCode)
                     }else{
-                        handler(false,result.statusCode)
+                        handler(nil,result.statusCode)
                     }
                 }catch{
-                    handler(false,result.statusCode)
+                    handler(nil,result.statusCode)
                 }
             case .failure(let error):
-                handler(false,error.response?.statusCode ?? 0)
+                handler(nil,error.response?.statusCode ?? 0)
                 print("failure")
             }
         }

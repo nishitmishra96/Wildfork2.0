@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class ButtonWithImage: UIButton {
+class ButtonWithImage: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()

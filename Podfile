@@ -11,6 +11,8 @@ def wffAppPods
   pod 'SWSegmentedControl'
   pod 'SDWebImage', '~> 5.0'
   pod 'IQKeyboardManagerSwift'
+  pod 'ReachabilitySwift'
+
 #  pod "ExpandableLabel"
 end
 def commonPods

@@ -25,38 +25,7 @@ class RegisterVC: UIViewController {
         
     }
     @IBAction func signupPressed(_ sender: Any) {
-        if firstName.text == ""{
-            errorAlert(msg: "Enter your First Name")
-            
-        }
-        else if !firstName.isValidName()
-        {
-            errorAlert(msg: "Invalid first name")
-        }
-        else if lastName.text == ""{
-            errorAlert(msg: "Enter your Last name")
-        }
-         else if !lastName.isValidLastName()
-         {
-             errorAlert(msg: "Invalid last name")
-         }
-        else if email.text == "" {
-            errorAlert(msg: "Enter your email")
-        }
-        else if !email.text!.isValidEmail()
-            {
-                errorAlert(msg: "Invalid Email")
-            }
-        else if password.text == ""{
-            errorAlert(msg: "Enter password")
-        }
-        else if !password.isValidPassword()
-            {
-                errorAlert(msg: "Choose some strong password")
-            }
-        else{
-            
-        }
+        
     }
     
     @IBAction func loginPressed(_ sender: Any) {
