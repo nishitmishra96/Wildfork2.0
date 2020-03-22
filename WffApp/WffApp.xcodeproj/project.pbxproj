@@ -93,7 +93,6 @@
 		F7BC86F3242645CF00A73632 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F2242645CF00A73632 /* UIAlertController.swift */; };
 		F7BC86F624264CE300A73632 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F524264CE300A73632 /* TabBarVC.swift */; };
 		F7BC86F824264DA100A73632 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F724264DA100A73632 /* UIImage.swift */; };
-		F7BC86FB24267EBE00A73632 /* PINKLABEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86FA24267EBE00A73632 /* PINKLABEL.swift */; };
 		F7BE3807242099C200057592 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BE3806242099C200057592 /* Product.storyboard */; };
 		F7BE380B24209A6E00057592 /* ProductImagesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE380924209A6E00057592 /* ProductImagesTVC.swift */; };
 		F7BE380C24209A6E00057592 /* ProductImagesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BE380A24209A6E00057592 /* ProductImagesTVC.xib */; };
@@ -105,7 +104,6 @@
 		F7F276632425E9FB00967685 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F276622425E9FB00967685 /* RegisterVC.swift */; };
 		F7F2766524260AF300967685 /* UIbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2766424260AF300967685 /* UIbutton.swift */; };
 		F7F27667242620C000967685 /* UIBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F27666242620C000967685 /* UIBarButton.swift */; };
-		F7F2766B242624BB00967685 /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766A242624BB00967685 /* splashvideo.mov */; };
 		F7F27671242624FA00967685 /* ProductsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2766D242624F800967685 /* ProductsHeader.swift */; };
 		F7F27672242624FA00967685 /* ProductsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766E242624F900967685 /* ProductsHeader.xib */; };
 		F7F27673242624FA00967685 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766F242624F900967685 /* HomeTableViewHeader.xib */; };
@@ -230,7 +228,6 @@
 		F7F276622425E9FB00967685 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = WFFApp/RegisterVC.swift; sourceTree = SOURCE_ROOT; };
 		F7F2766424260AF300967685 /* UIbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbutton.swift; sourceTree = "<group>"; };
 		F7F27666242620C000967685 /* UIBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButton.swift; sourceTree = "<group>"; };
-		F7F2766A242624BB00967685 /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
 		F7F2766D242624F800967685 /* ProductsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsHeader.swift; path = WFFApp/View/TableViewHeaders/ProductsHeader.swift; sourceTree = SOURCE_ROOT; };
 		F7F2766E242624F900967685 /* ProductsHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductsHeader.xib; path = WFFApp/View/TableViewHeaders/ProductsHeader.xib; sourceTree = SOURCE_ROOT; };
 		F7F2766F242624F900967685 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeTableViewHeader.xib; path = WFFApp/View/TableViewHeaders/HomeTableViewHeader.xib; sourceTree = SOURCE_ROOT; };
@@ -283,6 +280,13 @@
 				1DB0C1552424D12C0073B1FB /* ZipCodeVC.swift */,
 			);
 			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		1DB2EA1A242690F6004D99FD /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		1DE88B17242636AC00D35218 /* Resources */ = {
@@ -386,6 +390,7 @@
 				F73387C624164D7F00DE8F75 /* Products */,
 				FAD6D6990A47B6914F1A45F2 /* Pods */,
 				3983C8AE34CA183DA24B9E90 /* Frameworks */,
+				1DB2EA1A242690F6004D99FD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -656,22 +661,6 @@
 			path = ProductScreen;
 			sourceTree = "<group>";
 		};
-		F7F27668242624AB00967685 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F7F27669242624B300967685 /* Video */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		F7F27669242624B300967685 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				F7F2766A242624BB00967685 /* splashvideo.mov */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
 		F7F2766C242624CF00967685 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -783,7 +772,6 @@
 				1DE062F62421EC6E00A01FE4 /* ProductsGridTVC.xib in Resources */,
 				F7F27672242624FA00967685 /* ProductsHeader.xib in Resources */,
 				F7F27673242624FA00967685 /* HomeTableViewHeader.xib in Resources */,
-				F7F2766B242624BB00967685 /* splashvideo.mov in Resources */,
 				9492E309242375150073C806 /* AllReviews.xib in Resources */,
 				F73387F7241662EC00DE8F75 /* HomeCollectionTVC.xib in Resources */,
 				F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */,

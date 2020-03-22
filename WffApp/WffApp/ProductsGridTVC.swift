@@ -30,7 +30,7 @@ var delegate:SelectionDelegates?
 }
 extension ProductsGridTVC:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width/2 - 28, height:350)
+        return CGSize(width: UIScreen.main.bounds.width/2 - 28, height:324)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return  UIEdgeInsets(top: 12, left: 16, bottom: 24, right: 16);

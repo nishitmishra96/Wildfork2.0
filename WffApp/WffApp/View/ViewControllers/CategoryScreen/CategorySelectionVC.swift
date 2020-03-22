@@ -34,6 +34,8 @@ class CategorySelectionVC: UIViewController{
         tableView.delegate = self
         let headerNib = UINib.init(nibName: "ProductsHeader", bundle: Bundle.main)
         tableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "ProductsHeader")
+//        tableView.sectionHeaderHeight = 40
+//        tableView.rowHeight = UIScreen.main.bounds.height - 100
     }
     override func popViewController() {
         selectedCategory = nil
@@ -62,9 +64,9 @@ class CategorySelectionVC: UIViewController{
 //}
 extension CategorySelectionVC : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return 1
     }
-    
+
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //           return 2
 //       }
@@ -81,16 +83,15 @@ extension CategorySelectionVC : UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductsGridTVC", for: indexPath) as! ProductsGridTVC
             return cell
        }
-
-
-       }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-           return UITableView.automaticDimension
-       }
-       func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-           return 40
-       }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return  UIScreen.main.bounds.height - 100
-        
+     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+               return UITableView.automaticDimension
+           }
+           func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+               return 40
+           }
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return  UIScreen.main.bounds.height - 100
+            
+    }
 }
+   

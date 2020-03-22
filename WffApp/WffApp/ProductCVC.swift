@@ -10,6 +10,7 @@ import UIKit
 
 class ProductCVC: UICollectionViewCell {
 
+    @IBOutlet weak var changeQuantityStack: UIStackView!
     @IBOutlet var changeZipButton: UIButton!
     @IBOutlet var addToBasketButton: UIButton!
     @IBOutlet var updateQuantitySection: UIStackView!
@@ -33,6 +34,8 @@ class ProductCVC: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         showQuantitySection()
+        changeQuantityStack.layer.borderWidth = 2
+        changeQuantityStack.layer.borderColor = UIColor.black.cgColor
     }
 
     @IBAction func addToBasketPressed(_ sender: Any) {

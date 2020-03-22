@@ -31,10 +31,10 @@ class SplashVC: AVPlayerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showsPlaybackControls = false
-        let videoURL = URL(fileReferenceLiteralResourceName: "splashvideo.mov")
-        let player = AVPlayer(url: videoURL)
-        self.player = player
-        self.player?.play()
+        //let videoURL = URL(fileReferenceLiteralResourceName: "splashvideo.mov")
+       // let player = AVPlayer(url: videoURL)
+        //self.player = player
+        ///self.player?.play()
         
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem, queue: .main) { [weak self] _ in
             self?.didSplashEnd()
