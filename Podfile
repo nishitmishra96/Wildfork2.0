@@ -4,6 +4,7 @@ project 'WFFApp/WFFApp.xcodeproj'
 project 'WffPlatform/WffPlatform.xcodeproj'
 
 abstract_target 'WFF' do
+  
 def wffAppPods
   pod 'CZTableView',:git => "https://gitlab.craterzone.com/administartor/CZTableView-1.git"
   pod 'Firebase/RemoteConfig'
@@ -13,6 +14,13 @@ def wffAppPods
   pod 'IQKeyboardManagerSwift'
   pod 'ReachabilitySwift'
 end
+
+def platformPods
+  
+#  pod 'RealmSwift'
+  
+end
+
 def commonPods
   pod 'Moya','~> 12.0.1'
   pod 'ObjectMapper', '~> 3.5'
@@ -33,6 +41,7 @@ end
   target 'WffPlatform' do
     use_frameworks!
     project 'WffPlatform/WffPlatform.xcodeproj'
+    platformPods
     commonPods
   end
 end

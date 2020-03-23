@@ -71,6 +71,8 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
     func getCategoryTableViewCell(tableView:UITableView,indexPath:IndexPath)->UITableViewCell{
         let cell =  tableView.dequeueReusableCell(withIdentifier: "HomeCollectionTVC", for: indexPath) as! HomeCollectionTVC
         cell.delegate = self
+        cell.layoutDelegate = self
+        cell.indexPath = indexPath
         cell.setProductCategories(productcategory: self.productcategories)
         return cell
     }
@@ -93,6 +95,7 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
         switch SectionsOnHomeScreen(rawValue: indexPath.section) {
         case .category:
             cell = self.getCategoryTableViewCell(tableView: tableView, indexPath: indexPath)
+            
         case .nonCategory:
             if indexPath.row == 0{
                 cell = self.getFeaturedTableViewCell(tableView: tableView, indexPath: indexPath)
@@ -133,6 +136,14 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
         self.delegate.didSelectProduct(product: product)
     }
     
+}
+
+extension HomeScreenDataSource:LayoutDelegates{
+    func changeLayout(indexpath:IndexPath){
+        tableView?.beginUpdates()
+        tableView?.cellForRow(at: indexpath)?.layoutIfNeeded()
+        tableView?.endUpdates()
+    }
 }
 //class CategoryDataSource:HomeScreenDataSource
 //{

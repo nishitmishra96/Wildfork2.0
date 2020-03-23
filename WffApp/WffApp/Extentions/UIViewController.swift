@@ -19,6 +19,15 @@ public extension UIViewController {
             }
         }
     }
+    
+//    func showSlidableSearchBar(viewController:UIViewController){
+//        let controller = UISearchController(searchResultsController: viewController)
+//        controller.obscuresBackgroundDuringPresentation = false
+//        controller.searchResultsUpdater = viewController // for delegate
+//        controller.searchBar.placeholder = "Search Products"
+//        definesPresentationContext = true
+//        navigationItem.searchController = controller
+//    }
   @objc func setTittle(string:String){
        self.navigationItem.titleView = nil;
        self.title = string
