@@ -28,6 +28,9 @@ class OnboardingVC: UIViewController {
         super.viewDidLoad()
         OnboardingCV.dataSource = self
         OnboardingCV.delegate = self
+        OnboardingCV.showsVerticalScrollIndicator = false
+        OnboardingCV.showsHorizontalScrollIndicator = false
+        OnboardingCV.isPagingEnabled = true;
         OnboardingCV.registerCollectionViewCellNib(OnboardingCVC.self)
         OnboardingCV.isPagingEnabled = true
     }
@@ -49,18 +52,24 @@ class OnboardingVC: UIViewController {
 }
 extension OnboardingVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return titleList.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: collectionView.contentSize.height)
+        return CGSize.init(width: collectionView.frame.width, height: collectionView.frame.height)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCVC", for: indexPath) as! OnboardingCVC
-        cell.setOnboardingView(image: imageList[indexPath.row], title: titleList[indexPath.row], subtitle: subtitleList[indexPath.row])
-        cell.width.constant = UIScreen.main.bounds.width
+//        cell.setOnboardingView(image: imageList[indexPath.row], title: titleList[indexPath.row], subtitle: subtitleList[indexPath.row])
+        cell.onboardingImage.image = imageList[indexPath.row]
+        cell.onboardingTitle.text = titleList[indexPath.row]
+        cell.onboardingSubtitle.text = subtitleList[indexPath.row]
         return cell
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

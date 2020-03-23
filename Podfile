@@ -20,7 +20,7 @@ end
 
 def platformPods
   
-#  pod 'RealmSwift'
+#  pod 'RealmSwift' ,'~> 3.21.0'
   
 end
 
@@ -29,7 +29,7 @@ def commonPods
   pod 'ObjectMapper', '~> 3.5'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  
+#  pod 'RealmSwift' ,'~> 3.21.0'
 end
 
 #app target

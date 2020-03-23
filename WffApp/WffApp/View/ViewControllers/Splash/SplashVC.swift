@@ -30,11 +30,12 @@ class SplashVC: AVPlayerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         self.showsPlaybackControls = false
-        //let videoURL = URL(fileReferenceLiteralResourceName: "splashvideo.mov")
-       // let player = AVPlayer(url: videoURL)
-        //self.player = player
-        ///self.player?.play()
+        let videoURL = URL(fileReferenceLiteralResourceName: "splashvideo.mov")
+        let player = AVPlayer(url: videoURL)
+        self.player = player
+        self.player?.play()
         
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem, queue: .main) { [weak self] _ in
             self?.didSplashEnd()
@@ -42,11 +43,13 @@ class SplashVC: AVPlayerViewController {
         // Do any additional setup after loading the view.
     }
     private func didSplashEnd(){
-//        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
-//               let navigationController = UINavigationController(rootViewController: vc)
-//               AppDelegate.shared().window?.rootViewController = navigationController
-//               AppDelegate.shared().window?.makeKeyAndVisible()
-//        return
+        self.pushViewController(Storyboard.start.instanceOf(viewController: OnboardingVC.self)!)
+        return
+        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
+               let navigationController = UINavigationController(rootViewController: vc)
+               AppDelegate.shared().window?.rootViewController = navigationController
+               AppDelegate.shared().window?.makeKeyAndVisible()
+        return
         self.pushViewController(Storyboard.start.instanceOf(viewController: Login.self)!)
     }
 }

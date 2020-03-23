@@ -10,6 +10,8 @@ import UIKit
 
 class TabBarVC: UITabBarController {
     let home = Storyboard.home.instanceOf(viewController: HomeVC.self)!
+    let membershipVC = Storyboard.home.instanceOf(viewController: MembershipVC.self)!
+    let accountVC = Storyboard.start.instanceOf(viewController: Login.self)!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,7 @@ class TabBarVC: UITabBarController {
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.setTittleImage()
         self.setupStyleOfTabbar()
-        self.viewControllers = [home]
+        self.viewControllers = [home,membershipVC,accountVC]
     }
     private func setupStyleOfTabbar(){
         self.showButtonOnSearchBar(target: nil, action: nil)
@@ -26,6 +28,16 @@ class TabBarVC: UITabBarController {
         home.tabBarItem.image = UIImage(imageLiteralResourceName: "shop").withRenderingMode(.alwaysOriginal)
         home.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: "shop").withRenderingMode(.alwaysTemplate).setImageColor(color: .white)
         home.tabBarItem.image = home.tabBarItem.image?.setImageColor(color: .gray)
+        
+        membershipVC.tabBarItem = UITabBarItem(title: "Membership", image: UIImage(imageLiteralResourceName: "fav") , selectedImage: UIImage(imageLiteralResourceName: "fav"))
+        membershipVC.tabBarItem.image = UIImage(imageLiteralResourceName: "fav").withRenderingMode(.alwaysOriginal)
+        membershipVC.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: "fav").withRenderingMode(.alwaysTemplate).setImageColor(color: .white)
+        membershipVC.tabBarItem.image = membershipVC.tabBarItem.image?.setImageColor(color: .gray)
+        
+        accountVC.tabBarItem = UITabBarItem(title: "Membership", image: UIImage(imageLiteralResourceName: "account") , selectedImage: UIImage(imageLiteralResourceName: "account"))
+        accountVC.tabBarItem.image = UIImage(imageLiteralResourceName: "account").withRenderingMode(.alwaysOriginal)
+        accountVC.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: "account").withRenderingMode(.alwaysTemplate).setImageColor(color: .white)
+        accountVC.tabBarItem.image = accountVC.tabBarItem.image?.setImageColor(color: .gray)
         
     }
 

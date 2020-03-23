@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LqI-wc-KmW">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TTz-Hd-ypD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,31 +18,31 @@
             <objects>
                 <viewController storyboardIdentifier="ZipCodeVC" id="LqI-wc-KmW" customClass="ZipCodeVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ah6-Gu-6cj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2V6-OQ-DuO">
-                                <rect key="frame" x="80" y="60" width="160" height="47"/>
+                                <rect key="frame" x="107.5" y="60" width="160" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="LP7-0F-TLn"/>
                                     <constraint firstAttribute="width" constant="160" id="YWr-e1-xaK"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingIllustrations4" translatesAutoresizingMaskIntoConstraints="NO" id="owu-kI-7XP">
-                                <rect key="frame" x="83" y="147" width="154" height="154"/>
+                                <rect key="frame" x="110.5" y="147" width="154" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="owu-kI-7XP" secondAttribute="height" multiplier="1:1" id="2JT-Dh-vDE"/>
                                     <constraint firstAttribute="width" constant="154" id="ti6-ym-xJm"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER ZIP CODE TO GET STARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18k-Ys-jRs" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="35" y="302" width="250" height="21.5"/>
+                                <rect key="frame" x="35" y="302" width="305" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-i8-zK4" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="40" y="359.5" width="240" height="35.5"/>
+                                <rect key="frame" x="40" y="359.5" width="295" height="35.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                                 <userDefinedRuntimeAttributes>
@@ -51,10 +50,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-16-vvd">
-                                <rect key="frame" x="16" y="441" width="288" height="112"/>
+                                <rect key="frame" x="16" y="540" width="343" height="112"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-8x-i7i" customClass="WFFButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="Ckj-h8-PX8"/>
@@ -68,10 +67,10 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U0o-40-ygS">
-                                        <rect key="frame" x="0.0" y="57" width="288" height="55"/>
+                                        <rect key="frame" x="0.0" y="57" width="343" height="55"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40t-Qu-Y6I" customClass="WFFFlatButton" customModule="WFFApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="136" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="u89-XJ-miS"/>
@@ -85,7 +84,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrb-pw-t9d" customClass="WFFFlatButton" customModule="WFFApp" customModuleProvider="target">
-                                                <rect key="frame" x="152" y="0.0" width="136" height="55"/>
+                                                <rect key="frame" x="179.5" y="0.0" width="163.5" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="NY9-of-mU0"/>
@@ -142,26 +141,26 @@
             <objects>
                 <viewController storyboardIdentifier="PopupVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="0C1-QV-0WZ" customClass="PopupVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89p-lX-VSz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7co-fQ-GzY">
-                                <rect key="frame" x="16" y="106" width="288" height="356.5"/>
+                                <rect key="frame" x="16" y="176" width="343" height="315.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE DON'T DELIVERED TO 33210" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9H-Wg-O1W" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="12" y="32" width="264" height="41"/>
+                                        <rect key="frame" x="12" y="32" width="319" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We only serve selected areas right now, but are working hard to expand our coverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-lU-ObT" customClass="WFFSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="44" y="89" width="200" height="81.5"/>
+                                        <rect key="frame" x="44" y="68.5" width="255" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMN-vI-FQe" customClass="WFFBorderedButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="63.5" y="269.5" width="161" height="55"/>
+                                        <rect key="frame" x="54.5" y="228.5" width="234" height="55"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="gPk-hJ-Ure"/>
@@ -176,7 +175,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-uN-Vew" customClass="WFFFlatButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="27" y="202.5" width="234" height="55"/>
+                                        <rect key="frame" x="54.5" y="161.5" width="234" height="55"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="ZLT-UM-7tW"/>
@@ -193,6 +192,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="P2a-uN-Vew" firstAttribute="width" secondItem="bMN-vI-FQe" secondAttribute="width" id="5N0-3e-hIO"/>
                                     <constraint firstItem="TQO-lU-ObT" firstAttribute="top" secondItem="S9H-Wg-O1W" secondAttribute="bottom" constant="16" id="ID4-hx-PXL"/>
                                     <constraint firstAttribute="bottom" secondItem="bMN-vI-FQe" secondAttribute="bottom" constant="32" id="Joz-QU-sEe"/>
                                     <constraint firstItem="bMN-vI-FQe" firstAttribute="top" secondItem="P2a-uN-Vew" secondAttribute="bottom" constant="12" id="KZp-gs-DMB"/>
@@ -230,17 +230,17 @@
             <objects>
                 <viewController storyboardIdentifier="Login" id="cQr-Th-5jf" customClass="Login" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RmE-x9-uaA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8d-SK-aea" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="127.5" y="145" width="65" height="26"/>
+                                <rect key="frame" x="155" y="145" width="65" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-gF-uhZ" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="203" width="256" height="35.5"/>
+                                <rect key="frame" x="32" y="203" width="311" height="35.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
@@ -248,7 +248,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Zr-vgW" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="270.5" width="256" height="36"/>
+                                <rect key="frame" x="32" y="270.5" width="311" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
@@ -256,7 +256,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25T-gf-hdZ">
-                                <rect key="frame" x="98.5" y="338.5" width="123" height="30"/>
+                                <rect key="frame" x="126" y="338.5" width="123" height="30"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -265,7 +265,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-Pt-rCz" customClass="WFFFlatButton" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="80" y="392.5" width="160" height="55"/>
+                                <rect key="frame" x="107.5" y="392.5" width="160" height="55"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="2uV-E8-eWJ"/>
@@ -280,7 +280,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcN-eE-RKK">
-                                <rect key="frame" x="62.5" y="475.5" width="195" height="30"/>
+                                <rect key="frame" x="90" y="475.5" width="195" height="30"/>
                                 <state key="normal" title="Not a member yet ? Register">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -289,7 +289,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="A5S-xw-NaF">
-                                <rect key="frame" x="80" y="40" width="160" height="57"/>
+                                <rect key="frame" x="107.5" y="40" width="160" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="C2Z-Cr-nUq"/>
                                     <constraint firstAttribute="height" constant="57" id="mzE-6Z-Cgj"/>
@@ -519,40 +519,30 @@
             <objects>
                 <viewController storyboardIdentifier="OnboardingVC" id="TaV-ho-dD5" customClass="OnboardingVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EMD-fp-fIk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OVy-eG-wC2">
-                                <rect key="frame" x="0.0" y="145" width="320" height="292"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OVy-eG-wC2">
+                                <rect key="frame" x="0.0" y="102" width="375" height="434"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LlT-5l-4PI">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LlT-5l-4PI">
                                     <size key="itemSize" width="398" height="472"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCVC" id="a3l-qD-cPb">
-                                        <rect key="frame" x="0.0" y="-90" width="398" height="472"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cvF-yb-2yL">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="472"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="398" height="472"/>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ur5-op-6gb">
-                                <rect key="frame" x="140.5" y="449" width="39" height="37"/>
+                                <rect key="frame" x="168" y="548" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="okf-Ow-Z0h">
-                                <rect key="frame" x="16" y="498" width="288" height="55"/>
+                                <rect key="frame" x="16" y="597" width="343" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-RV-WeW" customClass="WFFBorderedButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="gVn-6G-D2U"/>
                                         </constraints>
@@ -565,7 +555,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zse-VA-HPs" customClass="WFFFlatButton" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="152" y="0.0" width="136" height="55"/>
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="55"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="es9-Om-JNf"/>
@@ -581,7 +571,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-Eu-RHj">
-                                <rect key="frame" x="80" y="60" width="160" height="57"/>
+                                <rect key="frame" x="107.5" y="30" width="160" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="68n-Re-UWy"/>
                                     <constraint firstAttribute="width" constant="160" id="9ts-p4-78f"/>
@@ -591,7 +581,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="OVy-eG-wC2" firstAttribute="leading" secondItem="7Ee-Ll-nFd" secondAttribute="leading" id="Cdb-cC-OYR"/>
-                            <constraint firstItem="Yji-Eu-RHj" firstAttribute="top" secondItem="7Ee-Ll-nFd" secondAttribute="top" constant="60" id="Eu1-KC-4AG"/>
+                            <constraint firstItem="Yji-Eu-RHj" firstAttribute="top" secondItem="7Ee-Ll-nFd" secondAttribute="top" constant="30" id="Eu1-KC-4AG"/>
                             <constraint firstItem="7Ee-Ll-nFd" firstAttribute="trailing" secondItem="OVy-eG-wC2" secondAttribute="trailing" id="Pdw-6F-NyD"/>
                             <constraint firstItem="7Ee-Ll-nFd" firstAttribute="trailing" secondItem="okf-Ow-Z0h" secondAttribute="trailing" constant="16" id="QM8-bR-32I"/>
                             <constraint firstItem="Yji-Eu-RHj" firstAttribute="centerX" secondItem="EMD-fp-fIk" secondAttribute="centerX" id="biK-CG-9Au"/>
@@ -602,7 +592,7 @@
                             <constraint firstItem="okf-Ow-Z0h" firstAttribute="leading" secondItem="7Ee-Ll-nFd" secondAttribute="leading" constant="16" id="pIs-nP-vHh"/>
                             <constraint firstItem="okf-Ow-Z0h" firstAttribute="centerX" secondItem="EMD-fp-fIk" secondAttribute="centerX" id="s9k-WP-G2Z"/>
                             <constraint firstItem="ur5-op-6gb" firstAttribute="top" secondItem="OVy-eG-wC2" secondAttribute="bottom" constant="12" id="u0K-EO-ql9"/>
-                            <constraint firstItem="OVy-eG-wC2" firstAttribute="top" secondItem="Yji-Eu-RHj" secondAttribute="bottom" constant="28" id="uFa-wa-2bC"/>
+                            <constraint firstItem="OVy-eG-wC2" firstAttribute="top" secondItem="Yji-Eu-RHj" secondAttribute="bottom" constant="15" id="uFa-wa-2bC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Ee-Ll-nFd"/>
                     </view>
@@ -648,24 +638,24 @@
         <!--Forgot PasswordVC-->
         <scene sceneID="0HA-b8-tF5">
             <objects>
-                <viewController storyboardIdentifier="ForgotPasswordVC" id="oRv-cV-Ikf" customClass="ForgotPasswordVC" customModule="WildFork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordVC" id="oRv-cV-Ikf" customClass="ForgotPasswordVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NfZ-oU-aMS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-iu-iLw">
-                                <rect key="frame" x="10" y="184" width="300" height="200"/>
+                                <rect key="frame" x="10" y="233.5" width="355" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6R-SM-41e">
-                                        <rect key="frame" x="-14" y="16" width="328" height="28"/>
+                                        <rect key="frame" x="13.5" y="16" width="328" height="28"/>
                                         <string key="text">RECOVER YOUR PASSWORD
 </string>
                                         <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEJ-CS-Aws" customClass="LMUnderLinedTextField" customModule="WildFork" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="60" width="280" height="48"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEJ-CS-Aws" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="60" width="335" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -673,10 +663,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-fa-jqX">
-                                        <rect key="frame" x="10" y="124" width="280" height="60"/>
+                                        <rect key="frame" x="10" y="124" width="335" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a7-kN-nct">
-                                                <rect key="frame" x="0.0" y="0.0" width="132" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="60"/>
                                                 <color key="backgroundColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="17"/>
                                                 <state key="normal" title="SUBMIT">
@@ -687,7 +677,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnk-kY-U9N">
-                                                <rect key="frame" x="148" y="0.0" width="132" height="60"/>
+                                                <rect key="frame" x="175.5" y="0.0" width="159.5" height="60"/>
                                                 <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="17"/>
                                                 <state key="normal" title="CANCEL">
                                                     <color key="titleColor" red="0.80392156859999997" green="0.19215686269999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -743,6 +733,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuF-q1-Utk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4860" y="-26"/>
+        </scene>
+        <!--AccountVC-->
+        <scene sceneID="wNA-Y0-pHe">
+            <objects>
+                <viewController id="Xnb-qV-Iy1" customClass="AccountVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4h0-4x-XMy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lx3-pk-97P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWz-0n-mV7">
+                                        <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2z-6c-cc0">
+                                                <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="i2z-6c-cc0" firstAttribute="top" secondItem="uWz-0n-mV7" secondAttribute="top" id="5cc-PI-Q47"/>
+                                            <constraint firstAttribute="trailing" secondItem="i2z-6c-cc0" secondAttribute="trailing" id="HnW-1v-mQ3"/>
+                                            <constraint firstAttribute="bottom" secondItem="i2z-6c-cc0" secondAttribute="bottom" id="Odn-Kd-Hvt"/>
+                                            <constraint firstItem="i2z-6c-cc0" firstAttribute="leading" secondItem="uWz-0n-mV7" secondAttribute="leading" id="UK8-py-DIn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uWz-0n-mV7" firstAttribute="height" secondItem="lx3-pk-97P" secondAttribute="height" id="HmP-Q1-scr"/>
+                                    <constraint firstItem="uWz-0n-mV7" firstAttribute="top" secondItem="lx3-pk-97P" secondAttribute="top" id="NTL-1z-tap"/>
+                                    <constraint firstItem="uWz-0n-mV7" firstAttribute="leading" secondItem="lx3-pk-97P" secondAttribute="leading" id="hmU-7v-6TJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uWz-0n-mV7" secondAttribute="trailing" id="mX7-d8-9qh"/>
+                                    <constraint firstAttribute="bottom" secondItem="uWz-0n-mV7" secondAttribute="bottom" id="tCX-zb-QWk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cBd-2I-i7b"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="e1J-vh-a79"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JNn-M2-HdE" firstAttribute="bottom" secondItem="lx3-pk-97P" secondAttribute="bottom" id="AAu-qP-RAJ"/>
+                            <constraint firstItem="uWz-0n-mV7" firstAttribute="width" secondItem="4h0-4x-XMy" secondAttribute="width" multiplier="2" id="Lhi-Mo-FFn"/>
+                            <constraint firstItem="JNn-M2-HdE" firstAttribute="trailing" secondItem="lx3-pk-97P" secondAttribute="trailing" id="Rvb-UA-jhP"/>
+                            <constraint firstItem="lx3-pk-97P" firstAttribute="top" secondItem="JNn-M2-HdE" secondAttribute="top" id="kVg-jq-BR6"/>
+                            <constraint firstItem="lx3-pk-97P" firstAttribute="leading" secondItem="JNn-M2-HdE" secondAttribute="leading" id="oTd-Xb-sou"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JNn-M2-HdE"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="uWz-0n-mV7" id="ayB-vT-I3I"/>
+                        <outlet property="scrollView" destination="lx3-pk-97P" id="MvE-1M-p8A"/>
+                        <outlet property="stackView" destination="i2z-6c-cc0" id="E4v-tx-hWW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMN-MZ-qEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5960.625" y="-33.802816901408448"/>
         </scene>
     </scenes>
     <resources>

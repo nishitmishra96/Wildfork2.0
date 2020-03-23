@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,41 +11,37 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCVC" id="gTV-IL-0wX" customClass="OnboardingCVC" customModule="WFFApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="291" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="376" height="403"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="291" height="400"/>
+                <rect key="frame" x="0.0" y="0.0" width="376" height="403"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-LW-0cb">
-                        <rect key="frame" x="0.0" y="0.0" width="291" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="403"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingIllustrations1" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-5B-kMo">
-                                <rect key="frame" x="68.5" y="12" width="154" height="154"/>
+                                <rect key="frame" x="111" y="12" width="154" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ehr-5B-kMo" secondAttribute="height" multiplier="1:1" id="BNR-YJ-24z"/>
                                     <constraint firstAttribute="width" constant="154" id="uBh-lp-yob"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP FASTER THAN EVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-mU-0wC" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="27" y="190" width="237" height="21.5"/>
+                                <rect key="frame" x="27" y="190" width="322" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-3b-dOF" customClass="WFFSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="13" y="223.5" width="265" height="95.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-3b-dOF" customClass="WFFSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
+                                <rect key="frame" x="13" y="223.5" width="350" height="76.5"/>
                                 <string key="text">Welcome to Wild fork Foods! We are now making it easier than ever to shop. Enjoy a personalized experience and reorder your favorites fast</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-Cc-7Fa">
-                                <rect key="frame" x="86" y="349" width="119" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="119" id="FbC-qK-1TD"/>
-                                    <constraint firstAttribute="height" constant="31" id="OQf-vX-gof"/>
-                                </constraints>
+                                <rect key="frame" x="134" y="351" width="108" height="32"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,7 +56,6 @@
                             <constraint firstItem="B0L-mU-0wC" firstAttribute="leading" secondItem="CbX-LW-0cb" secondAttribute="leading" constant="27" id="UBd-Zb-s7M"/>
                             <constraint firstItem="Ehr-5B-kMo" firstAttribute="centerX" secondItem="CbX-LW-0cb" secondAttribute="centerX" id="aXQ-Ig-yIt"/>
                             <constraint firstItem="Ehr-5B-kMo" firstAttribute="top" secondItem="CbX-LW-0cb" secondAttribute="top" constant="12" id="ffQ-X7-5Re"/>
-                            <constraint firstAttribute="width" constant="291" id="mJa-4G-Y6b"/>
                             <constraint firstAttribute="trailing" secondItem="0rW-3b-dOF" secondAttribute="trailing" constant="13" id="nsi-P1-fHr"/>
                         </constraints>
                     </view>
@@ -73,14 +68,13 @@
                 <constraint firstItem="CbX-LW-0cb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iV6-dj-oQl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="291" height="400"/>
+            <size key="customSize" width="376" height="403"/>
             <connections>
                 <outlet property="onboardingImage" destination="Ehr-5B-kMo" id="dTW-Cg-fU2"/>
                 <outlet property="onboardingSubtitle" destination="0rW-3b-dOF" id="6ST-2b-7jX"/>
                 <outlet property="onboardingTitle" destination="B0L-mU-0wC" id="5Wy-Oh-MEy"/>
-                <outlet property="width" destination="mJa-4G-Y6b" id="YQB-fn-8Tt"/>
             </connections>
-            <point key="canvasLocation" x="438.40579710144931" y="318.08035714285711"/>
+            <point key="canvasLocation" x="505.60000000000002" y="330.58470764617692"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -30,7 +30,6 @@ import IQKeyboardManagerSwift
         remoteConfig?.configSettings = settings
         ShopManager.shared.datasource = self
         //Enter production Product Id
-        Messaging.messaging().subscribe(toTopic: "2")
         // Override point for customization after application launch.
         return true
     }

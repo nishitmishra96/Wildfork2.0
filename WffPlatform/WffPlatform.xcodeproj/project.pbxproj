@@ -25,7 +25,7 @@
 		942A2EA82420A0AD00AAB648 /* BottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EA72420A0AD00AAB648 /* BottomLine.swift */; };
 		942A2EAA2420A0E600AAB648 /* StarDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EA92420A0E600AAB648 /* StarDistribution.swift */; };
 		942A2EAC2420A72400AAB648 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EAB2420A72400AAB648 /* UserManager.swift */; };
-		947E86F32428BC38009DD8C4 /* Zipcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947E86F22428BC38009DD8C4 /* Zipcode.swift */; };
+		944F0A8824293F5A007B6E83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0A8724293F5A007B6E83 /* AppState.swift */; };
 		94EDF9D22420E82900F2AFBA /* HttpResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDF9D12420E82900F2AFBA /* HttpResponseCodes.swift */; };
 		F733880724169ED000DE8F75 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733880624169ED000DE8F75 /* Category.swift */; };
 		F749E45124232D05004CD822 /* WFFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749E45024232D05004CD822 /* WFFUser.swift */; };
@@ -129,7 +129,7 @@
 		942A2EA72420A0AD00AAB648 /* BottomLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLine.swift; sourceTree = "<group>"; };
 		942A2EA92420A0E600AAB648 /* StarDistribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDistribution.swift; sourceTree = "<group>"; };
 		942A2EAB2420A72400AAB648 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		947E86F22428BC38009DD8C4 /* Zipcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zipcode.swift; sourceTree = "<group>"; };
+		944F0A8724293F5A007B6E83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		947E86F42428C24C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86F52428C24C009DD8C4 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86FA2428C88C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,6 +264,14 @@
 			path = YotpoLogin;
 			sourceTree = "<group>";
 		};
+		944F0A8624293F4A007B6E83 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				944F0A8724293F5A007B6E83 /* AppState.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		94EDF9C52420CC2200F2AFBA /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +384,7 @@
 		F7F5CBB6241378E3007F2096 /* WffPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				944F0A8624293F4A007B6E83 /* Application */,
 				F7518BA324247D4F006DE7DF /* Models */,
 				F7BE37F3242097E900057592 /* REST */,
 				F733880524169EBF00DE8F75 /* CustomModels */,
@@ -535,7 +544,6 @@
 				F7F5CF6E2413B308007F2096 /* Collection.swift */,
 				F7F5CF702413B3C0007F2096 /* Product.swift */,
 				F749E45024232D05004CD822 /* WFFUser.swift */,
-				947E86F22428BC38009DD8C4 /* Zipcode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -653,12 +661,12 @@
 				F7F5CF2B24138ABC007F2096 /* Fragment+VariantConnectionQuery.swift in Sources */,
 				F7F5CF0C24138A75007F2096 /* ViewModel.swift in Sources */,
 				942A2E9824209C8500AAB648 /* Status.swift in Sources */,
-				947E86F32428BC38009DD8C4 /* Zipcode.swift in Sources */,
 				942A2EA224209FD100AAB648 /* SocialLink.swift in Sources */,
 				F7F5CF2924138ABC007F2096 /* Fragment+DiscountAllocation.swift in Sources */,
 				F749E45324234AAC004CD822 /* AlgoliaRestManager.swift in Sources */,
 				F7F5CF4A24138AFB007F2096 /* DiscountAllocationViewModel.swift in Sources */,
 				F7F5CF1224138A91007F2096 /* CartItemViewModel.swift in Sources */,
+				944F0A8824293F5A007B6E83 /* AppState.swift in Sources */,
 				94026344241F70F5002E504C /* APIProvider.swift in Sources */,
 				942A2EA024209F7700AAB648 /* YotpoProduct.swift in Sources */,
 				F7F5CF3724138AE7007F2096 /* CustomerViewModel.swift in Sources */,

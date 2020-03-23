@@ -48,6 +48,7 @@ class ZipCodeVC: UIViewController {
             case 200:
                 self.messagLabel.text = "WE DELIVER TO \(self.zipCode.text ?? "YOUR PINCODE")"
                 self.isGoodZipCodeView()
+                UserDefaults.standard.set((Int(String(self.zipCode.text ?? "")) ?? 0), forKey: AppKeys.zipcode.rawValue)
             case 0:
                 self.showNoInterNetConnectionAlert(withMessage: "Hit retry to find delivery again, after connecting to Internet") {
                     self.submitPressed(sender)
