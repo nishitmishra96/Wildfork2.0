@@ -14,4 +14,9 @@ extension UIColor{
             return UIColor(displayP3Red: 61/255, green: 57/255, blue: 53/255, alpha: 1.0)
         }
     }
+    static var appBackgroundColor:UIColor{
+        get{
+            return UIColor(displayP3Red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
+        }
+        }
 }

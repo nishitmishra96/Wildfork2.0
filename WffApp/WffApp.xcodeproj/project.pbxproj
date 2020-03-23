@@ -60,6 +60,8 @@
 		942A54C424239B99002BDF86 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A54C324239B99002BDF86 /* ExpandableLabel.swift */; };
 		942B49A924276F460071A8BE /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B49A824276F460071A8BE /* ForgotPasswordVC.swift */; };
 		942B49AC242771300071A8BE /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 942B49AB242771300071A8BE /* splashvideo.mov */; };
+		944307BE242885F3007E7570 /* MembershipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944307BD242885F3007E7570 /* MembershipVC.swift */; };
+		944307BF24288C4C007E7570 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 944307BC24288334007E7570 /* Montserrat-Regular.ttf */; };
 		944F9D6A2423C201003BF6B8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F9D692423C201003BF6B8 /* HeaderView.swift */; };
 		948D153B24233F3200001A7A /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D153924233F3200001A7A /* ReviewTableViewCell.swift */; };
 		948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948D153A24233F3200001A7A /* ReviewTableViewCell.xib */; };
@@ -182,6 +184,8 @@
 		942A54C324239B99002BDF86 /* ExpandableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
 		942B49A824276F460071A8BE /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		942B49AB242771300071A8BE /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
+		944307BC24288334007E7570 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		944307BD242885F3007E7570 /* MembershipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MembershipVC.swift; path = ../../../../WffApp/WffApp/View/ViewControllers/MembershipVC.swift; sourceTree = "<group>"; };
 		944F9D692423C201003BF6B8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/HeaderView.swift; sourceTree = "<group>"; };
 		948D153924233F3200001A7A /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReviewTableViewCell.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		948D153A24233F3200001A7A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReviewTableViewCell.xib; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.xib; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 			children = (
 				1DE88B1D2426371700D35218 /* Montserrat-Light.ttf */,
 				1DE88B6E24264FF900D35218 /* Montserrat-LightItalic.ttf */,
+				944307BC24288334007E7570 /* Montserrat-Regular.ttf */,
 				1DE88B702426502E00D35218 /* Montserrat-Medium.ttf */,
 			);
 			path = Montserrat;
@@ -368,13 +373,6 @@
 				B136DD62D2B90A87DDD46A2B /* Pods_WFF_WFFApp.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		942B49A624276EA00071A8BE /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		942B49A724276F130071A8BE /* ForgotPassword */ = {
@@ -505,6 +503,7 @@
 				1D6BD46924233A3200184537 /* RegisterScreen */,
 				F733880C2416B92C00DE8F75 /* CategoryScreen */,
 				F73387EB2416603000DE8F75 /* Boarding */,
+				944307BD242885F3007E7570 /* MembershipVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -796,6 +795,7 @@
 				F7419B652420E474006D2780 /* ProductCostView.xib in Resources */,
 				948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */,
 				F7419B6E24210597006D2780 /* ReviewHeaderView.xib in Resources */,
+				944307BF24288C4C007E7570 /* Montserrat-Regular.ttf in Resources */,
 				942B49AC242771300071A8BE /* splashvideo.mov in Resources */,
 				1DE88B672426459400D35218 /* Oswald-Medium.ttf in Resources */,
 				F73387F3241662C200DE8F75 /* CollectionCVC.xib in Resources */,
@@ -888,6 +888,7 @@
 				F7F276612425E9EB00967685 /* Login.swift in Sources */,
 				1D6BD472242340A300184537 /* LMPlaceholderTextView.swift in Sources */,
 				1DB2EA1024266368004D99FD /* UIColor.swift in Sources */,
+				944307BE242885F3007E7570 /* MembershipVC.swift in Sources */,
 				948D153B24233F3200001A7A /* ReviewTableViewCell.swift in Sources */,
 				F7419B672420E480006D2780 /* ProductCostView.swift in Sources */,
 				F73387ED2416604C00DE8F75 /* HomeVC.swift in Sources */,

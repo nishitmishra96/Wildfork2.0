@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YOz-Yu-6WW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YOz-Yu-6WW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,6 +44,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="qrcode" catalog="system"/>
+                                <connections>
+                                    <action selector="membershipButtonPressed:" destination="YOz-Yu-6WW" eventType="touchUpInside" id="ZTH-fS-fcj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -101,93 +104,105 @@
             </objects>
             <point key="canvasLocation" x="2681.1594202898555" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--MembershipVC-->
         <scene sceneID="9wz-fO-yze">
             <objects>
-                <viewController id="JfR-bJ-UDa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MembershipVC" id="JfR-bJ-UDa" customClass="MembershipVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cfw-dU-iQn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-aM-MbZ">
-                                <rect key="frame" x="87" y="60" width="240" height="244"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-aM-MbZ">
+                                <rect key="frame" x="87" y="60" width="240" height="47"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFD-bc-PsE">
-                                <rect key="frame" x="24" y="324" width="366" height="366"/>
+                                <rect key="frame" x="24" y="127" width="366" height="366"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MEMBER CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-G9-2jH">
-                                        <rect key="frame" x="120.5" y="4" width="125.5" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMBER CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-G9-2jH" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="4" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-bc-V0u">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-bc-V0u" customClass="QRCodeView" customModule="WFFApp" customModuleProvider="target">
                                         <rect key="frame" x="48" y="29" width="270" height="270"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aj9-bc-V0u" secondAttribute="height" multiplier="1:1" id="74a-QX-6Kj"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-Kw-K01">
-                                        <rect key="frame" x="162" y="322" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-Kw-K01">
+                                        <rect key="frame" x="4" y="322" width="358" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="aj9-bc-V0u" firstAttribute="top" secondItem="ajp-G9-2jH" secondAttribute="bottom" constant="4" id="18d-RG-NRc"/>
                                     <constraint firstAttribute="trailing" secondItem="aj9-bc-V0u" secondAttribute="trailing" constant="48" id="7CN-2p-H7l"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJe-Kw-K01" secondAttribute="trailing" constant="4" id="Aga-cD-BGd"/>
+                                    <constraint firstItem="MJe-Kw-K01" firstAttribute="leading" secondItem="FFD-bc-PsE" secondAttribute="leading" constant="4" id="Aql-hL-ko3"/>
                                     <constraint firstItem="aj9-bc-V0u" firstAttribute="centerX" secondItem="FFD-bc-PsE" secondAttribute="centerX" id="NIP-V6-cC5"/>
                                     <constraint firstItem="ajp-G9-2jH" firstAttribute="top" secondItem="FFD-bc-PsE" secondAttribute="top" constant="4" id="Sa0-t4-D48"/>
                                     <constraint firstAttribute="bottom" secondItem="MJe-Kw-K01" secondAttribute="bottom" constant="23" id="WQv-aN-4JA"/>
                                     <constraint firstItem="aj9-bc-V0u" firstAttribute="leading" secondItem="FFD-bc-PsE" secondAttribute="leading" constant="48" id="dqB-XJ-hSg"/>
                                     <constraint firstItem="MJe-Kw-K01" firstAttribute="top" secondItem="aj9-bc-V0u" secondAttribute="bottom" constant="23" id="gk0-oK-GuA"/>
                                     <constraint firstItem="ajp-G9-2jH" firstAttribute="centerX" secondItem="FFD-bc-PsE" secondAttribute="centerX" id="ju2-Vl-cGT"/>
-                                    <constraint firstAttribute="width" secondItem="FFD-bc-PsE" secondAttribute="height" multiplier="1:1" id="vyr-Yh-Bw4"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh2-2i-oey">
-                                <rect key="frame" x="184" y="706" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="4" y="509" width="406" height="30"/>
+                                <state key="normal" title="Add To Apple Wallet"/>
+                                <connections>
+                                    <action selector="addToAppleWallet:" destination="JfR-bJ-UDa" eventType="touchUpInside" id="j9t-jQ-SLU"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-Ii-wiS">
-                                <rect key="frame" x="4" y="825" width="406" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-Ii-wiS" customClass="WFFTextLabel" customModule="WFFApp" customModuleProvider="target">
+                                <rect key="frame" x="4" y="555" width="406" height="40"/>
+                                <string key="text">Scan before paying in restaurants to 
+get your Reward points. </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="top" secondItem="G3O-aM-MbZ" secondAttribute="bottom" constant="20" id="5ka-b0-mZi"/>
-                            <constraint firstItem="k6l-ub-Sai" firstAttribute="bottom" secondItem="iIx-Ii-wiS" secondAttribute="bottom" constant="16" id="967-Lm-zfA"/>
+                            <constraint firstItem="k6l-ub-Sai" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iIx-Ii-wiS" secondAttribute="bottom" constant="16" id="967-Lm-zfA"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="width" secondItem="G3O-aM-MbZ" secondAttribute="width" multiplier="1.525" id="K5H-ZC-pDf"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="G3O-aM-MbZ" secondAttribute="trailing" constant="87" id="LNA-2N-6RS"/>
                             <constraint firstItem="iIx-Ii-wiS" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="NN4-po-z8T"/>
-                            <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="dh2-2i-oey" secondAttribute="trailing" constant="184" id="NZe-yH-GMW"/>
+                            <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="dh2-2i-oey" secondAttribute="trailing" constant="4" id="NZe-yH-GMW"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="FFD-bc-PsE" secondAttribute="trailing" constant="24" id="Orc-iU-fsM"/>
-                            <constraint firstItem="iIx-Ii-wiS" firstAttribute="top" secondItem="dh2-2i-oey" secondAttribute="bottom" constant="89.019999999999996" id="aFg-2v-Qef"/>
+                            <constraint firstItem="iIx-Ii-wiS" firstAttribute="top" secondItem="dh2-2i-oey" secondAttribute="bottom" constant="16" id="aFg-2v-Qef"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="iIx-Ii-wiS" secondAttribute="trailing" constant="4" id="arV-zB-yzA"/>
                             <constraint firstItem="dh2-2i-oey" firstAttribute="top" secondItem="FFD-bc-PsE" secondAttribute="bottom" constant="16" id="bMN-hU-hwD"/>
                             <constraint firstItem="G3O-aM-MbZ" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="dMP-Yc-TI1"/>
                             <constraint firstItem="G3O-aM-MbZ" firstAttribute="top" secondItem="k6l-ub-Sai" secondAttribute="top" constant="16" id="efX-x2-zH1"/>
                             <constraint firstItem="iIx-Ii-wiS" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="4" id="gWg-NG-erL"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="j1m-02-h4q"/>
-                            <constraint firstItem="dh2-2i-oey" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="184" id="jOO-MU-Hxu"/>
+                            <constraint firstItem="dh2-2i-oey" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="4" id="jOO-MU-Hxu"/>
+                            <constraint firstItem="FFD-bc-PsE" firstAttribute="height" secondItem="G3O-aM-MbZ" secondAttribute="height" multiplier="7.78723" id="kMr-xd-ZvT"/>
                             <constraint firstItem="G3O-aM-MbZ" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="87" id="s50-v8-DZB"/>
                             <constraint firstItem="dh2-2i-oey" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="uf5-39-r6b"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="24" id="ypK-7p-yRL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6l-ub-Sai"/>
                     </view>
+                    <connections>
+                        <outlet property="qrCodeView" destination="aj9-bc-V0u" id="J2U-cV-y6T"/>
+                        <outlet property="userName" destination="MJe-Kw-K01" id="XEP-wW-Nnp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPN-2m-8fE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3545" y="128"/>
+            <point key="canvasLocation" x="3584" y="135"/>
         </scene>
     </scenes>
     <resources>
         <image name="qrcode" catalog="system" width="64" height="56"/>
+        <image name="wffLogo" width="160" height="47"/>
     </resources>
 </document>

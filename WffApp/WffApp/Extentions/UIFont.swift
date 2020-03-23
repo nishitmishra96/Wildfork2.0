@@ -60,6 +60,9 @@ extension UIFont{
     static func appSubTitleBold(ofSize: fontSize) -> UIFont{
         return UIFont(name: "Montserrat-Medium", size: getFontSize(customFamily : .subtitle, size : ofSize))!
     }
+    static func appTextRegular(ofSize: fontSize) -> UIFont{
+        return UIFont(name: "Montserrat-Regular", size: getFontSize(customFamily : .subtitle, size : ofSize))!
+    }
     static func appSubTitleLightItalic(ofSize: fontSize) -> UIFont{
         return UIFont(name: "Montserrat-LightItalic", size: getFontSize(customFamily : .subtitle, size : ofSize))!
     }

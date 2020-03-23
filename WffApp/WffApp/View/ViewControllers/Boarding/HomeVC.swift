@@ -31,6 +31,15 @@ class HomeVC: UIViewController {
         self.homeScreenDS?.setupDataSource()
         self.tableView.tableHeaderView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
     }
+    
+    @IBAction func membershipButtonPressed(_ sender: Any) {
+        let membershipVC = Storyboard.home.instanceOf(viewController: MembershipVC.self)!
+        membershipVC.modalPresentationStyle = .fullScreen
+        membershipVC.modalTransitionStyle = .crossDissolve
+        membershipVC.setTextForQRCode(text:"google.com")
+        self.present(membershipVC,animated:true,completion:nil)
+    }
+    
 }
 
 extension HomeVC:SelectionDelegates{

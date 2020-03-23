@@ -15,6 +15,13 @@ class WFFSubtitleLabel : UILabel {
         self.textColor = UIColor.appGrey
     }
 }
+class WFFTextLabel : UILabel{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.font = UIFont.appTextRegular(ofSize: .small)
+        self.textColor = UIColor.appGrey
+    }
+}
 class WFFTitleLabel : UILabel {
     override func awakeFromNib() {
         super.awakeFromNib()

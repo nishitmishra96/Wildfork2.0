@@ -42,13 +42,13 @@ class SetStar:UIView{
             stackView.addArrangedSubview(imageView)
         }
         stackView.addArrangedSubview(label)
-
+        
     }
-     
+    
     public func set(rating:Int,numberOfReviews:Int){
         for count in 0..<arrayOfStars.count{
             if count < rating{
-            arrayOfStars[count].image = UIImage(named: "star.fill")
+                arrayOfStars[count].image = UIImage(named: "star.fill")
             }else{
                 arrayOfStars[count].image = UIImage(named: "star")
             }
@@ -59,12 +59,35 @@ class SetStar:UIView{
     public func setRatingWithoutNumberOfReviews(rating:Int){
         for count in 0..<arrayOfStars.count{
             if count < rating{
-            arrayOfStars[count].image = UIImage(named: "star.fill")
+                arrayOfStars[count].image = UIImage(named: "star.fill")
             }else{
                 arrayOfStars[count].image = UIImage(named: "star")
             }
         }
         
         label.isHidden = true
+    }
+}
+
+@IBDesignable class QRCodeView:UIImageView{
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        image = UIImage(named:"wfQrCode")
+    }
+    func setQRCode(text:String){
+        let data = text.data(using: .isoLatin1, allowLossyConversion: false)
+        var qrcodeImage: CIImage!
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        filter?.setValue(data, forKey: "inputMessage")
+        filter?.setValue("Q" , forKey: "inputCorrectionLevel")
+        qrcodeImage = filter?.outputImage
+        let scaleX = frame.size.width / qrcodeImage.extent.size.width
+         let scaleY = frame.size.height / qrcodeImage.extent.size.height
+
+        let transformedImage = qrcodeImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+
+        self.image = UIImage(ciImage: transformedImage)
+//        self.image = UIImage(ciImage: qrcodeImage)
     }
 }
