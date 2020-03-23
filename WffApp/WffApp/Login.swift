@@ -10,7 +10,6 @@ import UIKit
 
 class Login: UIViewController {
 
-    
     @IBOutlet weak var email: LMUnderLinedTextField!
     @IBOutlet weak var password: LMUnderLinedTextField!
     @IBOutlet weak var loginButton:UIButton!
@@ -24,6 +23,10 @@ class Login: UIViewController {
         pushViewController(registerVC)
     }
     @IBAction func forgotPasswordPressed(_ sender: Any) {
+        let forgotPasswordVC = Storyboard.start.instanceOf(viewController: ForgotPasswordVC.self)!
+        forgotPasswordVC.modalPresentationStyle = .fullScreen
+        forgotPasswordVC.modalTransitionStyle = .crossDissolve
+        self.present(forgotPasswordVC,animated: true,completion: nil)
         
     }
     

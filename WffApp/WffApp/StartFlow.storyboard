@@ -8,6 +8,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Bold.ttf">
+            <string>Oswald-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Zip CodeVC-->
         <scene sceneID="57D-29-N0Y">
@@ -38,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NsJ-i8-zK4" customClass="LMUnderLinedTextField" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="40" y="359.5" width="240" height="34"/>
+                                <rect key="frame" x="40" y="359.5" width="240" height="35.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                                 <userDefinedRuntimeAttributes>
@@ -639,6 +644,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnN-k9-KkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="753" y="-74"/>
+        </scene>
+        <!--Forgot PasswordVC-->
+        <scene sceneID="0HA-b8-tF5">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordVC" id="oRv-cV-Ikf" customClass="ForgotPasswordVC" customModule="WildFork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NfZ-oU-aMS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-iu-iLw">
+                                <rect key="frame" x="10" y="184" width="300" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6R-SM-41e">
+                                        <rect key="frame" x="-14" y="16" width="328" height="28"/>
+                                        <string key="text">RECOVER YOUR PASSWORD
+</string>
+                                        <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEJ-CS-Aws" customClass="LMUnderLinedTextField" customModule="WildFork" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="60" width="280" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email Address"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-fa-jqX">
+                                        <rect key="frame" x="10" y="124" width="280" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a7-kN-nct">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="60"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="17"/>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitPressed:" destination="oRv-cV-Ikf" eventType="touchUpInside" id="FWi-Pv-CLN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnk-kY-U9N">
+                                                <rect key="frame" x="148" y="0.0" width="132" height="60"/>
+                                                <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="17"/>
+                                                <state key="normal" title="CANCEL">
+                                                    <color key="titleColor" red="0.80392156859999997" green="0.19215686269999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.23921568630000001" green="0.22352941179999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelPressed:" destination="oRv-cV-Ikf" eventType="touchUpInside" id="rOS-xq-h20"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="rGu-7q-EEM"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="a6R-SM-41e" firstAttribute="top" secondItem="wiI-iu-iLw" secondAttribute="top" constant="16" id="11a-Bo-42c"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEJ-CS-Aws" secondAttribute="trailing" constant="10" id="Q47-45-94a"/>
+                                    <constraint firstAttribute="height" constant="200" id="TuL-aW-pRA"/>
+                                    <constraint firstItem="MEJ-CS-Aws" firstAttribute="leading" secondItem="wiI-iu-iLw" secondAttribute="leading" constant="10" id="V6z-Rz-mlF"/>
+                                    <constraint firstItem="MEJ-CS-Aws" firstAttribute="top" secondItem="a6R-SM-41e" secondAttribute="bottom" constant="16" id="WK1-MH-uYn"/>
+                                    <constraint firstItem="EZa-fa-jqX" firstAttribute="top" secondItem="MEJ-CS-Aws" secondAttribute="bottom" constant="16" id="f0O-Fs-2yw"/>
+                                    <constraint firstItem="a6R-SM-41e" firstAttribute="centerX" secondItem="wiI-iu-iLw" secondAttribute="centerX" id="grp-08-W8K"/>
+                                    <constraint firstAttribute="bottom" secondItem="EZa-fa-jqX" secondAttribute="bottom" constant="16" id="mey-Fa-b4w"/>
+                                    <constraint firstAttribute="trailing" secondItem="EZa-fa-jqX" secondAttribute="trailing" constant="10" id="ppt-mb-NVF"/>
+                                    <constraint firstItem="EZa-fa-jqX" firstAttribute="leading" secondItem="wiI-iu-iLw" secondAttribute="leading" constant="10" id="xpZ-Ey-oNI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.58449272259999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wiI-iu-iLw" firstAttribute="centerY" secondItem="NfZ-oU-aMS" secondAttribute="centerY" id="5uR-1X-IC7"/>
+                            <constraint firstItem="wiI-iu-iLw" firstAttribute="leading" secondItem="M3l-Kk-fgZ" secondAttribute="leading" constant="10" id="EjI-8m-hrG"/>
+                            <constraint firstItem="wiI-iu-iLw" firstAttribute="centerX" secondItem="NfZ-oU-aMS" secondAttribute="centerX" id="WYg-HF-QFd"/>
+                            <constraint firstItem="M3l-Kk-fgZ" firstAttribute="trailing" secondItem="wiI-iu-iLw" secondAttribute="trailing" constant="10" id="mhI-B7-yhh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M3l-Kk-fgZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="pnk-kY-U9N" id="g39-2M-LBg"/>
+                        <outlet property="contentView" destination="wiI-iu-iLw" id="thH-9q-VcL"/>
+                        <outlet property="email" destination="MEJ-CS-Aws" id="2p6-a0-faD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuF-q1-Utk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4860" y="-26"/>
         </scene>
     </scenes>
     <resources>

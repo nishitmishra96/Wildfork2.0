@@ -42,11 +42,11 @@ class SplashVC: AVPlayerViewController {
         // Do any additional setup after loading the view.
     }
     private func didSplashEnd(){
-        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
-               let navigationController = UINavigationController(rootViewController: vc)
-               AppDelegate.shared().window?.rootViewController = navigationController
-               AppDelegate.shared().window?.makeKeyAndVisible()
-        return
-        self.pushViewController(Storyboard.start.instanceOf(viewController: OnboardingVC.self)!)
+//        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
+//               let navigationController = UINavigationController(rootViewController: vc)
+//               AppDelegate.shared().window?.rootViewController = navigationController
+//               AppDelegate.shared().window?.makeKeyAndVisible()
+//        return
+        self.pushViewController(Storyboard.start.instanceOf(viewController: Login.self)!)
     }
 }

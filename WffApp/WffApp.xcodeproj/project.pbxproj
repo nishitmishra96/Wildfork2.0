@@ -58,6 +58,8 @@
 		94026340241F62E4002E504C /* Pay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9402633C241F62E4002E504C /* Pay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9415B5EA24248DB300295927 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9415B5E924248DB300295927 /* Protocols.swift */; };
 		942A54C424239B99002BDF86 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A54C324239B99002BDF86 /* ExpandableLabel.swift */; };
+		942B49A924276F460071A8BE /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B49A824276F460071A8BE /* ForgotPasswordVC.swift */; };
+		942B49AC242771300071A8BE /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 942B49AB242771300071A8BE /* splashvideo.mov */; };
 		944F9D6A2423C201003BF6B8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F9D692423C201003BF6B8 /* HeaderView.swift */; };
 		948D153B24233F3200001A7A /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D153924233F3200001A7A /* ReviewTableViewCell.swift */; };
 		948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948D153A24233F3200001A7A /* ReviewTableViewCell.xib */; };
@@ -93,7 +95,6 @@
 		F7BC86F3242645CF00A73632 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F2242645CF00A73632 /* UIAlertController.swift */; };
 		F7BC86F624264CE300A73632 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F524264CE300A73632 /* TabBarVC.swift */; };
 		F7BC86F824264DA100A73632 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86F724264DA100A73632 /* UIImage.swift */; };
-		F7BC86FB24267EBE00A73632 /* PINKLABEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC86FA24267EBE00A73632 /* PINKLABEL.swift */; };
 		F7BE3807242099C200057592 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BE3806242099C200057592 /* Product.storyboard */; };
 		F7BE380B24209A6E00057592 /* ProductImagesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE380924209A6E00057592 /* ProductImagesTVC.swift */; };
 		F7BE380C24209A6E00057592 /* ProductImagesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BE380A24209A6E00057592 /* ProductImagesTVC.xib */; };
@@ -105,7 +106,6 @@
 		F7F276632425E9FB00967685 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F276622425E9FB00967685 /* RegisterVC.swift */; };
 		F7F2766524260AF300967685 /* UIbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2766424260AF300967685 /* UIbutton.swift */; };
 		F7F27667242620C000967685 /* UIBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F27666242620C000967685 /* UIBarButton.swift */; };
-		F7F2766B242624BB00967685 /* splashvideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766A242624BB00967685 /* splashvideo.mov */; };
 		F7F27671242624FA00967685 /* ProductsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2766D242624F800967685 /* ProductsHeader.swift */; };
 		F7F27672242624FA00967685 /* ProductsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766E242624F900967685 /* ProductsHeader.xib */; };
 		F7F27673242624FA00967685 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F2766F242624F900967685 /* HomeTableViewHeader.xib */; };
@@ -180,6 +180,8 @@
 		9402633C241F62E4002E504C /* Pay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9415B5E924248DB300295927 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = ../../../../WffApp/WffApp/View/ViewProtocols/Protocols.swift; sourceTree = "<group>"; };
 		942A54C324239B99002BDF86 /* ExpandableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
+		942B49A824276F460071A8BE /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		942B49AB242771300071A8BE /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
 		944F9D692423C201003BF6B8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/HeaderView.swift; sourceTree = "<group>"; };
 		948D153924233F3200001A7A /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReviewTableViewCell.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		948D153A24233F3200001A7A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReviewTableViewCell.xib; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.xib; sourceTree = "<group>"; };
@@ -230,7 +232,6 @@
 		F7F276622425E9FB00967685 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = WFFApp/RegisterVC.swift; sourceTree = SOURCE_ROOT; };
 		F7F2766424260AF300967685 /* UIbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbutton.swift; sourceTree = "<group>"; };
 		F7F27666242620C000967685 /* UIBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButton.swift; sourceTree = "<group>"; };
-		F7F2766A242624BB00967685 /* splashvideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashvideo.mov; sourceTree = "<group>"; };
 		F7F2766D242624F800967685 /* ProductsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsHeader.swift; path = WFFApp/View/TableViewHeaders/ProductsHeader.swift; sourceTree = SOURCE_ROOT; };
 		F7F2766E242624F900967685 /* ProductsHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductsHeader.xib; path = WFFApp/View/TableViewHeaders/ProductsHeader.xib; sourceTree = SOURCE_ROOT; };
 		F7F2766F242624F900967685 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeTableViewHeader.xib; path = WFFApp/View/TableViewHeaders/HomeTableViewHeader.xib; sourceTree = SOURCE_ROOT; };
@@ -288,6 +289,7 @@
 		1DE88B17242636AC00D35218 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				942B49AA242771300071A8BE /* Video */,
 				1DE88B18242636C500D35218 /* Fonts */,
 			);
 			path = Resources;
@@ -361,6 +363,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		942B49A624276EA00071A8BE /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		942B49A724276F130071A8BE /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				942B49A824276F460071A8BE /* ForgotPasswordVC.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		942B49AA242771300071A8BE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				942B49AB242771300071A8BE /* splashvideo.mov */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		9492E30324236A280073C806 /* ViewProtocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +411,7 @@
 				F73387C624164D7F00DE8F75 /* Products */,
 				FAD6D6990A47B6914F1A45F2 /* Pods */,
 				3983C8AE34CA183DA24B9E90 /* Frameworks */,
+				942B49A624276EA00071A8BE /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -464,6 +490,7 @@
 		F73387EA2416602300DE8F75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				942B49A724276F130071A8BE /* ForgotPassword */,
 				F7BC86F424264CCE00A73632 /* Home */,
 				F7F2766C242624CF00967685 /* Splash */,
 				1DF07600242554F800C6B883 /* PopupController */,
@@ -656,22 +683,6 @@
 			path = ProductScreen;
 			sourceTree = "<group>";
 		};
-		F7F27668242624AB00967685 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F7F27669242624B300967685 /* Video */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		F7F27669242624B300967685 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				F7F2766A242624BB00967685 /* splashvideo.mov */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
 		F7F2766C242624CF00967685 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,12 +789,12 @@
 				F7419B652420E474006D2780 /* ProductCostView.xib in Resources */,
 				948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */,
 				F7419B6E24210597006D2780 /* ReviewHeaderView.xib in Resources */,
+				942B49AC242771300071A8BE /* splashvideo.mov in Resources */,
 				1DE88B672426459400D35218 /* Oswald-Medium.ttf in Resources */,
 				F73387F3241662C200DE8F75 /* CollectionCVC.xib in Resources */,
 				1DE062F62421EC6E00A01FE4 /* ProductsGridTVC.xib in Resources */,
 				F7F27672242624FA00967685 /* ProductsHeader.xib in Resources */,
 				F7F27673242624FA00967685 /* HomeTableViewHeader.xib in Resources */,
-				F7F2766B242624BB00967685 /* splashvideo.mov in Resources */,
 				9492E309242375150073C806 /* AllReviews.xib in Resources */,
 				F73387F7241662EC00DE8F75 /* HomeCollectionTVC.xib in Resources */,
 				F73387D224164D8300DE8F75 /* Assets.xcassets in Resources */,
@@ -888,6 +899,7 @@
 				1DE88B55242638A800D35218 /* UILabel.swift in Sources */,
 				F73387E924165F1200DE8F75 /* StoryBoards.swift in Sources */,
 				F7BC86F824264DA100A73632 /* UIImage.swift in Sources */,
+				942B49A924276F460071A8BE /* ForgotPasswordVC.swift in Sources */,
 				F7F27674242624FA00967685 /* HomeTableViewHeader.swift in Sources */,
 				F7BE380B24209A6E00057592 /* ProductImagesTVC.swift in Sources */,
 				1DF076042425558F00C6B883 /* PopupVC.swift in Sources */,

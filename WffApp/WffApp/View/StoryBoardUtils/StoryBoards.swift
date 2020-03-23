@@ -21,5 +21,3 @@ enum Storyboard: String {
         return instance.instantiateViewController(withIdentifier: x) as? T
     }
 }
-
-
