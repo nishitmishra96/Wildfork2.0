@@ -15,9 +15,7 @@ class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let searchController = UISearchController(searchResultsController: nil)
-        navigationItem.searchController = searchController
-        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.setTittleImage()
         self.setupStyleOfTabbar()
         self.viewControllers = [home,membershipVC,accountVC]
@@ -34,7 +32,7 @@ class TabBarVC: UITabBarController {
         membershipVC.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: "fav").withRenderingMode(.alwaysTemplate).setImageColor(color: .white)
         membershipVC.tabBarItem.image = membershipVC.tabBarItem.image?.setImageColor(color: .gray)
         
-        accountVC.tabBarItem = UITabBarItem(title: "Membership", image: UIImage(imageLiteralResourceName: "account") , selectedImage: UIImage(imageLiteralResourceName: "account"))
+        accountVC.tabBarItem = UITabBarItem(title: "Account", image: UIImage(imageLiteralResourceName: "account") , selectedImage: UIImage(imageLiteralResourceName: "account"))
         accountVC.tabBarItem.image = UIImage(imageLiteralResourceName: "account").withRenderingMode(.alwaysOriginal)
         accountVC.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: "account").withRenderingMode(.alwaysTemplate).setImageColor(color: .white)
         accountVC.tabBarItem.image = accountVC.tabBarItem.image?.setImageColor(color: .gray)

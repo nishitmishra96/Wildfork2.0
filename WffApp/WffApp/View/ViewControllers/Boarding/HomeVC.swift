@@ -24,6 +24,10 @@ class HomeVC: UIViewController {
     private var homeScreenDS:HomeScreenDataSource?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.isNavigationBarHidden = false
         floatingButton.layer.cornerRadius = floatingButton.frame.height/2
         homeScreenDS = HomeScreenDataSource(delegate: self, tableView: tableView)
         tableView.registerCellNib(HomeCollectionTVC.self)
@@ -34,7 +38,10 @@ class HomeVC: UIViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.rowHeight = UITableView.automaticDimension
         self.homeScreenDS?.setupDataSource()
-        self.tableView.tableHeaderView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
+        var headerView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
+        headerView.delegate = self
+        self.tableView.tableHeaderView = headerView
+        UserDefaults.standard.set(true, forKey: AppKeys.userSawHome.rawValue)
     }
     
     @IBAction func membershipButtonPressed(_ sender: Any) {
@@ -66,4 +73,10 @@ extension HomeVC:SelectionDelegates{
     }
     
     
+}
+
+extension HomeVC:DeleveryViewDelegate{
+    func didtapOnChangeZipCode(){
+        self.present(Storyboard.start.instanceOf(viewController: PopupVC.self)!, animated: true, completion: nil)
+    }
 }

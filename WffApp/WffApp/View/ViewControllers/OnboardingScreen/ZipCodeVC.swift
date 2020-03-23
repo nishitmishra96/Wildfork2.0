@@ -71,8 +71,11 @@ class ZipCodeVC: UIViewController {
         AppDelegate.shared().window?.makeKeyAndVisible()
     }
     @IBAction func loginRegisterPressed(_ sender: UIButton) {
-        let loginVC = UIStoryboard.init(name: "StartFlow", bundle: .main).instantiateViewController(withIdentifier: "Login") as! Login
-            pushViewController(loginVC)
+        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
+        vc.selectedIndex = 2
+        let navigationController = UINavigationController(rootViewController: vc)
+        AppDelegate.shared().window?.rootViewController = navigationController
+        AppDelegate.shared().window?.makeKeyAndVisible()
     }
 
 }

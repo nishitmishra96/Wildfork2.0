@@ -11,4 +11,5 @@ import Foundation
 enum AppKeys:String{
     case zipcode = "zipcode"
     case appState = "appState"
+    case userSawHome = "userSawHome"
 }
