@@ -9,11 +9,14 @@
 import UIKit
 import RxCocoa
 import RxSwift
-class WFFUser: NSObject {
-    var firstName:BehaviorRelay<String?> = BehaviorRelay(value: nil)
-    var lastName:BehaviorRelay<String?> = BehaviorRelay(value: nil)
+public class WFFUser: NSObject {
+    public var firstName:BehaviorRelay<String?> = BehaviorRelay(value: nil)
+    public var lastName:BehaviorRelay<String?> = BehaviorRelay(value: nil)
     var email:BehaviorRelay<String?> = BehaviorRelay(value: nil)
     var id:BehaviorRelay<String?> = BehaviorRelay(value: nil)
+    public var fullName : String? {
+        return "\(firstName.value ?? "") \(lastName.value ?? "")"
+    }
     
     init(custumerVM:CustomerViewModel) {
         self.firstName.accept(custumerVM.firstName)

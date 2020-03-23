@@ -15,7 +15,11 @@ protocol SelectionDelegates {
     func didSelectCollection(collection:WFFCollection)
     func didSelectProduct(product:WFFProduct)
 }
-class HomeVC: UIViewController {
+class HomeVC: UIViewController,UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
     @IBOutlet weak var floatingButton: UIButton!
     @IBOutlet weak var tableView: TableView!
     private var homeScreenDS:HomeScreenDataSource?
@@ -30,6 +34,12 @@ class HomeVC: UIViewController {
         tableView.dataSource = homeScreenDS
         self.homeScreenDS?.setupDataSource()
         self.tableView.tableHeaderView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
+        let controller = UISearchController(searchResultsController: nil)
+        controller.searchResultsUpdater = self
+        controller.obscuresBackgroundDuringPresentation = false
+        controller.searchBar.placeholder = "Search Products"
+        definesPresentationContext = true
+        navigationItem.searchController = controller
     }
     
     @IBAction func membershipButtonPressed(_ sender: Any) {

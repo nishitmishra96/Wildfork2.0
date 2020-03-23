@@ -19,7 +19,7 @@ public class UserManager:NSObject{
             return UserDefaults.standard.value(forKey: "USERTOKEN") as? String
         }
     }
-    var user:BehaviorRelay<WFFUser?> = BehaviorRelay(value: nil)
+    public var user:BehaviorRelay<WFFUser?> = BehaviorRelay(value: nil)
     var orders:BehaviorRelay<[OrderViewModel]> = BehaviorRelay(value: [])
     
     private var productCursor:(String?,Bool) = (nil,true)

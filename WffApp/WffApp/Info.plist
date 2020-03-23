@@ -26,13 +26,13 @@
 		<string>Montserrat-Medium</string>
 		<string>Montserrat-LightItalic</string>
 		<string>Oswald-Bold.ttf</string>
-		<string>Oswald-Regular</string>
+		<string>Oswald-Regular.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Home</string>
+	<string>StartFlow</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

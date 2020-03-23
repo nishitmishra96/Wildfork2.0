@@ -31,7 +31,8 @@ class Login: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        
+        let homeVC = Storyboard.home.instanceOf(viewController: HomeVC.self)!
+        pushViewController(homeVC)
     }
     private func ViewValidations()->Bool{
         return true

@@ -35,32 +35,41 @@ class HomeTableViewHeader: UIView {
         bindWithViewModel()
     }
     private func bindWithViewModel(){
+        
         UserManager.shared.userZipCode.asObservable()
             .subscribe(onNext: { (newZip) in
-                guard let zipcode = newZip else { return }
-                let newValue = UserManager.shared.isDeleveryAvailable.value
-                if newValue{
-                    self.truckIcon.isHidden = false
-                    self.messageLabel.text = "We Deliver to \(zipcode)"
-                }else{
-                    self.truckIcon.isHidden = false
-                    self.messageLabel.text = "WE DO NOT DELIVER TO \(zipcode)"
-                }
+                guard let zipCode = newZip else { return }
+                self.truckIcon.isHidden = UserManager.shared.isDeleveryAvailable.value
+                self.messageLabel.attributedText = self.getDeliveryString(isDeliveryAvailable: UserManager.shared.isDeleveryAvailable.value, zipCode: zipCode)
             })
             .disposed(by: disposebag)
         UserManager.shared.isDeleveryAvailable.asObservable()
             .subscribe(onNext: { (newValue) in
-                if newValue{
-                    self.truckIcon.isHidden = false
-                    self.messageLabel.text = "We Deliver to \(UserManager.shared.userZipCode.value ?? "Your Zip")"
-                }else{
-                    self.truckIcon.isHidden = false
-                    self.messageLabel.text = "WE DO NOT DELIVER TO \(UserManager.shared.userZipCode.value ?? "Your Zip")"
-                }
+                self.truckIcon.isHidden = UserManager.shared.isDeleveryAvailable.value
+                self.messageLabel.attributedText = self.getDeliveryString(isDeliveryAvailable: UserManager.shared.isDeleveryAvailable.value, zipCode: UserManager.shared.userZipCode.value ?? "YOUR ZIP")
             })
             .disposed(by: disposebag)
     }
     @IBAction private func didTapOnView(_ sender: UIButton) {
         self.delegate?.didtapOnChangeZipCode()
+    }
+    
+    func getDeliveryString(isDeliveryAvailable:Bool,zipCode:String) -> NSAttributedString{
+        if isDeliveryAvailable{
+            let attributedString = NSMutableAttributedString(string: "WE DELIVER TO \(zipCode)", attributes: [
+            .font: UIFont.appTitleRegular(ofSize: .medium),
+          .foregroundColor: UIColor.appGrey
+        ])
+        attributedString.addAttribute(.font, value: UIFont.appTitleBold(ofSize: .medium), range: NSRange(location: 14, length: zipCode.count))
+            return attributedString as NSAttributedString
+        }else{
+            let attributedString = NSMutableAttributedString(string: "WE DO NOT DELIVER TO \(zipCode)", attributes: [
+                .font: UIFont.appTitleRegular(ofSize: .medium),
+              .foregroundColor: UIColor.appGrey
+            ])
+            attributedString.addAttribute(.font, value: UIFont.appTitleBold(ofSize: .medium), range: NSRange(location: 21, length: zipCode.count))
+                return attributedString as NSAttributedString
+        }
+        
     }
 }

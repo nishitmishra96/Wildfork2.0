@@ -7,15 +7,22 @@
 //
 
 import UIKit
-
+import WffPlatform
+import RxCocoa
+import RxSwift
 class MembershipVC: UIViewController {
 
     @IBOutlet weak var qrCodeView: QRCodeView!
     @IBOutlet weak var userName: UILabel!
     private var textForQRCodeView:String?
-    
+    private var disposebag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserManager.shared.user.asObservable().subscribe(onNext: { (user) in
+            self.userName.text = "\(String(describing: user?.firstName.value))  \(String(describing: user?.lastName.value))"
+        })
+            .disposed(by: disposebag)
         if let text = self.textForQRCodeView{
             self.qrCodeView.setQRCode(text:text)
         }
