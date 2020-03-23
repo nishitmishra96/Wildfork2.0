@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Access to location services is needed to occasionally send relevant information and promotions.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Light.ttf</string>
@@ -28,6 +30,12 @@
 		<string>Oswald-Bold.ttf</string>
 		<string>Oswald-Regular.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

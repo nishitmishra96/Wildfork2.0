@@ -13,6 +13,9 @@ def wffAppPods
   pod 'SDWebImage', '~> 5.0'
   pod 'IQKeyboardManagerSwift'
   pod 'ReachabilitySwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Crashlytics'
 end
 
 def platformPods
@@ -26,7 +29,7 @@ def commonPods
   pod 'ObjectMapper', '~> 3.5'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-
+  
 end
 
 #app target
