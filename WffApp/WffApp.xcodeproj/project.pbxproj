@@ -286,6 +286,13 @@
 			path = OnboardingScreen;
 			sourceTree = "<group>";
 		};
+		1DB2EA1A242690F6004D99FD /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		1DE88B17242636AC00D35218 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,7 +418,7 @@
 				F73387C624164D7F00DE8F75 /* Products */,
 				FAD6D6990A47B6914F1A45F2 /* Pods */,
 				3983C8AE34CA183DA24B9E90 /* Frameworks */,
-				942B49A624276EA00071A8BE /* Recovered References */,
+				1DB2EA1A242690F6004D99FD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};

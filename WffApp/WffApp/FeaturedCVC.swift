@@ -17,6 +17,7 @@ class FeaturedCVC: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        foregroundLabel.textColor = UIColor.white
     }
 
 }

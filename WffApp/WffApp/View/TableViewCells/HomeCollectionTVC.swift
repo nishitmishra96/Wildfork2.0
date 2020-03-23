@@ -20,6 +20,7 @@ class HomeCollectionTVC: UITableViewCell {
         collectionView.dataSource = self
         collectionView.register(UINib.init(nibName: "CollectionCVC", bundle: nil), forCellWithReuseIdentifier: "CollectionCVC")
         
+        
     }
 
     func setProductCategories(productcategory:[ProductCategories]){
@@ -31,7 +32,7 @@ class HomeCollectionTVC: UITableViewCell {
 extension HomeCollectionTVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 112, height: 112)
+        return CGSize(width: 60, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -46,6 +47,12 @@ extension HomeCollectionTVC:UICollectionViewDelegate,UICollectionViewDataSource,
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.delegate?.didSelectCategory(category: self.categories[indexPath.row])
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return  UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12);
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 24.0
     }
     
 }

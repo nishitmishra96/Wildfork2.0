@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBk-t6-nyI" customClass="RoundedView" customModule="WFFApp" customModuleProvider="target">
-                        <rect key="frame" x="20.5" y="8" width="60" height="60"/>
+                        <rect key="frame" x="28.5" y="8" width="44" height="44"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nlc-Xm-hB8">
-                                <rect key="frame" x="18" y="20.5" width="24" height="19.5"/>
+                                <rect key="frame" x="10" y="12.5" width="24" height="19.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="Gy6-SP-BUQ"/>
                                     <constraint firstAttribute="width" secondItem="Nlc-Xm-hB8" secondAttribute="height" multiplier="1:1" id="WFV-7K-fh9"/>
@@ -33,12 +33,12 @@
                         <constraints>
                             <constraint firstAttribute="width" secondItem="qBk-t6-nyI" secondAttribute="height" multiplier="1:1" id="7Aq-dT-Hqc"/>
                             <constraint firstItem="Nlc-Xm-hB8" firstAttribute="centerX" secondItem="qBk-t6-nyI" secondAttribute="centerX" id="Q2b-UF-hwg"/>
-                            <constraint firstAttribute="width" constant="60" id="lAT-Om-3h1"/>
+                            <constraint firstAttribute="width" constant="44" id="lAT-Om-3h1"/>
                             <constraint firstItem="Nlc-Xm-hB8" firstAttribute="centerY" secondItem="qBk-t6-nyI" secondAttribute="centerY" id="trz-pN-fly"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHk-Lo-12F">
-                        <rect key="frame" x="28" y="76" width="45" height="27"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHk-Lo-12F" customClass="WFFSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
+                        <rect key="frame" x="28" y="60" width="45" height="43"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,6 +63,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
 </document>

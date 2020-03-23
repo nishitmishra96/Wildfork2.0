@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OQu-Hh-JEQ">
-                        <rect key="frame" x="0.0" y="54" width="307" height="400"/>
+                        <rect key="frame" x="0.0" y="47" width="307" height="407"/>
                         <color key="backgroundColor" white="0.90772630580000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="C1f-dQ-Qvj"/>
@@ -30,7 +30,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-m1-Ssp">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-m1-Ssp" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="126.5" height="30"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                         <nil key="textColor"/>
@@ -41,7 +41,7 @@
                 <constraints>
                     <constraint firstItem="wZg-m1-Ssp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5ZU-Xg-cdQ"/>
                     <constraint firstItem="OQu-Hh-JEQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bxr-rw-vzH"/>
-                    <constraint firstItem="OQu-Hh-JEQ" firstAttribute="top" secondItem="wZg-m1-Ssp" secondAttribute="bottom" constant="16" id="Odd-dA-twR"/>
+                    <constraint firstItem="OQu-Hh-JEQ" firstAttribute="top" secondItem="wZg-m1-Ssp" secondAttribute="bottom" constant="9" id="Odd-dA-twR"/>
                     <constraint firstAttribute="trailing" secondItem="OQu-Hh-JEQ" secondAttribute="trailing" id="YPO-aN-bRC"/>
                     <constraint firstAttribute="bottom" secondItem="OQu-Hh-JEQ" secondAttribute="bottom" id="bRm-e5-apX"/>
                     <constraint firstItem="wZg-m1-Ssp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="myu-Rj-emK"/>

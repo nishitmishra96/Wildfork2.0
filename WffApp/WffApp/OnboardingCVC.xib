@@ -27,13 +27,13 @@
                                     <constraint firstAttribute="width" constant="154" id="uBh-lp-yob"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP FASTER THAN EVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-mU-0wC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP FASTER THAN EVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-mU-0wC" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
                                 <rect key="frame" x="27" y="190" width="237" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-3b-dOF" customClass="WFFSubtitle" customModule="WFFApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rW-3b-dOF" customClass="WFFSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
                                 <rect key="frame" x="13" y="223.5" width="265" height="95.5"/>
                                 <string key="text">Welcome to Wild fork Foods! We are now making it easier than ever to shop. Enjoy a personalized experience and reorder your favorites fast</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
