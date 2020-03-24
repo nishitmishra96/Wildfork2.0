@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WffPlatform
 
 class Login: UIViewController {
 
@@ -27,12 +28,17 @@ class Login: UIViewController {
         forgotPasswordVC.modalPresentationStyle = .fullScreen
         forgotPasswordVC.modalTransitionStyle = .crossDissolve
         self.present(forgotPasswordVC,animated: true,completion: nil)
-        
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        let homeVC = Storyboard.home.instanceOf(viewController: HomeVC.self)!
-        pushViewController(homeVC)
+        UserManager.shared.login(email: /email.text, password: /password.text){(sucessfullyLoggedIn) in
+            if sucessfullyLoggedIn{
+                UserDefaults.appState = AppState.loggedIn.rawValue
+            }else{
+                UserDefaults.appState = nil
+            }
+        }
+        
     }
     private func ViewValidations()->Bool{
         return true

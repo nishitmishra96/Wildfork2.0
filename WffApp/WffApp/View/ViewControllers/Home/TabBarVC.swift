@@ -8,17 +8,19 @@
 
 import UIKit
 
-class TabBarVC: UITabBarController {
-    let home = Storyboard.home.instanceOf(viewController: HomeVC.self)!
+class TabBarVC: UITabBarController,UITabBarControllerDelegate {
+    
+    let home =   UINavigationController.init(rootViewController: Storyboard.home.instanceOf(viewController: HomeVC.self)!)
     let membershipVC = Storyboard.home.instanceOf(viewController: MembershipVC.self)!
     let accountVC = Storyboard.start.instanceOf(viewController: Login.self)!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.setTittleImage()
         self.setupStyleOfTabbar()
         self.viewControllers = [home,membershipVC,accountVC]
+        self.delegate = self
+        UserDefaults.isIntroShown = true
     }
     private func setupStyleOfTabbar(){
         self.showButtonOnSearchBar(target: nil, action: nil)
@@ -38,7 +40,12 @@ class TabBarVC: UITabBarController {
         accountVC.tabBarItem.image = accountVC.tabBarItem.image?.setImageColor(color: .gray)
         
     }
-
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if viewController is MembershipVC{
+            (viewController as? MembershipVC)?.closeButton.isHidden = true
+        }
+    }
 
 }
 extension UISearchController {

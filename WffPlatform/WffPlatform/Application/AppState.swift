@@ -7,8 +7,7 @@
 //
 
 import Foundation
-    enum State {
-        case unregistered
-        case loggedIn(WFFUser)
-        case sessionExpired(WFFUser)
-    }
+public enum AppState:String {
+    case loggedIn = "loggedIn"
+    case loggedOut = "loggedOut"
+}

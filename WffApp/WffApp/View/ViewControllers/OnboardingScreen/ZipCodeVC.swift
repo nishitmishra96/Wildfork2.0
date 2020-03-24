@@ -57,7 +57,11 @@ class ZipCodeVC: UIViewController {
                 let popupVC = Storyboard.start.instanceOf(viewController: PopupVC.self)!
                 popupVC.zipcode = self.zipCode.text
                 self.messagLabel.text = "ENTER ZIP CODE TO GET STARTED"
+                UserDefaults.standard.removeObject(forKey: AppKeys.zipcode.rawValue)
                 self.present(popupVC, animated: true, completion: nil)
+                popupVC.continuePressed = {
+                    self.pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
+                }
             default:
                 print("DEFAULT: NEED TO INSPECT CODE")
             }
@@ -65,17 +69,12 @@ class ZipCodeVC: UIViewController {
     }
     
     @IBAction func startShoppingPressed(_ sender: UIButton) {
-        let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
-        let navigationController = UINavigationController(rootViewController: vc)
-        AppDelegate.shared().window?.rootViewController = navigationController
-        AppDelegate.shared().window?.makeKeyAndVisible()
+        pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
     }
     @IBAction func loginRegisterPressed(_ sender: UIButton) {
         let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
         vc.selectedIndex = 2
-        let navigationController = UINavigationController(rootViewController: vc)
-        AppDelegate.shared().window?.rootViewController = navigationController
-        AppDelegate.shared().window?.makeKeyAndVisible()
+        pushViewController(vc)
     }
 
 }

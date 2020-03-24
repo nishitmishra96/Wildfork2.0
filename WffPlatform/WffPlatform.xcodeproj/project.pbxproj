@@ -26,6 +26,7 @@
 		942A2EAA2420A0E600AAB648 /* StarDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EA92420A0E600AAB648 /* StarDistribution.swift */; };
 		942A2EAC2420A72400AAB648 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EAB2420A72400AAB648 /* UserManager.swift */; };
 		944F0A8824293F5A007B6E83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0A8724293F5A007B6E83 /* AppState.swift */; };
+		945988C9242A3FC500A95664 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988C8242A3FC500A95664 /* Prefix.swift */; };
 		94EDF9D22420E82900F2AFBA /* HttpResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDF9D12420E82900F2AFBA /* HttpResponseCodes.swift */; };
 		F733880724169ED000DE8F75 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733880624169ED000DE8F75 /* Category.swift */; };
 		F749E45124232D05004CD822 /* WFFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749E45024232D05004CD822 /* WFFUser.swift */; };
@@ -130,6 +131,7 @@
 		942A2EA92420A0E600AAB648 /* StarDistribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDistribution.swift; sourceTree = "<group>"; };
 		942A2EAB2420A72400AAB648 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		944F0A8724293F5A007B6E83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		945988C8242A3FC500A95664 /* Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
 		947E86F42428C24C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86F52428C24C009DD8C4 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86FA2428C88C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +274,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		945988C7242A3FB500A95664 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				945988C8242A3FC500A95664 /* Prefix.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		94EDF9C52420CC2200F2AFBA /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +394,7 @@
 		F7F5CBB6241378E3007F2096 /* WffPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				945988C7242A3FB500A95664 /* Helpers */,
 				944F0A8624293F4A007B6E83 /* Application */,
 				F7518BA324247D4F006DE7DF /* Models */,
 				F7BE37F3242097E900057592 /* REST */,
@@ -734,6 +745,7 @@
 				F7BE38042420982400057592 /* ResponseVariant.swift in Sources */,
 				F7F5CF4D24138AFB007F2096 /* GiftCardViewModel.swift in Sources */,
 				942A2E902420918100AAB648 /* YotpoLogin.swift in Sources */,
+				945988C9242A3FC500A95664 /* Prefix.swift in Sources */,
 				F7F5CF712413B3C0007F2096 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

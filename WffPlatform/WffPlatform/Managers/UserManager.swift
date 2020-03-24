@@ -45,15 +45,20 @@ extension UserManager{
         }
     }
     
-    func register(email:String,password:String,name:String,lastname:String,acceptsMarketing:Bool){
+    public func register(email:String,password:String,name:String,lastname:String,acceptsMarketing:Bool){
         Client.shared.register(email: email , password: password, name: name, lastName: lastname, acceptsMarketing: acceptsMarketing){
             (accessToken) in
             self.accessToken = accessToken
         }
     }
-    func login(email:String,password:String){
+    public func login(email:String,password:String,handler:@escaping ((Bool)->())){
         Client.shared.login(email: email, password: password) { (accessToken) in
-            self.accessToken = accessToken
+            if let accessToken = accessToken{
+                self.accessToken = accessToken
+                handler(true)
+            }else{
+                handler(false)
+            }
         }
     }
 }

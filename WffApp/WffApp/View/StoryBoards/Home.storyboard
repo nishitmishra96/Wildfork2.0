@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YOz-Yu-6WW">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="TabBarVC" id="obG-bu-bTQ" customClass="TabBarVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QlO-0l-UvI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="W3v-5V-pge"/>
@@ -28,15 +28,15 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="YOz-Yu-6WW" customClass="HomeVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6GS-bg-T6o">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jtO-3U-Sy4" customClass="TableView" customModule="CZTableView">
-                                <rect key="frame" x="0.0" y="20" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-dL-w1a">
-                                <rect key="frame" x="330" y="778" width="60" height="60"/>
+                                <rect key="frame" x="291" y="583" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LPx-dL-w1a" secondAttribute="height" multiplier="1:1" id="4VN-If-AkC"/>
@@ -79,11 +79,11 @@
             <objects>
                 <viewController storyboardIdentifier="CategorySelectionVC" id="pmv-6f-Wuq" customClass="CategorySelectionVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mys-r9-jPa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gl4-Fj-R44" customClass="TableView" customModule="CZTableView">
-                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -109,29 +109,29 @@
             <objects>
                 <viewController storyboardIdentifier="MembershipVC" id="JfR-bJ-UDa" customClass="MembershipVC" customModule="WFFApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cfw-dU-iQn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wffLogo" translatesAutoresizingMaskIntoConstraints="NO" id="G3O-aM-MbZ">
-                                <rect key="frame" x="87" y="60" width="240" height="47"/>
+                                <rect key="frame" x="80.5" y="16" width="214" height="47"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFD-bc-PsE">
-                                <rect key="frame" x="24" y="127" width="366" height="366"/>
+                                <rect key="frame" x="24" y="83" width="327" height="366"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMBER CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-G9-2jH" customClass="WFFTitleLabel" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="123" y="4" width="120" height="21"/>
+                                        <rect key="frame" x="103.5" y="4" width="120" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-bc-V0u" customClass="QRCodeView" customModule="WFFApp" customModuleProvider="target">
-                                        <rect key="frame" x="48" y="29" width="270" height="270"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aj9-bc-V0u" customClass="QRCodeView" customModule="WFFApp" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="28.5" width="231" height="231"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aj9-bc-V0u" secondAttribute="height" multiplier="1:1" id="74a-QX-6Kj"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-Kw-K01">
-                                        <rect key="frame" x="4" y="322" width="358" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="2" text="userName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-Kw-K01">
+                                        <rect key="frame" x="4" y="282.5" width="319" height="60.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -152,27 +152,39 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh2-2i-oey">
-                                <rect key="frame" x="4" y="509" width="406" height="30"/>
+                                <rect key="frame" x="4" y="465" width="367" height="30"/>
                                 <state key="normal" title="Add To Apple Wallet"/>
                                 <connections>
                                     <action selector="addToAppleWallet:" destination="JfR-bJ-UDa" eventType="touchUpInside" id="j9t-jQ-SLU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-Ii-wiS" customClass="WFFTextLabel" customModule="WFFApp" customModuleProvider="target">
-                                <rect key="frame" x="4" y="555" width="406" height="40"/>
+                                <rect key="frame" x="4" y="511" width="367" height="40"/>
                                 <string key="text">Scan before paying in restaurants to 
 get your Reward points. </string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvr-AO-9P8">
+                                <rect key="frame" x="291" y="4" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nvr-AO-9P8" secondAttribute="height" multiplier="1:1" id="a3H-2q-I1v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Close get assets">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton:" destination="JfR-bJ-UDa" eventType="touchUpInside" id="1CG-Md-N0A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="top" secondItem="G3O-aM-MbZ" secondAttribute="bottom" constant="20" id="5ka-b0-mZi"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iIx-Ii-wiS" secondAttribute="bottom" constant="16" id="967-Lm-zfA"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="width" secondItem="G3O-aM-MbZ" secondAttribute="width" multiplier="1.525" id="K5H-ZC-pDf"/>
-                            <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="G3O-aM-MbZ" secondAttribute="trailing" constant="87" id="LNA-2N-6RS"/>
                             <constraint firstItem="iIx-Ii-wiS" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="NN4-po-z8T"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="dh2-2i-oey" secondAttribute="trailing" constant="4" id="NZe-yH-GMW"/>
                             <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="FFD-bc-PsE" secondAttribute="trailing" constant="24" id="Orc-iU-fsM"/>
@@ -185,20 +197,22 @@ get your Reward points. </string>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="j1m-02-h4q"/>
                             <constraint firstItem="dh2-2i-oey" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="4" id="jOO-MU-Hxu"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="height" secondItem="G3O-aM-MbZ" secondAttribute="height" multiplier="7.78723" id="kMr-xd-ZvT"/>
-                            <constraint firstItem="G3O-aM-MbZ" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="87" id="s50-v8-DZB"/>
+                            <constraint firstItem="nvr-AO-9P8" firstAttribute="top" secondItem="k6l-ub-Sai" secondAttribute="top" constant="4" id="rqz-15-cal"/>
                             <constraint firstItem="dh2-2i-oey" firstAttribute="centerX" secondItem="Cfw-dU-iQn" secondAttribute="centerX" id="uf5-39-r6b"/>
+                            <constraint firstItem="k6l-ub-Sai" firstAttribute="trailing" secondItem="nvr-AO-9P8" secondAttribute="trailing" constant="4" id="xg1-Lj-KhF"/>
                             <constraint firstItem="FFD-bc-PsE" firstAttribute="leading" secondItem="k6l-ub-Sai" secondAttribute="leading" constant="24" id="ypK-7p-yRL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k6l-ub-Sai"/>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="nvr-AO-9P8" id="bIF-9a-1s2"/>
                         <outlet property="qrCodeView" destination="aj9-bc-V0u" id="J2U-cV-y6T"/>
                         <outlet property="userName" destination="MJe-Kw-K01" id="XEP-wW-Nnp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPN-2m-8fE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3584" y="135"/>
+            <point key="canvasLocation" x="3582.608695652174" y="134.59821428571428"/>
         </scene>
     </scenes>
     <resources>

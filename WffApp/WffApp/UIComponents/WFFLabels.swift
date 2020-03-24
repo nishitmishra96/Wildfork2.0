@@ -15,10 +15,17 @@ class WFFSubtitleLabel : UILabel {
         self.textColor = UIColor.appGrey
     }
 }
+class WFFLargeTextLabel:UILabel{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.font = UIFont.appSubTitleLight(ofSize: .large)
+        self.textColor = UIColor.appGrey
+    }
+}
 class WFFTextLabel : UILabel{
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.font = UIFont.appTextRegular(ofSize: .small)
+        self.font = UIFont.appTextRegular(ofSize: .medium)
         self.textColor = UIColor.appGrey
     }
 }
@@ -26,6 +33,13 @@ class WFFTitleLabel : UILabel {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.font = UIFont.appTitleBold(ofSize: .large)
+        self.textColor = UIColor.appGrey
+    }
+}
+class WFFMediumTitleLabel:UILabel{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.font = UIFont.appTitleBold(ofSize: .medium)
         self.textColor = UIColor.appGrey
     }
 }

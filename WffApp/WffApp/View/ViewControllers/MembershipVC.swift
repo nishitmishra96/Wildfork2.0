@@ -16,7 +16,8 @@ class MembershipVC: UIViewController {
     @IBOutlet weak var userName: UILabel!
     private var textForQRCodeView:String?
     private var disposebag = DisposeBag()
-
+    @IBOutlet var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UserManager.shared.user.asObservable().subscribe(onNext: { (user) in
@@ -33,5 +34,8 @@ class MembershipVC: UIViewController {
 
     @IBAction func addToAppleWallet(_ sender: Any) {
         
+    }
+    @IBAction func closeButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

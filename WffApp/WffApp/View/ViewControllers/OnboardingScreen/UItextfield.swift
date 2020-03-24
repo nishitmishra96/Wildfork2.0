@@ -14,5 +14,6 @@ import UIKit
         self.borderStyle = .line
         self.layer.borderWidth = 1.5
         self.layer.borderColor = UIColor.appGrey.cgColor
+        attributedPlaceholder = NSAttributedString(string: "Enter Zip Code",attributes: [NSAttributedString.Key.foregroundColor:  UIColor.appGrey])
     }
 }

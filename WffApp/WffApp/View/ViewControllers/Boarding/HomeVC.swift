@@ -26,6 +26,8 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
+        self.setTittleImage()
+        self.showButtonOnSearchBar(target: self, action: #selector(showQRCode))
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationController?.isNavigationBarHidden = false
         floatingButton.layer.cornerRadius = floatingButton.frame.height/2
@@ -41,7 +43,6 @@ class HomeVC: UIViewController {
         var headerView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
         headerView.delegate = self
         self.tableView.tableHeaderView = headerView
-        UserDefaults.standard.set(true, forKey: AppKeys.userSawHome.rawValue)
     }
     
     @IBAction func membershipButtonPressed(_ sender: Any) {
@@ -52,6 +53,9 @@ class HomeVC: UIViewController {
         self.present(membershipVC,animated:true,completion:nil)
     }
     
+    @objc func showQRCode(){
+        
+    }
 }
 
 extension HomeVC:SelectionDelegates{

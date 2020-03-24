@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import WffPlatform
 extension UserDefaults{
     static var isIntroShown:Bool{
         set{
@@ -25,11 +26,21 @@ extension UserDefaults{
             return UserDefaults.standard.value(forKey: "USERZIPCODE") as? String
         }
     }
+    
+    static var appState:String?{
+        set{
+            UserDefaults.standard.set(newValue, forKey: AppKeys.appState.rawValue)
+        }get{
+            return UserDefaults.standard.value(forKey: AppKeys.appState.rawValue) as? String
+        }
+    }
+    
 }
 class SplashVC: AVPlayerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.view.backgroundColor = .white
         self.showsPlaybackControls = false
         let videoURL = URL(fileReferenceLiteralResourceName: "splashvideo.mov")
@@ -43,11 +54,12 @@ class SplashVC: AVPlayerViewController {
         // Do any additional setup after loading the view.
     }
     private func didSplashEnd(){
-        if let _ = UserDefaults.standard.value(forKey: AppKeys.userSawHome.rawValue){
-            let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
-                   let navigationController = UINavigationController(rootViewController: vc)
-                   AppDelegate.shared().window?.rootViewController = navigationController
-                   AppDelegate.shared().window?.makeKeyAndVisible()
+        if UserDefaults.isIntroShown{
+            if let _ = UserDefaults.userZipCode{
+                self.pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
+            }else{
+                self.pushViewController(Storyboard.start.instanceOf(viewController: ZipCodeVC.self)!)
+            }
         }else{
             self.pushViewController(Storyboard.start.instanceOf(viewController: OnboardingVC.self)!)
 

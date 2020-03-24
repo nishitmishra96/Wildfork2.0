@@ -26,13 +26,13 @@ class OnboardingVC: UIViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
         OnboardingCV.dataSource = self
         OnboardingCV.delegate = self
         OnboardingCV.showsVerticalScrollIndicator = false
         OnboardingCV.showsHorizontalScrollIndicator = false
-        OnboardingCV.isPagingEnabled = true;
-        OnboardingCV.registerCollectionViewCellNib(OnboardingCVC.self)
         OnboardingCV.isPagingEnabled = true
+        OnboardingCV.registerCollectionViewCellNib(OnboardingCVC.self)
     }
     @IBAction func didTapSkipButton(){
         let zipcodeVC = Storyboard.start.instanceOf(viewController: ZipCodeVC.self)!
