@@ -83,13 +83,6 @@ public extension UIViewController {
     
 }
 
-//
-enum ValidationResult{
-    case empty
-    case valid
-    case invalid
-}
-
 class BlockBarButtonItem: UIBarButtonItem {
     private var actionHandler: (() -> ())?
     

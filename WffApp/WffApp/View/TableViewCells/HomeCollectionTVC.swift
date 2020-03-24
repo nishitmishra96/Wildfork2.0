@@ -79,7 +79,6 @@ extension HomeCollectionTVC:UICollectionViewDelegate,UICollectionViewDataSource,
         return 20
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCVC", for: indexPath) as! CollectionCVC
         cell.categoryName.text = self.categories[0].name

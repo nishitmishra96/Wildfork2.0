@@ -48,7 +48,7 @@ class ZipCodeVC: UIViewController {
             case 200:
                 self.messagLabel.text = "WE DELIVER TO \(self.zipCode.text ?? "YOUR PINCODE")"
                 self.isGoodZipCodeView()
-                UserDefaults.standard.set((Int(String(self.zipCode.text ?? "")) ?? 0), forKey: AppKeys.zipcode.rawValue)
+                UserDefaults.userZipCode = self.zipCode.text ?? nil
             case 0:
                 self.showNoInterNetConnectionAlert(withMessage: "Hit retry to find delivery again, after connecting to Internet") {
                     self.submitPressed(sender)
@@ -61,6 +61,7 @@ class ZipCodeVC: UIViewController {
                 self.present(popupVC, animated: true, completion: nil)
                 popupVC.continuePressed = {
                     self.pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
+                UserDefaults.userZipCode = nil
                 }
             default:
                 print("DEFAULT: NEED TO INSPECT CODE")

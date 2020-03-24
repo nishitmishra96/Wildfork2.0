@@ -9,6 +9,11 @@
 import UIKit
 import WffPlatform
 
+fileprivate enum LoginViewValidations: String{
+    case emailempty = "Please fill Correct email"
+    case passwordempty = "Please enter a password"
+}
+
 class Login: UIViewController {
 
     @IBOutlet weak var email: LMUnderLinedTextField!
@@ -31,6 +36,7 @@ class Login: UIViewController {
     }
     
     @IBAction func loginPressed(_ sender: Any) {
+        if ViewValidations(){
         UserManager.shared.login(email: /email.text, password: /password.text){(sucessfullyLoggedIn) in
             if sucessfullyLoggedIn{
                 UserDefaults.appState = AppState.loggedIn.rawValue
@@ -38,9 +44,22 @@ class Login: UIViewController {
                 UserDefaults.appState = nil
             }
         }
-        
+        }
     }
     private func ViewValidations()->Bool{
+
+        if email.isValidEmail() == UserDetailsValidationResult.valid {} else
+        {
+            email.errorMessage =  LoginViewValidations.emailempty.rawValue
+            ShowErrorUtil.showError(withMessage: LoginViewValidations.emailempty.rawValue )
+            return false
+        }
+        
+        if /password.text?.isEmpty{
+            password.errorMessage =  LoginViewValidations.passwordempty.rawValue
+            ShowErrorUtil.showError(withMessage: LoginViewValidations.passwordempty.rawValue )
+            return false
+        }
         return true
     }
 }
