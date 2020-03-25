@@ -70,6 +70,8 @@
 		945988CD242A4A2800A95664 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988CB242A4A2800A95664 /* SnackBar.swift */; };
 		945988CF242A6F4E00A95664 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988CE242A6F4E00A95664 /* String.swift */; };
 		945988D1242A6F8F00A95664 /* TextfieldUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988D0242A6F8F00A95664 /* TextfieldUtils.swift */; };
+		945988D4242A73E500A95664 /* SearchedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988D2242A73E500A95664 /* SearchedProduct.swift */; };
+		945988D5242A73E500A95664 /* SearchedProduct.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945988D3242A73E500A95664 /* SearchedProduct.xib */; };
 		948D153B24233F3200001A7A /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948D153924233F3200001A7A /* ReviewTableViewCell.swift */; };
 		948D153C24233F3200001A7A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948D153A24233F3200001A7A /* ReviewTableViewCell.xib */; };
 		9492E300242365B40073C806 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9492E2FF242365B40073C806 /* UIButton.swift */; };
@@ -202,6 +204,8 @@
 		945988CB242A4A2800A95664 /* SnackBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
 		945988CE242A6F4E00A95664 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../../WffApp/WffApp/UIComponents/String.swift; sourceTree = "<group>"; };
 		945988D0242A6F8F00A95664 /* TextfieldUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldUtils.swift; sourceTree = "<group>"; };
+		945988D2242A73E500A95664 /* SearchedProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchedProduct.swift; path = ../../../../WffApp/WffApp/View/TableViewCells/SearchedProduct.swift; sourceTree = "<group>"; };
+		945988D3242A73E500A95664 /* SearchedProduct.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SearchedProduct.xib; path = ../../../../WffApp/WffApp/View/TableViewCells/SearchedProduct.xib; sourceTree = "<group>"; };
 		948D153924233F3200001A7A /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReviewTableViewCell.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		948D153A24233F3200001A7A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReviewTableViewCell.xib; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/ReviewTableViewCell.xib; sourceTree = "<group>"; };
 		9492E2FF242365B40073C806 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ../../../../WffApp/WffApp/View/UIViewElements/UIButton.swift; sourceTree = "<group>"; };
@@ -579,6 +583,8 @@
 				1D91FC1F2420E5560098BAEE /* HomeFeaturedTVC.xib */,
 				F73387F4241662EC00DE8F75 /* HomeCollectionTVC.swift */,
 				F73387F5241662EC00DE8F75 /* HomeCollectionTVC.xib */,
+				945988D2242A73E500A95664 /* SearchedProduct.swift */,
+				945988D3242A73E500A95664 /* SearchedProduct.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -847,6 +853,7 @@
 				1DE88B3B2426371800D35218 /* Montserrat-Light.ttf in Resources */,
 				F73388092416A6CC00DE8F75 /* GoogleService-Info.plist in Resources */,
 				1DB0C14D2424967B0073B1FB /* OnboardingCVC.xib in Resources */,
+				945988D5242A73E500A95664 /* SearchedProduct.xib in Resources */,
 				1DE88B652426459400D35218 /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -949,6 +956,7 @@
 				F7F27667242620C000967685 /* UIBarButton.swift in Sources */,
 				9415B5EA24248DB300295927 /* Protocols.swift in Sources */,
 				F73388102416BB2D00DE8F75 /* UIViewController.swift in Sources */,
+				945988D4242A73E500A95664 /* SearchedProduct.swift in Sources */,
 				1DE062F92421F54600A01FE4 /* SubCategoryListTVC.swift in Sources */,
 				1DE7B7522420BAA4009A8634 /* PopularCVC.swift in Sources */,
 				F7419B6924210381006D2780 /* ProductInfoView.swift in Sources */,

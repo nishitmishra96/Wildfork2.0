@@ -35,6 +35,7 @@ class HomeVC: UIViewController {
         tableView.registerCellNib(HomeCollectionTVC.self)
         tableView.registerCellNib(HomeFeaturedTVC.self)
         tableView.registerCellNib(HomePopularTVC.self)
+        tableView.registerCellNib(SearchedProduct.self)
 //        tableView.registerTableViewHeaderFooterNib(HomeTableViewHeader.self)
         tableView.dataSource = homeScreenDS
         tableView.estimatedRowHeight = UITableView.automaticDimension

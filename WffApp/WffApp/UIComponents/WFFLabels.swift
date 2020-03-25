@@ -8,17 +8,24 @@
 
 import Foundation
 import UIKit
-class WFFSubtitleLabel : UILabel {
+class WFFMediumSubtitleLabel : UILabel {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.font = UIFont.appSubTitleLight(ofSize: .medium)
         self.textColor = UIColor.appGrey
     }
 }
-class WFFLargeTextLabel:UILabel{
+class WFFLargeSubtitleLabel:UILabel{
     override func awakeFromNib() {
         super.awakeFromNib()
         self.font = UIFont.appSubTitleLight(ofSize: .large)
+        self.textColor = UIColor.appGrey
+    }
+}
+class WFFSmallSubtitleLabel:UILabel{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.font = UIFont.appSubTitleLight(ofSize: .small)
         self.textColor = UIColor.appGrey
     }
 }
