@@ -63,7 +63,6 @@
 		944307BE242885F3007E7570 /* MembershipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944307BD242885F3007E7570 /* MembershipVC.swift */; };
 		944307BF24288C4C007E7570 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 944307BC24288334007E7570 /* Montserrat-Regular.ttf */; };
 		9443D6462429669700432150 /* UItextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9443D6452429669700432150 /* UItextfield.swift */; };
-		944F0A8224293760007B6E83 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0A8124293760007B6E83 /* AppKeys.swift */; };
 		944F0A8B24294A2B007B6E83 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0A8A24294A2B007B6E83 /* AccountVC.swift */; };
 		944F9D6A2423C201003BF6B8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F9D692423C201003BF6B8 /* HeaderView.swift */; };
 		945988CC242A4A2800A95664 /* ShowErrorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988CA242A4A2700A95664 /* ShowErrorUtil.swift */; };
@@ -197,7 +196,6 @@
 		944307BD242885F3007E7570 /* MembershipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MembershipVC.swift; path = ../../../../WffApp/WffApp/View/ViewControllers/MembershipVC.swift; sourceTree = "<group>"; };
 		9443D6452429669700432150 /* UItextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UItextfield.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/OnboardingScreen/UItextfield.swift; sourceTree = "<group>"; };
 		944F0A7C2428FE3B007B6E83 /* WFFApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WFFApp.entitlements; sourceTree = "<group>"; };
-		944F0A8124293760007B6E83 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppKeys.swift; path = ../../../WffApp/WffApp/Appliation/AppKeys.swift; sourceTree = "<group>"; };
 		944F0A8A24294A2B007B6E83 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountVC.swift; path = ../../../../../WffApp/WffApp/View/ViewControllers/Account/AccountVC.swift; sourceTree = "<group>"; };
 		944F9D692423C201003BF6B8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ../../../../../WffApp/WffApp/View/ProductInfoPage/CustomViews/HeaderView.swift; sourceTree = "<group>"; };
 		945988CA242A4A2700A95664 /* ShowErrorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowErrorUtil.swift; sourceTree = "<group>"; };
@@ -484,7 +482,6 @@
 			children = (
 				F73387C824164D7F00DE8F75 /* AppDelegate.swift */,
 				F73387D124164D8300DE8F75 /* Assets.xcassets */,
-				944F0A8124293760007B6E83 /* AppKeys.swift */,
 			);
 			path = Appliation;
 			sourceTree = "<group>";
@@ -980,7 +977,6 @@
 				1DB2EA16242669F8004D99FD /* WFFBorderedButton.swift in Sources */,
 				F73387FE24166E5000DE8F75 /* HomeScreenDataSource.swift in Sources */,
 				F7F276632425E9FB00967685 /* RegisterVC.swift in Sources */,
-				944F0A8224293760007B6E83 /* AppKeys.swift in Sources */,
 				F7BC86F624264CE300A73632 /* TabBarVC.swift in Sources */,
 				1D3875BD2423760900E8D93F /* ProductProtocol.swift in Sources */,
 				945988D1242A6F8F00A95664 /* TextfieldUtils.swift in Sources */,

@@ -44,6 +44,7 @@ class HomeVC: UIViewController {
         var headerView = HomeTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
         headerView.delegate = self
         self.tableView.tableHeaderView = headerView
+        tableView.allowsSelection = false
     }
     
     @IBAction func membershipButtonPressed(_ sender: Any) {

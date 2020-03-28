@@ -27,6 +27,7 @@
 		942A2EAC2420A72400AAB648 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A2EAB2420A72400AAB648 /* UserManager.swift */; };
 		944F0A8824293F5A007B6E83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0A8724293F5A007B6E83 /* AppState.swift */; };
 		945988C9242A3FC500A95664 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945988C8242A3FC500A95664 /* Prefix.swift */; };
+		9479360C242B6EC600637791 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479360B242B6EC600637791 /* AppKeys.swift */; };
 		94EDF9D22420E82900F2AFBA /* HttpResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDF9D12420E82900F2AFBA /* HttpResponseCodes.swift */; };
 		F733880724169ED000DE8F75 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733880624169ED000DE8F75 /* Category.swift */; };
 		F749E45124232D05004CD822 /* WFFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749E45024232D05004CD822 /* WFFUser.swift */; };
@@ -132,6 +133,7 @@
 		942A2EAB2420A72400AAB648 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		944F0A8724293F5A007B6E83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		945988C8242A3FC500A95664 /* Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
+		9479360B242B6EC600637791 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
 		947E86F42428C24C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86F52428C24C009DD8C4 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947E86FA2428C88C009DD8C4 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				944F0A8724293F5A007B6E83 /* AppState.swift */,
+				9479360B242B6EC600637791 /* AppKeys.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 				F7F5CBDB241379F2007F2096 /* CollectionManager.swift in Sources */,
 				942A2EAC2420A72400AAB648 /* UserManager.swift in Sources */,
 				F7F5CF5E24139660007F2096 /* GiftCardViewModel+PayGiftCard.swift in Sources */,
+				9479360C242B6EC600637791 /* AppKeys.swift in Sources */,
 				F7F5CF0924138A75007F2096 /* ViewModeling.swift in Sources */,
 				F7BE38052420982400057592 /* ProductListResponse.swift in Sources */,
 				F7F5CF2424138ABC007F2096 /* Fragment+ImageConnectionQuery.swift in Sources */,

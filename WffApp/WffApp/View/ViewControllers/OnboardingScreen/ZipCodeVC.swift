@@ -61,6 +61,7 @@ class ZipCodeVC: UIViewController {
                 self.present(popupVC, animated: true, completion: nil)
                 popupVC.continuePressed = {
                     self.pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
+                    
                 UserDefaults.userZipCode = nil
                 }
             default:
@@ -73,6 +74,7 @@ class ZipCodeVC: UIViewController {
         pushViewController(Storyboard.home.instanceOf(viewController: TabBarVC.self)!)
     }
     @IBAction func loginRegisterPressed(_ sender: UIButton) {
+        // TODO : selected index
         let vc = Storyboard.home.instanceOf(viewController: TabBarVC.self)!
         vc.selectedIndex = 2
         pushViewController(vc)

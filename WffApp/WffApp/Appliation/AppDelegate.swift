@@ -29,6 +29,7 @@ import IQKeyboardManagerSwift
         settings.minimumFetchInterval = 0
         remoteConfig?.configSettings = settings
         ShopManager.shared.datasource = self
+        initials()
         //Enter production Product Id
         // Override point for customization after application launch.
         return true
@@ -38,6 +39,9 @@ import IQKeyboardManagerSwift
     }
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Messaging.messaging().apnsToken = deviceToken
+    }
+    func initials(){
+        UserManager.shared.setNewZipCode(zipCode: UserDefaults.userZipCode ?? "", handler: nil)
     }
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         

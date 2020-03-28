@@ -30,6 +30,7 @@ extension ShopManager{
                 let categories = try JSONDecoder().decode([ProductCategories].self, from: jsonData)
                 handler?(categories)
                 }catch{
+                    print("Failed to map")
                     handler?(nil)
                 }
             }

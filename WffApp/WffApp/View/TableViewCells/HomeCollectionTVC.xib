@@ -18,36 +18,39 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-un-Fx4">
-                        <rect key="frame" x="0.0" y="0.0" width="377" height="226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="212"/>
                         <color key="backgroundColor" white="0.90772630580000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" priority="999" constant="150" id="ytL-tx-LLv"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TXF-wK-rZE">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TXF-wK-rZE">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrG-E3-Ywr" customClass="WFFLargeSubtitleLabel" customModule="WFFApp" customModuleProvider="target">
-                        <rect key="frame" x="174" y="230" width="29" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QF-dE-025" customClass="WFFMediumTitleLabel" customModule="WFFApp" customModuleProvider="target">
+                        <rect key="frame" x="169" y="216" width="39.5" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="2TM-D4-4XB"/>
+                            <constraint firstAttribute="height" constant="30" id="Ig1-af-vS4"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scW-nH-6vc">
-                        <rect key="frame" x="181" y="254" width="15" height="15"/>
+                        <rect key="frame" x="158.5" y="216" width="60" height="46"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="15" id="6IP-N8-QN2"/>
-                            <constraint firstAttribute="width" secondItem="scW-nH-6vc" secondAttribute="height" multiplier="1:1" id="Wcc-Ui-fmm"/>
+                            <constraint firstAttribute="width" constant="60" id="c3R-TM-rcV"/>
+                            <constraint firstAttribute="height" constant="46" id="i8x-HM-uJ6"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <state key="normal" image="dropdown"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-22"/>
+                        <state key="normal" image="dropdown">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
                         <connections>
                             <action selector="moreButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9cX-dP-5eu"/>
                         </connections>
@@ -55,21 +58,21 @@
                 </subviews>
                 <color key="backgroundColor" white="0.90772630580000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="QrG-E3-Ywr" firstAttribute="top" secondItem="OFa-un-Fx4" secondAttribute="bottom" constant="4" id="2dB-fS-Vo7"/>
-                    <constraint firstItem="scW-nH-6vc" firstAttribute="top" secondItem="QrG-E3-Ywr" secondAttribute="bottom" constant="4" id="Sl8-8v-EJq"/>
+                    <constraint firstItem="scW-nH-6vc" firstAttribute="top" secondItem="OFa-un-Fx4" secondAttribute="bottom" constant="4" id="9Cm-hZ-KG4"/>
                     <constraint firstAttribute="trailing" secondItem="OFa-un-Fx4" secondAttribute="trailing" id="Uk6-sz-be5"/>
-                    <constraint firstItem="scW-nH-6vc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="i31-1N-Q45"/>
+                    <constraint firstItem="6QF-dE-025" firstAttribute="top" secondItem="OFa-un-Fx4" secondAttribute="bottom" constant="4" id="UsF-wZ-AOw"/>
+                    <constraint firstItem="6QF-dE-025" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WbW-8j-ACt"/>
                     <constraint firstItem="OFa-un-Fx4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iRD-af-ANL"/>
-                    <constraint firstAttribute="bottom" secondItem="scW-nH-6vc" secondAttribute="bottom" constant="4" id="r4l-Vp-wau"/>
+                    <constraint firstItem="scW-nH-6vc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oj6-LQ-Gcr"/>
                     <constraint firstItem="OFa-un-Fx4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s3q-S0-Tdd"/>
-                    <constraint firstItem="QrG-E3-Ywr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="y8G-VD-6Cg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="scW-nH-6vc" secondAttribute="bottom" id="sjt-9a-bGV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="OFa-un-Fx4" id="h5O-NK-Ma4"/>
                 <outlet property="collectionViewHeight" destination="ytL-tx-LLv" id="R6L-c6-sLh"/>
-                <outlet property="moreOrLess" destination="QrG-E3-Ywr" id="a80-cU-Gl2"/>
+                <outlet property="moreOrLess" destination="6QF-dE-025" id="j0G-rx-r39"/>
                 <outlet property="moreOrLessButton" destination="scW-nH-6vc" id="ccl-PP-hxr"/>
             </connections>
             <point key="canvasLocation" x="180.43478260869566" y="120.20089285714285"/>

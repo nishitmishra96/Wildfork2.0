@@ -36,8 +36,3 @@ public class WFFCollection: NSObject {
         }
     }
 }
-extension String{
-    func getBase64EncodedString()->String{
-        return String(data:  Data(base64Encoded: self)!, encoding: .utf8)!
-    }
-}

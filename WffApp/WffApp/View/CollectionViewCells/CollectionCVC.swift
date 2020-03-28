@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WffPlatform
 
 class CollectionCVC: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
@@ -19,9 +20,21 @@ class CollectionCVC: UICollectionViewCell {
         // Initialization code
         categoryImageContainer.layer.shadowOpacity = 0.2
         categoryImageContainer.layer.shadowOffset = CGSize(width: 0, height: 5)
-       
+        categoryImageContainer.backgroundColor = .white
+    }
+    override func prepareForReuse() {
+        categoryImageContainer.layer.shadowOpacity = 0.2
+        categoryImageContainer.layer.shadowOffset = CGSize(width: 0, height: 5)
+        categoryImageContainer.backgroundColor = .white
+        self.makeCircular()
     }
 
+    func setValues(productCategroy:ProductCategories?){
+        guard let category = productCategroy else{return}
+        self.categoryImage.image = UIImage(named: "more2")
+        self.categoryName.text = category.name
+        categoryImageContainer.backgroundColor = .white
+    }
 }
 extension UIView {
     func makeCircular() {

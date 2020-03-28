@@ -68,10 +68,13 @@ extension UserManager{
 extension UserManager{
     public func setNewZipCode(zipCode:String,handler:((Bool?,Int)->())?){
         InventoryManager.shared.isProductAvailable(at: zipCode) { (flag,statusCode)  in
-            if let responseFlag = flag{
-            self.userZipCode.accept(zipCode)
-            self.isDeleveryAvailable.accept(responseFlag)
+            if let _ = flag{
+            UserDefaults.userZipCode = zipCode
+            }else{
+                UserDefaults.userZipCode = nil
             }
+            self.isDeleveryAvailable.accept(flag ?? false)
+            self.userZipCode.accept(zipCode)
             handler?(flag, statusCode)
         }
     }

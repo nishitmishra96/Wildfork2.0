@@ -27,17 +27,18 @@ class PopupVC: UIViewController {
         textField.isHidden = true
         verifyZipcode.isHidden = true
     }
-    
     @IBAction func dismissPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func verifyZipcode(_ sender: Any) {
+        print("Verify zip code called")
         UserManager.shared.setNewZipCode(zipCode: self.textField.text ?? "") { (newValue, statusCode) in
             switch statusCode{
             case 200:
                 self.popupTitle.text = "WE DELIVER TO \(self.textField.text ?? "YOUR PINCODE")"
                 UserDefaults.userZipCode = self.textField.text ?? ""
+                self.dismiss(animated: true, completion: nil)
             case 0:
                 self.showNoInterNetConnectionAlert(withMessage: "Hit retry to find delivery again, after connecting to Internet") {
                 }

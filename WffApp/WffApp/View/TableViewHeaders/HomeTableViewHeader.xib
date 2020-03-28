@@ -23,6 +23,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-SI-fwC">
                     <rect key="frame" x="0.0" y="0.0" width="505" height="200"/>
                     <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MG-Rd-lNH">
+                            <rect key="frame" x="0.0" y="199" width="505" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="F1L-GR-i3a"/>
+                            </constraints>
+                        </view>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wdc-TE-IJ3">
                             <rect key="frame" x="131" y="85" width="243" height="30"/>
                             <subviews>
@@ -57,12 +64,15 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6MG-Rd-lNH" secondAttribute="trailing" id="3VQ-QH-qQf"/>
+                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="centerX" secondItem="6xX-SI-fwC" secondAttribute="centerX" id="Cva-7b-Yzx"/>
                         <constraint firstItem="Wdc-TE-IJ3" firstAttribute="centerX" secondItem="6xX-SI-fwC" secondAttribute="centerX" id="KJ0-76-RF1"/>
                         <constraint firstItem="Wdc-TE-IJ3" firstAttribute="centerY" secondItem="6xX-SI-fwC" secondAttribute="centerY" id="PJ3-ky-obR"/>
-                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="top" secondItem="6xX-SI-fwC" secondAttribute="top" constant="20" symbolic="YES" id="V2h-wm-QPt"/>
-                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="leading" secondItem="6xX-SI-fwC" secondAttribute="leading" constant="20" symbolic="YES" id="Xa4-QI-UvY"/>
-                        <constraint firstAttribute="bottom" secondItem="dZV-Vc-k8C" secondAttribute="bottom" constant="20" symbolic="YES" id="Yb8-4X-H9d"/>
-                        <constraint firstAttribute="trailing" secondItem="dZV-Vc-k8C" secondAttribute="trailing" constant="20" symbolic="YES" id="s1e-W2-1BI"/>
+                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="width" secondItem="6xX-SI-fwC" secondAttribute="width" multiplier="0.920792" id="VJB-Rv-L0u"/>
+                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="centerY" secondItem="6xX-SI-fwC" secondAttribute="centerY" id="VNj-za-53D"/>
+                        <constraint firstItem="dZV-Vc-k8C" firstAttribute="height" secondItem="6xX-SI-fwC" secondAttribute="height" multiplier="0.8" id="Wgx-C3-UVC"/>
+                        <constraint firstAttribute="bottom" secondItem="6MG-Rd-lNH" secondAttribute="bottom" id="slB-52-kf6"/>
+                        <constraint firstItem="6MG-Rd-lNH" firstAttribute="leading" secondItem="6xX-SI-fwC" secondAttribute="leading" id="tSR-c8-1EJ"/>
                     </constraints>
                 </view>
             </subviews>
@@ -76,6 +86,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="173.59999999999999" y="388.60569715142429"/>
+        </view>
+        <view contentMode="scaleToFill" id="AoZ-hj-QJJ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="Mn5-1b-IjN"/>
+            <point key="canvasLocation" x="-142" y="39"/>
         </view>
     </objects>
     <resources>

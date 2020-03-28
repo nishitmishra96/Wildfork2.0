@@ -16,7 +16,11 @@ enum SectionsOnHomeScreen:Int{
 }
 //mark for review
 var selectedCategory:ProductCategories? = nil
-class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,SelectionDelegates{
+class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,SelectionDelegates,PlaceholderDelegate{
+    
+    func view(_ view: Any, actionButtonTappedFor placeholder: Placeholder) {
+        setupDataSource()
+    }
     
     private var delegate:SelectionDelegates!
     private var tableView:TableView?
@@ -34,14 +38,16 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
                 guard let allCategories = categories else { return }
                 self.productcategories = allCategories
                 
-                if let homeItems = (UIApplication.shared.delegate as! AppDelegate).remoteConfig?.configValue(forKey: "homepage").stringValue{
-                    if let jsonData = homeItems.data(using: .utf8) {
+                if let homeItems = (UIApplication.shared.delegate as! AppDelegate).remoteConfig?.configValue(forKey: "featured"){
+                    if let jsonData = homeItems.stringValue?.data(using: .utf8) {
                         do{
                             let homeScreenItems = try JSONDecoder().decode([HomeScreenCollections].self, from: jsonData)
                             self.homeProducts = homeScreenItems
                         }catch{
-                            print("Soemthing not good while getting data")
+                            print("Something not good while getting data")
                         }
+                    }else{
+                        
                     }
                 }
                 self.tableView?.reloadData()
@@ -95,7 +101,6 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
         switch SectionsOnHomeScreen(rawValue: indexPath.section) {
         case .category:
             cell = self.getCategoryTableViewCell(tableView: tableView, indexPath: indexPath)
-            
         case .nonCategory:
             if indexPath.row == 0{
                 cell = self.getFeaturedTableViewCell(tableView: tableView, indexPath: indexPath)
@@ -103,9 +108,6 @@ class HomeScreenDataSource:NSObject, UITableViewDataSource,PaginateDelegate,Sele
             else if indexPath.row == 1 {
                 cell = self.getPopularTableViewCell(tableView: tableView, indexPath: indexPath)
             }
-            
-            //cell = UITableViewCell()
-            //cell.detailTextLabel?.text = self.homeProducts[indexPath.row].name
         default:
             assertionFailure("Woa!! this cannot come in this")
         }

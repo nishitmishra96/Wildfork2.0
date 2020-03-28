@@ -1,14 +1,14 @@
 //
 //  AppKeys.swift
-//  WFFApp
+//  WffPlatform
 //
-//  Created by Nishit Mishra on 23/03/20.
+//  Created by Nishit Mishra on 25/03/20.
 //  Copyright © 2020 Himanshu Singh. All rights reserved.
 //
 
 import Foundation
 
-enum AppKeys:String{
+public enum AppKeys:String{
     case zipcode = "zipcode"
     case appState = "appState"
     case userSawHome = "userSawHome"

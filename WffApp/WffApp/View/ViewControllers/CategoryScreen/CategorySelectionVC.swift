@@ -10,8 +10,6 @@ import UIKit
 import CZTableView
 import WffPlatform
 class CategorySelectionVC: UIViewController{
-   
-   
     
     @IBOutlet weak var tableView:TableView!
     private var category:ProductCategories!
